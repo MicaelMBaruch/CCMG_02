@@ -1,0 +1,55 @@
+% Author: Luan Leal
+% Last update: 2024-12-03
+
+% ----------------------------
+
+% ----------------------------   IMPORTS   ----------------------------
+\usepackage{amssymb, amsthm, amsmath, geometry, siunitx, caption, float, graphicx}
+\usepackage{enumitem}
+\usepackage[utf8]{inputenc}
+\usepackage[onehalfspacing]{setspaceenhanced}
+\usepackage[brazil]{babel} % Adaptação ao pt-br
+\usepackage{hyperref} % Usado para inserir links
+\usepackage[capitalize, brazilian, noabbrev]{cleveref} % Referência adaptada ao pt-br
+
+% ----------------------------   LAYOUT   ----------------------------
+\geometry{a4paper, lmargin=3cm, tmargin=3cm, rmargin=2cm, bmargin=2cm}
+\onehalfspacing
+%\setlength{\parindent}{45pt}
+\sisetup{output-decimal-marker = {,}}
+
+% ----------------------------  THEOREMS  ----------------------------
+% -Ambiente de definição
+\theoremstyle{definition}
+\newtheorem{dfn}{Definição}[section]
+
+% -Ambiente de observação
+\theoremstyle{remark}
+\newtheorem{obs}{Observação}
+
+% -Ambiente de lema
+\theoremstyle{definition}
+\newtheorem{lema}{Lema}
+
+% -Ambiente de exemplo
+\theoremstyle{definition}
+\newtheorem{xp}{Exemplo}[section]
+
+% -Ambiente de proposição
+\newtheorem{prop}{Proposição}
+
+% -Ambiente de teorema e demonstração
+\theoremstyle{plain}
+\newtheorem{thm}{Teorema}
+\theoremstyle{remark}
+\newtheorem*{dms}{Demonstração}
+
+% -Ambiente de exercício e resolução
+\theoremstyle{definition}
+\newtheorem{xcs}{Exercício}
+\theoremstyle{remark}
+\newtheorem*{rsl}{Resolução}
+
+% ----------------------------  COMMANDS  ----------------------------
+%\newcommand{\RR}{\mathbb{R}} % \mathbb{R} = \RR
+%\newcommand{\ZZ}{\mathbb{Z}} % \mathbb{Z} = \ZZ
