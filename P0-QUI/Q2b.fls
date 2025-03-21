@@ -1,5 +1,0 @@
-PWD /home/thefire888/Latex/fisicaII/P0-QUI
-INPUT /usr/share/texmf-dist/web2c/texmf.cnf
-INPUT /var/lib/texmf/web2c/pdftex/pdflatex.fmt
-INPUT Q2b.tex
-OUTPUT Q2b.log
