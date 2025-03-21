@@ -10,6 +10,20 @@
 \end{xcs}
 \begin{rsl}
 
-    Agora, vamos provar que \( x \to b^+ \) implica em \( P(V_m) \to +\infty \). 
-    
+    Agora, vamos provar que \( V_m \to b^+ \) implica em \( P(V_m) \to +\infty \).
+    Para isso, basta verificar que 
+    \begin{align*}
+        \lim_{V_m \to b^+} P(V_m) = \lim_{V_m \to b^+} \frac{RT}{V_m-b} = +\infty
+    \end{align*}
+    isto é, \( \forall M > 0 \), \( \exists \delta > 0 \) tal que:
+    \begin{align*}
+        0 < V_m - b < \delta \Rightarrow M < \frac{RT}{V_m-b}
+    \end{align*}
+    Note que para \( \delta = \frac{RT}{M} \), temos
+    \begin{align*}
+        V_m - b &< \frac{RT}{M}\\
+        M &< \frac{RT}{V_m - b} 
+    \end{align*}
+    que é exatamente o que queríamos. Logo, concluimos que \( V_m \to b^+
+    \Rightarrow P(V_m) \to +\infty \).
 \end{rsl}
