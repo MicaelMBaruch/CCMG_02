@@ -17,36 +17,27 @@
     % TODO: Justino, revisar lógica e escrita da questão!!
     
     Para realizar o cálculo do valor da constante universal dos gases \( R \),
-    podemos utilizar a fórmula da lei dos gases ideais: 
+    podemos utilizar a lei dos gases ideais: 
     \begin{align*}
-        PV_m = RT \Rightarrow R = \frac{PV_m}{T}
+        PV_m = RT \Rightarrow 
+        V_m = RT \frac{1}{P} 
     \end{align*}
     Dessa forma, como \( n = 1,000 \) mol e \( T = 273,15 \) K são constantes,
-    podemos definir:
-    \begin{align*}
-        Y = PV_m = RT \Rightarrow Y = RT (\text{para pressão
-        muito baixa})
-    \end{align*}
-    Logo, para determinarmos o valor de \( RT \) no caso ideal, 
-    isto é, com \( P \to 0 \), vamos analisar a \cref{reggeo}.
-
+    temos que \( V_m \) varia linearmente com \( \frac{1}{P} \) e a inclinação
+    da reta que rege essa relação é dada por \( RT \). Utilizando os dados
+    da tabela para contruir uma regressão linear, temos a \cref{reggeo} 
     \begin{figure}[H]
         \centering
-        \includegraphics[width=.5\linewidth]{images/geogebra.png}
-        \caption{Regressão Linear de P x \(PV_m\)}
+        \includegraphics[width=.4\linewidth]{images/geo1.png}
+        \caption{Regressão Linear de \(V_m\) em função de \( 1/P \) }
         \label{reggeo}
     \end{figure}
-
-    Segundo a regressão linear realizada pela ferramenta do GeoGebra, quando \(
-    P \to 0 \) a função \( PV_m \) tende a \( 22414 \) atm cm\(^3\)
-    mol\(^{-1}\). 
-    E como mostrado anteriormente \( PV_m = RT \Rightarrow
-    \frac{PV_m}{T} = R \), então:
+    Pela equação da reta dada pela regressão linear, obtemos o valor de \( RT \)
+    e, então, determinamos R
     \begin{align*}
-        22414 \, \text{atm cm}^3 \text{mol}^{-1} = R \times 273,15 \, \text{K}\\
-        \Rightarrow R = \frac{22414}{273,15} \, \text{atm cm}^3
-        \text{mol}^{-1} \text{K}^{-1}\\
-        R = 82,057 \, \text{atm cm}^3 \text{mol}^{-1} \text{K}^{-1}
+        R &= \frac{22415 \ \unit{cm^3.atm.mol^{-1}} }{273K} && (\text{Note o uso
+        de 5 A.S.})\\
+        &= 82,106 \ \unit{cm^3.atm.mol^{-1}.K^{-1}}
     \end{align*}
     Note que esse valor está alinhado com o valor de referência.
     
