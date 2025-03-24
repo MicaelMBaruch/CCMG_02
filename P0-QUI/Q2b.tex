@@ -10,13 +10,17 @@
 \end{xcs}
 \begin{rsl}
     %TODO: Sei lá, sinto que dei um bilhão de voltas e não provei muita coisa
+    %TODO: No entanto, ... pela quantidade de partículas.
     Para que uma equação possa ser empregada como equação de estado de um gás real,
     deve satisfazer as seguinte condições:
-    \begin{itemize} %põe no modo números pf
+    \begin{enumerate}
         \item Considerar o volume das partículas;
         \item Considerar as forças de atração e repulsão entre as partículas;
-    \end{itemize}
-    Primeiro, vamos provar que \( V_m \to b^+ \) implica em \( P(V_m) \to +\infty \).
+    \end{enumerate}
+    Vamos avaliar se a equação dada condiz com esses critérios. Para o primeiro
+    critério, vamos
+    provar que \( V_m \to b^+ \) implica em \( P(V_m) \to +\infty \), isto é, \(
+    b\) representa o volume das partículas (ou as forças repulsivas).
     Para isso, basta verificar que 
     \begin{align*}
         \lim_{V_m \to b^+} P(V_m) = \lim_{V_m \to b^+} \frac{RT}{V_m-b} = +\infty
@@ -31,18 +35,23 @@
         M &< \frac{RT}{V_m - b} 
     \end{align*}
     que é exatamente o que queríamos. Logo, concluimos que \( V_m \to b^+
-    \Rightarrow P(V_m) \to +\infty \).
+    \Rightarrow P(V_m) \to +\infty \). Portanto, \( b \) representa interações
+    repulsivas entre as partículas, para o modelo de esferas rígidas temos que
+    \( b \) representa o volume das partículas individuais.
 
-    É plausível dizer que uma equação considere simultaneamente as forças de repulsão
-    e o volume das partículas, já que as forças repulsivas dependem usualmente de uma
-    distância tão pequena para serem sentidas que é equivalente a dizer que as partículas
-    estão se tocando. No entanto, as forças atrativas entre partículas são sentidas a uma
-    distância maior, além disso, o efeito que essas interações vão ter no comportamento do 
-    gás depende da densidade de partículas, do tamanho das mesmas e da natureza das interações
-    entre elas. Dessa forma, um termo que descreva corretamente essas interações deve depender
-    do volume pela quantidade de partículas. Dessa forma, seria vazio acusar que o valor de $b$
-    poderia ser negativo e representar forças atrativas que de alguma forma diminuem a pressão
-    causada por um gás em condições isovolumétricas pela variação de temperatura. Assim, 
-    provamos que a equação a cima não pode descrever um gás real, pois não atende ao requisito
-    de considerar as forças repulsivas \textit{\textbf{e}} atrativas do gás consigo mesmo.   
+    É plausível dizer que uma equação considere simultaneamente as forças de
+    repulsão e o volume das partículas, já que as forças repulsivas dependem
+    usualmente de uma distância tão pequena para serem sentidas que é
+    equivalente a dizer que as partículas estão se tocando. No entanto, as
+    forças atrativas entre partículas são sentidas a uma distância maior, além
+    disso, o efeito que essas interações vão ter no comportamento do gás depende
+    da densidade de partículas, do tamanho das mesmas e da natureza das
+    interações entre elas. Dessa forma, um termo que descreva corretamente essas
+    interações deve depender do volume pela quantidade de partículas. Dessa
+    forma, seria vazio acusar que o valor de $b$ poderia ser negativo e
+    representar forças atrativas que de alguma forma diminuem a pressão causada
+    por um gás em condições isovolumétricas pela variação de temperatura. Assim,
+    provamos que a equação a cima não pode descrever um gás real, pois não
+    atende ao requisito de considerar as forças repulsivas \textit{\textbf{e}}
+    atrativas do gás consigo mesmo.   
 \end{rsl}

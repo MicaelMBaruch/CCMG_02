@@ -1,6 +1,6 @@
 \begin{xcs}
     A \qty{273}{K}, o argônio tem os seguintes coeficientes do virial: 
-    B = \qty{-21,7}{cm^3 mol^{-1}} e C = \qty{1200}{cm^6 mol^{-2}}.
+    B = \qty{-21,7}{cm^3.mol^{-1}} e C = \qty{1200}{cm^6 mol^{-2}}.
     Admitindo que a lei dos gases perfeitos seja
     suficientemente exata para estimar o segundo e terceiro termos da expansão
     (ou seja, use a lei dos gases perfeitos em caso de necessidade): 
@@ -12,9 +12,31 @@
 \end{xcs}
 \begin{rsl}
     %TODO: só explicar a substituição algébrica?
+    Vejamos a definição de Z
     \begin{align*}
-        Z = (1 + \frac{-21,7 \cdot 100}{273 \cdot 82,057} + 
-        \frac{1200 \cdot 100^2}{273^2 \cdot 82,057^2}) 
+        Z = \frac{V_m}{V_m^o} 
+    \end{align*}
+    onde \( V_m \) é o volume molar real do gás e \( V_m^o \) é o volume molar
+    ideal do gás. Temos um modelo para gás ideal, de forma que
+    \begin{align*}
+        Z = \frac{PV_m}{RT} 
+    \end{align*}
+    Podemos reescrever P na forma da equação do virial
+    \begin{align*}
+        Z &= \frac{V_m}{RT} . \frac{RT}{V_m} \left(1 + \frac{B}{V_m} +
+        \frac{C}{V_m^2}  \right)\\
+        &= \left( 1 + \frac{B}{V_m} + \frac{C}{V_m^2}  \right)
+    \end{align*}
+    Agora, fazemos uma aproximação de um comportamento ideal do gás, de forma
+    que
+    \begin{align*}
+        Z = \left( 1 + \frac{BP}{RT} + \frac{CP^2}{R^2T^2}  \right)
+    \end{align*}
+    Por fim, determinamos Z a partir dessa equação:
+    \begin{align*}
+        Z = \left(1 + \frac{-21,7 \cdot 100}{273 \cdot 82,057} + 
+        \frac{1200 \cdot 100^2}{273^2 \cdot 82,057^2}\right) 
         = 0,927
     \end{align*}
+    Concluímos que \( Z = 0,927 \) para as condições dadas.
 \end{rsl}
