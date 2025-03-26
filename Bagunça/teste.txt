@@ -1,8 +1,5 @@
-<<<<<<< HEAD
 i|||||| Isso é um assalto ||||asnishjskdjksjdkajdkajsd
-=======
 Micael
->>>>>>> refs/remotes/origin/main
 iasnishjskdjksjdkajdkajsd
 
 Aqui foi dado o merge pelo mergetool
@@ -19,11 +16,15 @@ public class Louco {
     public static int maluquice(pinto){
         return -3
     }
+    public static int pinto(go) {
+        go.pinto.com - 1
+    }
 }
 iasnishjskdjksjdkajdkajsdfdfgfd
 iasnishjskdjksjdkajdkajsdgfdfgfd
 iasnishjskdjksjdkajdkajsdgfdfgfd
 
+Luan esteve aqui
 asnisMicael
 iasnishjskdjksjdkajdkajsd
 iasnishjskdjksjdkajdkajsd
