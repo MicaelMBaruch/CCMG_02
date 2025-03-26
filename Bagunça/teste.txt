@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 i|||||| Isso é um assalto ||||asnishjskdjksjdkajdkajsd
+=======
+Micael
+>>>>>>> refs/remotes/origin/main
 iasnishjskdjksjdkajdkajsd
 
 
@@ -6,6 +10,7 @@ Bolsonaro
 
 
 iasnishjskdjksjdkajdkajsd
+<<<<<<< HEAD
 iasnishjdsasdgfdskdjksjdkajdkajsd
 iasnishjskdjksjdkdfgfdsdfajdkajsd
 iasnishjskdjksjdkajdkajsdgfdsdfg
@@ -14,6 +19,16 @@ iasnishjskdjksjdkajdkajsddfgfd
 iasnishjskdjksjdkajdkajsdfdfgfd
 iasnishjskdjksjdkajdkajsdgfdfgfd
 iasnishjskdjksjdkajdkajsdgfdfgfd
+=======
+iasnisMicael
+iasnishjskdjksjdkajdkajsd
+iasnishjskdjksjdkajdkajsd
+iasnishjskdjksjdkajdkajsd
+iasnishjskdjksjdkajdkajsd
+iasnishjskdjksjdkajdkajsd
+iasnishjskdjksjdkajdkajsd
+iasnishjskdjksjdkajdkajsd
+>>>>>>> refs/remotes/origin/main
 Essa linha foi alterada por Luan, antes do merge
 iasnishjskdjksjdkajdkajsd
 iasnishjskdjksjdkajdkajsdfdfgf
