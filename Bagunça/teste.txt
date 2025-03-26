@@ -16,6 +16,14 @@ iasnishjskdjksjdkdfgfdsdfajdkajsd
 iasnishjskdjksjdkajdkajsdgfdsdfg
 iasnishjskdjksjdkajdkajsdfgfdsdfg
 iasnishjskdjksjdkajdkajsddfgfd
+
+public class Louco {
+    public static int maluquice(pinto){
+        return -3
+    }
+}
+
+
 iasnishjskdjksjdkajdkajsdfdfgfd
 iasnishjskdjksjdkajdkajsdgfdfgfd
 iasnishjskdjksjdkajdkajsdgfdfgfd
