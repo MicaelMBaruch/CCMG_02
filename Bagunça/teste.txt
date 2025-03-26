@@ -10,25 +10,14 @@ Bolsonaro
 
 
 iasnishjskdjksjdkajdkajsd
-<<<<<<< HEAD
-iasnishjdsasdgfdskdjksjdkajdkajsd
-iasnishjskdjksjdkdfgfdsdfajdkajsd
-iasnishjskdjksjdkajdkajsdgfdsdfg
-iasnishjskdjksjdkajdkajsdfgfdsdfg
-iasnishjskdjksjdkajdkajsddfgfd
-iasnishjskdjksjdkajdkajsdfdfgfd
-iasnishjskdjksjdkajdkajsdgfdfgfd
-iasnishjskdjksjdkajdkajsdgfdfgfd
-=======
 iasnisMicael
 iasnishjskdjksjdkajdkajsd
+iasnishjskESSA LINHA O MICAEL MUDOU AGORA
 iasnishjskdjksjdkajdkajsd
 iasnishjskdjksjdkajdkajsd
 iasnishjskdjksjdkajdkajsd
 iasnishjskdjksjdkajdkajsd
 iasnishjskdjksjdkajdkajsd
-iasnishjskdjksjdkajdkajsd
->>>>>>> refs/remotes/origin/main
 Essa linha foi alterada por Luan, antes do merge
 iasnishjskdjksjdkajdkajsd
 iasnishjskdjksjdkajdkajsdfdfgf
