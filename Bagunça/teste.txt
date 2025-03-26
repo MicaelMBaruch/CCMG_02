@@ -9,6 +9,7 @@ iasnishjskdjksjdkajdkajsd
 iasnishjskdjksjdkajdkajsd
 iasnishjskdjksjdkajdkajsd
 iasnishjskdjksjdkajdkajsd
+Essa linha foi alterada por Luan, antes do merge
 iasnishjskdjksjdkajdkajsd
 iasnishjskdjksjdkajdkajsd
 iasnishjskdjksjdkajdkajsd
@@ -18,11 +19,7 @@ iasnishjskdjksjdkajdkajsd
 iasnishjskdjksjdkajdkajsd
 iasnishjskdjksjdkajdkajsd
 iasnishjskdjksjdkajdkajsd
-iasnishjskdjksjdkajdkajsd
-iasnishjskdjksjdkajdkajsd
-iasnishjskdjksjdkajdkajsd
-iasnishjskdjksjdkajdkajsd
-iasnishjskdjksjdkajdkajsd
+Essa linha também foi alterada pelo Luan :)
 iasnishjskdjksjdkajdkajsd
 iasnishjskdjksjdkajdkajsd
 iasnishjskdjksjdkajdkajsd
