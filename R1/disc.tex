@@ -8,13 +8,23 @@ líquido misterioso:
     \rho_l &= \frac{\rho_w \cdot h_w}{h_l}\\
     \rho_l &= \frac{966,5 \cdot 0,123}{0,153} = \qty{767,0}{kg/m^3} 
 \end{align*}
+
 Logo, a densidade do líquido misterioso é de \qty{767,0}{kg/m^3}. Consultando
 uma tabela de referência, não foi possui atribuir essa densidade a nenhum
 líquido.
 
+\subsubsection{Cálculo de erro}
+Considerando os erros experimentais \(\sigma h_w = \pm0,0005 m\) e \(\sigma h_l = \pm 0,0005 m\), temos pela propagação de erro:
+\begin{align*}
+    \sigma_l &= \sqrt{\left(\frac{\partial\rho_l}{\partial h_w}\right)^2\sigma_{h_w}^2 + \left(\frac{\partial\rho_l}{\partial h_l}\right)\sigma_{h_l}^2}\\
+    &= \sqrt{\left(\frac{\rho_w}{h_l}\right)^2 \sigma_{h_w}^2 + \left(\frac{-\rho_2 \cdot h_w}{h_l^2}\right)^2\sigma_l^2}\\
+    &= \qty{4,05}{kg/m^3}
+\end{align*}
+
+
 \subsection{Manômetro}
 
-
+%TODO: mesmo
 
 \subsection{Discos de Magdeburg}
 
