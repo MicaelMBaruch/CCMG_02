@@ -1,6 +1,8 @@
 \section{Resultados}
 \subsection{Discos de Magdeburg}
 
+<<<<<<< HEAD
+=======
 %TODO: formatar e, talvez mudar algumas coisas de seção
 
 Durante o experimento, os hemisférios foram encaixados e alinhados (\cref{foto hemisferios}). Posteriormente, ao serem puxados em direções opostas (por forças de tração) eles não se separaram nem apresentaram deformação notável, indicando que tais forças não superaram aquelas que os uniam. Tal resultado pode ser explicado pelo fato de que entre discos ocorre um vácuo (sem possibilidade de entrada de ar), logo por fora há a pressão atmosférica pressionando-os, sendo que ela não é contrabalanceada por uma pressão interna, sendo essa segunda mínima.
@@ -49,9 +51,12 @@ Erro =
 
 Pode-se notar que o erro calculado é superior ao próprio resultado obtido, o que indica a necessidade de uma possível revisão na forma de cálculo de erro utilizada, ou uma forte imprecisão do cálculo devido ao uso de grandezas muito discrepentes (o próprio erro da pressão era superior ao raio, o que pode ter causado tal grande incerteza).
 
+>>>>>>> origin
 \subsection{Frasco com membrana}
 
     Após análise com o software Traker, obtemos a \cref{copo.png}. Veja
+
+    \begin{figure}[H]
         \centering
         \includegraphics[width=.5\linewidth]{fig/copo.png}
         \caption{Ângulo de inclinação do copo para equilíbrio de pressões}
@@ -60,6 +65,9 @@ Pode-se notar que o erro calculado é superior ao próprio resultado obtido, o q
 
     Note a inclinação do frasco em relação ao nível da água, em torno de \( 45,6 \)° .
 
+%
+%
+%
 \subsection{Manõmetros}
 
 Para este experimento, vamos avaliar os valores da seguinte maneira:
