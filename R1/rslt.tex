@@ -3,6 +3,9 @@
 
 %TODO: formatar e, talvez mudar algumas coisas de seção
 
+%TODO: Algumas coisas estõa fora de lugar, aqui falamos de resultados. 
+% Qual a razão para ter uma discussão aqui? -TF8
+
 Durante o experimento, os hemisférios foram encaixados e alinhados (\cref{foto hemisferios}). % metodologia?
 Posteriormente, ao serem puxados em direções opostas (por forças de tração) eles não se separaram nem apresentaram deformação notável, indicando que tais forças não superaram aquelas que os uniam. % Na minha humilde opinião, daqui pra cima é resultado, daqui pra baixo é discussão
 Tal resultado pode ser explicado pelo fato de que entre discos ocorre um vácuo (sem possibilidade de entrada de ar), logo por fora há a pressão atmosférica pressionando-os, sendo que ela não é contrabalanceada por uma pressão interna, sendo essa segunda mínima.
@@ -11,7 +14,7 @@ Tal resultado pode ser explicado pelo fato de que entre discos ocorre um vácuo 
     \centering
     \includegraphics[width=0.5\textwidth]{fig/Cortada.jpeg}
     \caption{Hemisférios sob tração}
-    \label{foto hemisferios}
+    \label{foto hemisferios} % TF8: Péssima label
 \end{figure}
 Foi feito também um diagrama (\cref{esquema hemisférios}) das forças que atuam sobre um dos hemisférios no eixo horizontal (em que é feita a tração).
 
@@ -22,7 +25,11 @@ Foi feito também um diagrama (\cref{esquema hemisférios}) das forças que atua
     \label{esquema hemisférios}
 \end{figure}
 
+%TODO: Melhorar essa legenda -TF8
+
 Como o sistema encontrava-se em equilíbrio estático, pode-se concluir que, em módulo, Fa = Fh2 + T. Além disso, dado que a pressão atmosférica é constante e a área dos discos também (logo Fa é fixa), pode-se concluir que Fh2 deve reduzir proporcionalmente ao aumento da tensão T. Por fim, para separar os discos, seria necessária uma tração, em cada lado (se iguais) superior à força atmosférica:
+
+%TODO: Fórmula fora do mathmode, arrumar -TF8
 
 \begin{align*}
     Fa = \text{pressão} \cdot\text{área}\\
@@ -34,11 +41,15 @@ Como o sistema encontrava-se em equilíbrio estático, pode-se concluir que, em 
 	Logo, a força de cada lado para separar os discos seria de \(8,884 \cdot 10^3 N\). Isto é, aproximadamente equivalente a pendurar \(9,06 \cdot10^3\) kg na esfera.
  
 	%TODO: transformar isso em uma footnote?
+    % TF8: De acordo.
     *Foi utilizada a pressão atmosférica medida pelo Instituto de Astronomia, Geofísica e Ciências Atmosféricas da Universidade de São Paulo %TODO: citar a ref de baixo aqui 
 
     %TODO: Por isso aqui como referência(de 923.5 hPa em 30/3/2025, http://www.estacao.iag.usp.br/index.php).
+    % TF8: De acordo.
     
 	Cálculo de erro: a área foi calculada a partir do diâmetro do hemisfério, de 35cm, cujo erro associado é \(\sigma_R = \pm0,5cm = \pm0,5\times10^{-2}m\). Enquanto o erro associado à pressão atmosférica é \(\sigma_P = \pm 5\) Pa.
+
+    %TODO: Arrumar esse texto -TF8
 
 	Por propagação de incerteza (tome R como raio e P como pressão):
 
@@ -72,6 +83,8 @@ Para este experimento, vamos avaliar os valores da seguinte maneira:
     \item Vamos corrigir os valores medidos na E. Livre para que represente quantos centímetros abaixo da água está a ponta.
 \end{enumerate}
 
+% TODO: Isso não é metodologia? -TF8
+
 Dessa forma, os valores obtidos estão sintetizados na \cref{tab_man}
 
 \begin{table}[H]
@@ -98,3 +111,5 @@ Definindo a linha paralela à separação da fase de água com a fase do líquid
     \rho_l &= \frac{\rho_w \cdot h_w}{h_l}\\
     \rho_l &= \frac{966,5 \cdot 0,123}{0,153} = \qty{767,0}{kg/m^3} 
 \end{align*}
+
+%TODO: Bom -TF8
