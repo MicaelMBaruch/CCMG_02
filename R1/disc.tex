@@ -1,2 +1,89 @@
 \section{Discussão}
-% TODO: Tirar toda a discussão dos resultados e passar pra cá -TF8
+\subsection{Densímetro}
+
+A partir dos resultados, a lei de Stevin nos permite calcular a densidade do
+líquido misterioso:
+\begin{align*}
+    \rho_l \cdot h_l &= \rho_w \cdot h_w\\
+    \rho_l &= \frac{\rho_w \cdot h_w}{h_l}\\
+    \rho_l &= \frac{966,5 \cdot 0,123}{0,153} = \qty{767,0}{kg/m^3} 
+\end{align*}
+Logo, a densidade do líquido misterioso é de \qty{767,0}{kg/m^3}. Consultando
+uma tabela de referência, não foi possui atribuir essa densidade a nenhum
+líquido.
+
+\subsection{Manômetro}
+
+
+
+\subsection{Discos de Magdeburg}
+
+O resultado observado pode ser explicado pela diferença entre as pressões
+interna e externa aos discos. Em especial, consideramos um vácuo parcial onde
+adotamos a pressão interna como zero. Vejamos:
+\begin{align*}
+    \Delta p &= p_{\text{ext}} - p_{\text{int}}\\
+    &= p_{\text{ext}}\\
+    &= p_{\text{atm}}
+\end{align*}
+Podemos considerar, então, a existência de uma ``força atmosférica'' distribuída
+por toda a superfície dos discos dada por:
+\begin{align*}
+    F_{\text{atm}} &= p_{\text{atm}} \cdot A_{\text{disco}}
+\end{align*}
+Em particular, podemos olhar para um dos discos num modelo de corpo livre.
+Assim temos:
+\begin{align*}
+    \sum F = F_{\text{atm}} - T - n = 0
+\end{align*}
+onde \( T \) é a força de tração exercida e \( n \) é a força normal exercida
+entre um disco e outro. Como \( n \) depende da força exercida entre os
+discos e a força \( T \) reduz esse contato, temos que conforme \( T \) aumenta
+\( n \) diminui. Logo, \( T \) deve ser superior ao valor máximo de \( n
+\)\footnote{que ocorre quando \( T=0 \), assim assume o valor de
+\(F_{\text{atm}}\)} para que haja movimento do disco, ou seja, 
+\( T > F_{\text{atm}} \) para que haja movimento.
+
+Agora, podemos avaliar a força de tração necessária:
+\begin{align*}
+    F_{\text{atm}} &= p_{\text{atm}} \cdot A_{\text{disco}}\\
+    &= (9,235 \cdot 10^4 \unit{Pa}) \cdot (9,62 \cdot 10^{-2} \unit{m})\\
+    &= 8,884 \cdot 10^3 \unit{N}
+\end{align*}
+Logo, a força de tração necessária é de \( 8,884 \cdot 10^3 \unit{N} \). 
+Aqui, usamos a pressão atmosférica medida pelo Instituto de Astronomia,
+Geofísica e Ciências Atmosféricas da Universidade de São Paulo\footnote{Retirado
+de \url{http://www.estacao.iag.usp.br/index.php}}.
+
+\subsubsection{Cálculo de erro}
+A área foi calculada a partir do diâmetro do hemisfério, de \qty{35}{cm},
+cujo erro associado é \(\sigma_R = \pm 0,5 \unit{cm} =
+\pm 0,5 \times 10^{-2} \unit{m} \).
+Enquanto o erro associado à pressão atmosférica é \(\sigma_P = \pm 5
+\unit{Pa}\).
+
+Por propagação de incerteza (tome \(R\) como raio e \(P\) como pressão):
+
+\begin{align*}
+&\sqrt{\left( \frac{\partial }{\partial R} R^{2}\pi P \cdot \sigma_R \right)^{2} + \left( \frac{\partial }{\partial P} R^{2}\pi P \cdot\sigma_P \right)^{2}}\\
+&= \sqrt{\left( 2 \cdot 0,175 \pi 92350 \cdot 0,005 \right)^{2} + \left(0,175^{2}\pi \cdot 5 \right)^{2}} \\
+&\cong  \pm 5,07 \cdot 10^2 \unit{N}
+\end{align*}
+
+Dessa forma, podemos afirmar com mais precisão que seriam necessários
+(\(8884,07 \pm 507 \)) N de força para separar as esferas.
+
+\subsection{Frasco com membrana}
+
+Podemos atribuir a permanência do líquido no frasco a dois fenômenos: (1) a
+tensão superficial da água em contato com a membrana; (2) a diferença de
+pressões interna e externa ao frasco. Inclusive, a inclinação realizada, que
+quebra o estado de equilíbrio, se relaciona com o último. 
+
+Podemos afirmar, pela Lei de Stevin, que a pressão da água na membrana, quando o
+frasco se encontra alinhado com a vertical é a mesma em todos os pontos.
+Contudo, ao ser inclinada, cada altura da membrana possui uma pressão distinta,
+em especial, o ponto mais alto da membrana possui a menor pressão. Assim, a
+inclinação de desequilíbrio é aquela tal que a pressão da água na membrana se
+torne menor que a pressão atmosférica, permitindo a entrada de ar. A partir
+desse instante, há uma ruptura do equilíbrio e o líquido escorre.
