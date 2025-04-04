@@ -1,0 +1,112 @@
+\section{Discussão}
+\subsection{Densímetro}
+
+A partir dos resultados, a lei de Stevin nos permite calcular a densidade do
+líquido misterioso:
+\begin{align*}
+    \rho_l \cdot h_l &= \rho_w \cdot h_w\\
+    \rho_l &= \frac{\rho_w \cdot h_w}{h_l}\\
+    \rho_l &= \frac{966,5 \cdot 0,123}{0,153} = \qty{767,0}{kg/m^3} 
+\end{align*}
+Logo, a densidade do líquido misterioso é de \qty{767,0}{kg/m^3}. Consultando
+uma tabela de referência, não foi possui atribuir essa densidade a nenhum
+líquido. Em seguida, vejamos o cálculo de erro.
+
+\subsubsection{Cálculo de erro}
+Considerando os erros experimentais \(\sigma h_w = \pm0,0005 m\) e \(\sigma h_l = \pm 0,0005 m\), temos pela propagação de erro:
+\begin{align*}
+    \sigma_l &= \sqrt{\left(\frac{\partial\rho_l}{\partial h_w}\right)^2\sigma_{h_w}^2 + \left(\frac{\partial\rho_l}{\partial h_l}\right)\sigma_{h_l}^2}\\
+    &= \sqrt{\left(\frac{\rho_w}{h_l}\right)^2 \sigma_{h_w}^2 + \left(\frac{-\rho_2 \cdot h_w}{h_l^2}\right)^2\sigma_l^2}\\
+    &= \qty{4,05}{kg/m^3}
+\end{align*}
+
+Por fim, mesmo considerando o erro, não conseguimos encontrar um líquido cuja
+densidade seja compatível com a ora calculada.
+
+\subsection{Manômetro}
+
+Em relação aos resultados obtidos, é possível diferenciar os dados em dois
+casos: (a) equilíbrio atmosférico, onde \( h_{\text{atm}} \) é igual a \(
+h_{\text{Conect}} \); e (b) submersão da extremidade livre sem vazamento de ar,
+onde \( h_{\text{atm}} > h_{\text{Conect}}\). 
+
+No caso (a), temos apenas uma aplicação direta da Lei de Stevin, onde pontos de
+mesma altura no líquido possuem a mesma pressão. Enquanto, no caso (b), temos um
+deslocamento da coluna de água do recipiente, gerando um aumento da pressão nos
+pontos inferiores e, consequentemente, gerando uma diferença de pressão no
+manômetro, que pode ser observada pela mudança de alturas em relação ao
+equilíbrio. De fato, quanto mais submersa é a extremidade livre, maior o
+deslocamento da coluna de água do recipiente que, por sua vez, gera maior
+diferença de alturas no manômetro.
+
+\subsection{Discos de Magdeburg}
+
+O resultado observado pode ser explicado pela diferença entre as pressões
+interna e externa aos discos. Em especial, consideramos um vácuo parcial onde
+adotamos a pressão interna como zero. Vejamos:
+\begin{align*}
+    \Delta p &= p_{\text{ext}} - p_{\text{int}}\\
+    &= p_{\text{ext}}\\
+    &= p_{\text{atm}}
+\end{align*}
+Podemos considerar, então, a existência de uma ``força atmosférica'' distribuída
+por toda a superfície dos discos dada por:
+\begin{align*}
+    F_{\text{atm}} &= p_{\text{atm}} \cdot A_{\text{disco}}
+\end{align*}
+Em particular, podemos olhar para um dos discos num modelo de corpo livre.
+Assim temos:
+\begin{align*}
+    \sum F = F_{\text{atm}} - T - n = 0
+\end{align*}
+onde \( T \) é a força de tração exercida e \( n \) é a força normal exercida
+entre um disco e outro. Como \( n \) depende da força exercida entre os
+discos e a força \( T \) reduz esse contato, temos que conforme \( T \) aumenta
+\( n \) diminui. Logo, \( T \) deve ser superior ao valor máximo de \( n
+\)\footnote{que ocorre quando \( T=0 \), assim assume o valor de
+\(F_{\text{atm}}\)} para que haja movimento do disco, ou seja, 
+\( T > F_{\text{atm}} \) para que haja movimento.
+
+Agora, podemos avaliar a força de tração necessária:
+\begin{align*}
+    F_{\text{atm}} &= p_{\text{atm}} \cdot A_{\text{disco}}\\
+    &= (9,235 \cdot 10^4 \unit{Pa}) \cdot (9,62 \cdot 10^{-2} \unit{m})\\
+    &= 8,884 \cdot 10^3 \unit{N}
+\end{align*}
+Logo, a força de tração necessária é de \( 8,884 \cdot 10^3 \unit{N} \). 
+Aqui, usamos a pressão atmosférica medida pelo Instituto de Astronomia,
+Geofísica e Ciências Atmosféricas da Universidade de São Paulo\footnote{Retirado
+de \url{http://www.estacao.iag.usp.br/index.php}}.
+
+\subsubsection{Cálculo de erro}
+A área foi calculada a partir do diâmetro do hemisfério, de \qty{35}{cm},
+cujo erro associado é \(\sigma_R = \pm 0,5 \unit{cm} =
+\pm 0,5 \times 10^{-2} \unit{m} \).
+Enquanto o erro associado à pressão atmosférica é \(\sigma_P = \pm 5
+\unit{Pa}\).
+
+Por propagação de incerteza (tome \(R\) como raio e \(P\) como pressão):
+
+\begin{align*}
+&\sqrt{\left( \frac{\partial }{\partial R} R^{2}\pi P \cdot \sigma_R \right)^{2} + \left( \frac{\partial }{\partial P} R^{2}\pi P \cdot\sigma_P \right)^{2}}\\
+&= \sqrt{\left( 2 \cdot 0,175 \pi 92350 \cdot 0,005 \right)^{2} + \left(0,175^{2}\pi \cdot 5 \right)^{2}} \\
+&\cong  \pm 5,07 \cdot 10^2 \unit{N}
+\end{align*}
+
+Dessa forma, podemos afirmar com mais precisão que seriam necessários
+(\(8884,07 \pm 507 \)) N de força para separar as esferas.
+
+\subsection{Frasco com membrana}
+
+Podemos atribuir a permanência do líquido no frasco a dois fenômenos: (1) a
+tensão superficial da água em contato com a membrana; (2) a diferença de
+pressões interna e externa ao frasco. Inclusive, a inclinação realizada, que
+quebra o estado de equilíbrio, se relaciona com o último. 
+
+Podemos afirmar, pela Lei de Stevin, que a pressão da água na membrana, quando o
+frasco se encontra alinhado com a vertical é a mesma em todos os pontos.
+Contudo, ao ser inclinada, cada altura da membrana possui uma pressão distinta,
+em especial, o ponto mais alto da membrana possui a menor pressão. Assim, a
+inclinação de desequilíbrio é aquela tal que a pressão da água na membrana se
+torne menor que a pressão atmosférica, permitindo a entrada de ar. A partir
+desse instante, há uma ruptura do equilíbrio e o líquido escorre.
