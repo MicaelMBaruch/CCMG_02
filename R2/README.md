@@ -6,10 +6,8 @@
 
 # Demandas específicas desse relatório
 
-- Estimem a força necessária para separar os discos;
-- Explicação fenomenológica do frasco de vidro quando se retira a interface plástica; 
-- Determinar a densidade do líquido; e
-- Tomar 3 pontos no manômetro.
+Fico devendo de colocar aqui
+> -TF8
 
 # Introdução
 ## Demandas Gerais
@@ -53,7 +51,8 @@ procedimento (**cuidados tomados**).
 **Dados obtidos** no experimento, *tabelas*, *gráficos* e *figuras*, *cálculos*
 realizados e **incertezas** associadas.
 
-> Check?
+> Check? Check -TF8
+> Falta sua avaliação, Magina
 
 ## Demandas Específicas
 
@@ -70,7 +69,8 @@ realizados e **incertezas** associadas.
 O que os resultados representam, **comparações** com valores teóricos ou de 
 referência e possíveis **testes estatísticos**.
 
-> Check? 
+> Check? Check -TF8
+> Falta sua avaliação, Magina
 
 ## Demandas Específicas
 
@@ -92,6 +92,7 @@ referência e possíveis **testes estatísticos**.
 
 - Retomada dos principais resultados
 - O que poderia ser melhorado no experimento?
+> Queiroz, pode falar sobre retirar as capas protetoras dos celulares -TF8
 - Como a metodologia pode ser aprimorada para reduzir erros? 
 - Existem variações do experimento que poderiam ser exploradas? 
 
