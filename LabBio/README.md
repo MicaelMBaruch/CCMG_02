@@ -11,5 +11,21 @@ trabalho de qualquer jeito, não deixe para o coleguinha!
 
 ## Relatório A - Diagnóstico Molecular
 
+### DIA 1 - Extração do DNA
+Aqui temos duas partes importantes: a metodologia (que foi modificada) e os
+resultados e discussões.
+
+Temos dois resultados: a observação em microscópio (qualitativa) e a
+espectrofotometria (quantitativa).
+
+### DIA 2 - PCRs A, B, C e Digestão PCR A (RFLP)
+
+### DIA 3 - Eletroforese, PCR/HRM e Fotos géis
 
 ## Relatório B - Transformação genética de plantas
+
+### DIA 2 - Transformação de plantas
+
+### DIA 3 - Transformação de _E. Coli_ e cortes anatômicos/imagens
+
+### DIA 4 - Aquisição de images
