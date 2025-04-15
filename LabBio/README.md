@@ -25,6 +25,8 @@ fixa, eis uma breve descrição dos procedimentos:
 2. Preparo das amostras (45 &#181;l de mix + DNA), contendo 100 ng de DNA genômico por reação (isto é, 5 &#181;l de cada solução). Aqui também foi preparado o controle negativo, com 5 &#181;l de água
 3. Termociclador: seguir apostila.
 
+Montamos mix sem a amostra em um eppendorf, com volume calculado para 7 reações. Trasfegamos alíquotas do líquido para cada reação para eppendorfs individuais marcados (A, B, C para cada PCR e 1-6 para cada amostra de DNA). Não respirar, usar luvar, trocar a ponteira, 
+
 
 ### DIA 3 - Eletroforese, PCR/HRM e Fotos géis
 
