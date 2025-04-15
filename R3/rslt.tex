@@ -1,101 +1,5 @@
 \section{Resultados e discussões}
 
-\subsection{Fenômeno de planagem}
-\subsubsection{Asa de um avião}
-% Magina, aqui
-    Ao ligar o ventilador a asa de isopor subia no fio, até uma altura próxima à do
-    centro da hélice e lá permanecia estável com pequenos tremores. Caso se forçasse
-    a asa para baixo ela apresentava resistência e, assim que solta, voltava à
-    posição elevada. Já se um integrante levantasse a asa e a soltasse, ela caía até
-    a mesma posição e lá permanecia.
-
-    Tendo em vista que as principais forças atuantes eram o peso da asa e as
-    resultantes da interação do objeto com o ar, como o empuxo, pode-se concluir que
-    com o acionamento do ventilador a pressão do ar embaixo da asa tornava-se maior
-    que aquela em cima, fazendo uma força ascendente por conta do empuxo resultante.
-    O grupo aponta que essa diferença de pressão ocorre, ao menos majoritariamente,
-    por conta da forma da asa, que afeta como o ar passará por ela.
-
-    Já ao ultrapassar a altura de estabilidade essa força ascendente não era mais
-    suficiente para vencer o peso, de forma que ela descia. Possivelmente isso
-    ocorre porque ao passar da altura do eixo do ventilador o vento ficaria
-    proporcionalmente mais rápido embaixo, o que reduz a pressão nessa região pelo
-    efeito Venturi (maior velocidade do fluído abaixa sua pressão). Com isso, ela
-    permanece estável no ponto em que a força peso e o empuxo do ar causado pela
-    diferença de pressão se equilibram, sem descer pois isso aumentaria a diferença
-    de pressão e consequentemente o empuxo, e sem subir porque a diferença reduziria
-    juntamente ao empuxo. 
-
-\subsubsection{Tubo de Pitot}
-    A relação entre as medidas relativas de pressão e os pontos medidos foi
-    sintetizada na \cref{erapraserumquadro-sequiserarrumevc}.
-    %Aqui deveria ser um quadro, porém não tenho como criar essa estrutura agora
-    %sem o risco de errar a numeração. Em prol de uma boa numeração, não irei
-    %arrumar isso. Aquele que se sentir disposto pode fazê-lo.
-    \begin{table}[H]
-    \caption{Medidas relativas de pressão observadas}\label{erapraserumquadro-sequiserarrumevc}
-    \begin{center}
-    \begin{tabular}{c c c}
-    \hline
-    Tubo & Local & Pressão Relativa à Pressão Atmosférica \\
-    \hline
-    1    & Parte frontal da asa & Parcialmente positiva\\
-    2    & Parte superior da asa & Negativa\\
-    3    & Parte inferior da asa & Parcialmente negativa\\
-    \hline
-    \end{tabular}
-    \end{center}
-    \end{table}
-    Assim, fica evidente a relação dessas medidas com o fenômeno de planagem: a
-    diferença de pressões entre a parte inferior e a superior da asa geram uma
-    força de pressão direcionada para cima (região com menor pressão). Além
-    disso, a pressão parcialmente positiva na parte frontal da asa se relaciona
-    com o ponto de estagnação, onde toda a energia cinética do fluido é
-    convertida em pressão, que foi estudada no tubo de Pitot.
-
-\subsection{Tubos com esfera}
-\subsubsection{Análise qualitativa dos fluidos}
-% Luan, aqui
-    Após analisar os tubos fechados, observou-se que em um dos tubos a esfera se
-    moveu mais lentamente que no outro. Essa diferença pode ser atribuída a
-    diferença de viscosidade dos fluidos, tendo em vista que uma força de
-    resistência viscosa maior seria responsável por uma velocidade terminal
-    menor da esfera. Em relação ao fluido do viscosímetro, veja
-    a \cref{sec:viscStokes}, onde foi realizada uma discussão mais
-    detalhada da viscosidade e o movimento das esferas nesse meio.
-
-\subsubsection{Análise quantitativa das velocidades}
-% Luan, aqui
-% Aguardando os vídeos
-    As sessões dos tubos tinham distância média de
-    \qty{5.00\pm0.05}{\centi\meter} e ambos os tubos tinham um total de 12
-    seções. Com a análise dos vídeos gravados durante a experimentação, obtemos
-    a \cref{tab:tubos}:
-    \begin{table}[H]
-    \caption{Dados cinemático obtidos por uso do
-    Tracker\textsuperscript{\textcopyright}}\label{tab:tubos}
-    \begin{center}
-    \begin{tabular}{c c c c c}
-    \hline
-    Tubo & \( \Delta x \) & \( \Delta t \) & \( v_m \) & Tempo estimado para o
-    percurso \\
-    \hline
-    Tubo 1 & \qty{5.00\pm0.05}{\centi\meter} & \qty{15.648}{\second} &
-    \qty{0.320}{\centi\meter\per\second} & \qty{188}{\second} \\
-    Tubo 2 & \qty{5.00\pm0.05}{\centi\meter} & \qty{1.635}{\second} &
-    \qty{3.06}{\centi\meter\per\second} & \qty{19.6}{\second} \\
-    \hline
-    \end{tabular}
-    \end{center}
-    \end{table}
-    Note que os algarismos significativos e os erros associados a cada medida
-    foram atribuídos conforme a ferramenta de medida utilizada.  Além disso,
-    observe a diferença entre os tempos estimados, o Tubo 2 possui uma
-    estimativa cerca de 10 vezes menor que o Tubo 1. Como discutimos
-    anteriormente, essa diferença está fundamentalmente atrelada às diferenças
-    de viscosidade dos fluidos, tendo em vista que os outros parâmetros da
-    experimentação se mantiveram constantes. 
-
 \subsection{Viscosímetro de Stokes}\label{sec:viscStokes}
 % Magina, aqui
     A partir dos dados coletados pelos grupos da turma foi montada uma tabela, posteriormente então repassada às equipes e recebeu alguns ajustes. Segue abaixo:
@@ -198,4 +102,101 @@ Com isso, foram calculados pelos orientadores os seguintes valores de viscosidad
     \end{tabular}
 \end{table}
 Todavia, é possível notar que o valor obtido (\(476 \pm 35\) cSt) diverge do esperado (438 cSt), inclusive estando fora da margem de incerteza calculada. O erro percentual encontra-se em 9\%. Uma explicação para tal divergência é a baixa precisão das medidas, como o tempo de descida dependente do tempo de reação humano (cerca de 200ms)\footnote{\url{https://en.wikipedia.org/wiki/Mental_chronometry}} e da observação visual se a esfera em movimento havia entrado e saído da região desejada do líquido. Já outra explicação é pela alta influência temperatura, pois pela tabela fornecida a viscosidade cinética do líquido varia de 465,83 a 412,39 cSt no intervalo de 24 a 26\(^\circ\)C.
+
+
+\subsection{Fenômeno de planagem}
+\subsubsection{Asa de um avião}
+% Magina, aqui
+    Ao ligar o ventilador a asa de isopor subia no fio, até uma altura próxima à do
+    centro da hélice e lá permanecia estável com pequenos tremores. Caso se forçasse
+    a asa para baixo ela apresentava resistência e, assim que solta, voltava à
+    posição elevada. Já se um integrante levantasse a asa e a soltasse, ela caía até
+    a mesma posição e lá permanecia.
+
+    Tendo em vista que as principais forças atuantes eram o peso da asa e as
+    resultantes da interação do objeto com o ar, como o empuxo, pode-se concluir que
+    com o acionamento do ventilador a pressão do ar embaixo da asa tornava-se maior
+    que aquela em cima, fazendo uma força ascendente por conta do empuxo resultante.
+    O grupo aponta que essa diferença de pressão ocorre, ao menos majoritariamente,
+    por conta da forma da asa, que afeta como o ar passará por ela.
+
+    Já ao ultrapassar a altura de estabilidade essa força ascendente não era mais
+    suficiente para vencer o peso, de forma que ela descia. Possivelmente isso
+    ocorre porque ao passar da altura do eixo do ventilador o vento ficaria
+    proporcionalmente mais rápido embaixo, o que reduz a pressão nessa região pelo
+    efeito Venturi (maior velocidade do fluído abaixa sua pressão). Com isso, ela
+    permanece estável no ponto em que a força peso e o empuxo do ar causado pela
+    diferença de pressão se equilibram, sem descer pois isso aumentaria a diferença
+    de pressão e consequentemente o empuxo, e sem subir porque a diferença reduziria
+    juntamente ao empuxo. 
+
+\subsubsection{Tubo de Pitot}
+    A relação entre as medidas relativas de pressão e os pontos medidos foi
+    sintetizada na \cref{erapraserumquadro-sequiserarrumevc}.
+    %Aqui deveria ser um quadro, porém não tenho como criar essa estrutura agora
+    %sem o risco de errar a numeração. Em prol de uma boa numeração, não irei
+    %arrumar isso. Aquele que se sentir disposto pode fazê-lo.
+    \begin{table}[H]
+    \caption{Medidas relativas de pressão observadas}\label{erapraserumquadro-sequiserarrumevc}
+    \begin{center}
+    \begin{tabular}{c c c}
+    \hline
+    Tubo & Local & Pressão Relativa à Pressão Atmosférica \\
+    \hline
+    1    & Parte frontal da asa & Parcialmente positiva\\
+    2    & Parte superior da asa & Negativa\\
+    3    & Parte inferior da asa & Parcialmente negativa\\
+    \hline
+    \end{tabular}
+    \end{center}
+    \end{table}
+    Assim, fica evidente a relação dessas medidas com o fenômeno de planagem: a
+    diferença de pressões entre a parte inferior e a superior da asa geram uma
+    força de pressão direcionada para cima (região com menor pressão). Além
+    disso, a pressão parcialmente positiva na parte frontal da asa se relaciona
+    com o ponto de estagnação, onde toda a energia cinética do fluido é
+    convertida em pressão, que foi estudada no tubo de Pitot.
+
+\subsection{Tubos com esfera}
+\subsubsection{Análise qualitativa dos fluidos}
+% Luan, aqui
+    Após analisar os tubos fechados, observou-se que em um dos tubos a esfera se
+    moveu mais lentamente que no outro. Essa diferença pode ser atribuída a
+    diferença de viscosidade dos fluidos, tendo em vista que uma força de
+    resistência viscosa maior seria responsável por uma velocidade terminal
+    menor da esfera. Em relação ao fluido do viscosímetro, veja
+    a \cref{sec:viscStokes}, onde foi realizada uma discussão mais
+    detalhada da viscosidade e o movimento das esferas nesse meio.
+
+\subsubsection{Análise quantitativa das velocidades}
+% Luan, aqui
+% Aguardando os vídeos
+    As sessões dos tubos tinham distância média de
+    \qty{5.00\pm0.05}{\centi\meter} e ambos os tubos tinham um total de 12
+    seções. Com a análise dos vídeos gravados durante a experimentação, obtemos
+    a \cref{tab:tubos}:
+    \begin{table}[H]
+    \caption{Dados cinemático obtidos por uso do
+    Tracker\textsuperscript{\textcopyright}}\label{tab:tubos}
+    \begin{center}
+    \begin{tabular}{c c c c c}
+    \hline
+    Tubo & \( \Delta x \) & \( \Delta t \) & \( v_m \) & Tempo estimado para o
+    percurso \\
+    \hline
+    Tubo 1 & \qty{5.00\pm0.05}{\centi\meter} & \qty{15.648}{\second} &
+    \qty{0.320}{\centi\meter\per\second} & \qty{188}{\second} \\
+    Tubo 2 & \qty{5.00\pm0.05}{\centi\meter} & \qty{1.635}{\second} &
+    \qty{3.06}{\centi\meter\per\second} & \qty{19.6}{\second} \\
+    \hline
+    \end{tabular}
+    \end{center}
+    \end{table}
+    Note que os algarismos significativos e os erros associados a cada medida
+    foram atribuídos conforme a ferramenta de medida utilizada.  Além disso,
+    observe a diferença entre os tempos estimados, o Tubo 2 possui uma
+    estimativa cerca de 10 vezes menor que o Tubo 1. Como discutimos
+    anteriormente, essa diferença está fundamentalmente atrelada às diferenças
+    de viscosidade dos fluidos, tendo em vista que os outros parâmetros da
+    experimentação se mantiveram constantes. 
 
