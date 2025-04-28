@@ -10,9 +10,40 @@ calcule:\\
 
 (a) verifique se a reação é favorável a 298 K.\\
 
-(b) determine a temperatura na qual a reação se torna favorável no sentido
+Para verificar se a reação é favorável ou não, precisa-se calcular a variação da energia livre de Gibbs padrão \( \Delta_rG^\circ_{298}\):
+
+\begin{align*}
+	\ce{\Delta_rG^\circ = \Delta_rH^\circ - T \Delta_rS^\circ}
+\end{align*}
+
+Dessa forma, primeiro será calculado a variação de entalpia da reação \( \Delta_rH^\circ_{298}\) com os dados fornecidos:
+
+\begin{align*}
+	\ce{\Delta_rH^\circ &= \sum\Delta_fH^\circ_{produtos} - \sum\Delta_fH^\circ_{reagentes}}\\ \\
+	\ce{\Delta_rH^\circ &= [Delta_fH^\circ_{CO_2} + Delta_fH^\circ_{H_2}] - [ Delta_fH^\circ_{CO} + Delta_fH^\circ_{H_2O}]}\\ \\
+	\ce{\Delta_rH^\circ &= -393,54 - (-352,35) \rightarrow -41,19kJmol^{-1}}
+\end{align*}
+
+Agora, convertendo \(\Delta_rS^\circ = -42,4Jmol^{-1}K^{-1} \rightarrow -0,0424kJ mol^{-1}K^{-1}\), é possível aplicar os valores no cálculo da \(\Delta_rG^\circ_{298}\):
+\begin{align*}
+	\ce{\Delta_rG^\circ &= -41,19kJmol^{-1} - (298K * -0,0424)} \\ \\
+	\ce{\Delta_rG^\circ &= -28,5548kJmol^{-1}}
+\end{align*}
+
+Assim, como \(\Delta_rG^\circ_{298} < 0\), a reação é favorável.
+ 
+(b) determine a temperatura na qual a reação se torna favorável no sentido 
 oposto. Considere que apenas o \(C_{P,m}\), das espécies envolvidas pode ser
 considerado constante nesse intervalo de temperatura.\\
+
+Para descobrir a que temperatura a reação inversa se torna favorável, é só descobrir a partir de que temperatura \(\Delta_rG^\circ > 0\):
+
+\begin{align*}
+	\ce{ &\Delta_rG^\circ = \Delta_rH^\circ - T \Delta_rS^\circ} \\
+	0 < &-41,19kJmol^{-1} - (T * - 0,0424kJmol^{-1}K^{-1})\\
+	T > 971,46 K
+\end{align*}
+
 
 \noindent Dados:\\
 \( \Delta_f H^0_{298(\ce{CO(g)})} = \qty{-110.52}{kJ \per mol};\) 

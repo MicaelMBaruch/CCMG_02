@@ -5,15 +5,55 @@ dados abaixo:\\
 
 Calor específico do \ce{CO2} em função da temperatura:
 \begin{align*}
-    C_{P, \ce{CO2}} (J / K mol) = \num{26.00} + \num{43.5} \left(\frac{10^{-3}
+    C_{p, \ce{CO2}} (\unit{J \per K . mol}) = \num{26.00} + \num{43.5} \left(\frac{10^{-3}
     T}{\unit{K}}\right) && \qty{273}{K} < T < \qty{1500}{K}
 \end{align*}
 
 Valores dos coeficientes de Joule-Thomson do \ce{CO2} em função da pressão:
 \begin{align*}
-    \mu_{JT, \ce{CO2}} (\unit{K} / \unit{atm}) \num{0.94} - \num{0.0027} \left(
-    \frac{P}{\unit{atm}} \right) - \num{1.51} \left( \frac{10^{-5}
-    P^2}{\unit{atm}^2} \right) && \qty{0}{atm} < P < \qty{100}{atm}
+    \mu_{JT, \ce{CO2}} (\unit{K} / \unit{atm}) = \num{0.94} - \num{0.0027} \left(
+    \frac{p}{\unit{atm}} \right) - \num{1.51} \left( \frac{10^{-5}
+    p^2}{\unit{atm}^2} \right) && \qty{0}{atm} < p < \qty{100}{atm}
 \end{align*}
 
 Justifique sua abordagem e mostre as passagens utilizadas.\\
+
+    \textbf{Resposta:} A variação de entalpia \( H \) é dada por:
+    \begin{align*}
+        dH = -\mu C_p dp + C_p dT
+    \end{align*}
+    Como a compressão é isotérmica, temos \( dT = 0 \). Portanto, podemos
+    simplificar a equação:
+    \begin{align*}
+        dH = -\mu C_p dp
+    \end{align*}
+    Queremos calcular \( \Delta H \), dado pela integral:
+    \begin{align*}
+        \Delta H = \int_{\qty{0}{atm}}^{\qty{10}{atm}} -\mu C_p dp
+    \end{align*}
+    Temos a função de \( C_p \), calculamos seu valor a \qty{300}{K}:
+    \begin{align*}
+        C_{p, \ce{CO2}} &= \num{26.00} + \num{43.5} \left( \frac{\qty{300}{K}
+            \cdot 10^{-3}}{K}
+            \right) (\unit{J \per K . mol})\\
+                        &= \num{39.05} \left( \unit{J \per K . mol} \right) 
+    \end{align*}
+    Como esse valor é constante em relação a \( p \), reescrevemos a integral:
+    \begin{align*}
+        \Delta H = C_p \int_{\qty{0}{atm}}^{\qty{10}{atm}} -\mu dp
+    \end{align*}
+    Agora, pela expressão de \( \mu \), temos:
+    \begin{align*}
+        \Delta H &= - \qty{39.05}{J \per K . mol}
+                 \int_{\qty{0}{atm}}^{\qty{10}{atm}} \num{0.94} -
+                 \num{0.0027} \left( \frac{p}{\unit{atm}} \right) - \num{1.51} \left(
+                 \frac{p^2 \cdot 10^{-5}}{\unit{atm^2}} \right) dp\\
+                 &= - \qty{39.05}{J \per K . mol} \left[ \left( \num{0.94}p -
+                     \num{0.00135}p^2 \frac{1}{\unit{atm}} - \num{5.033e-6}p^3
+                 \frac{1}{\unit{atm^2}} \right) \unit{K \per atm}
+         \right]_{\qty{0}{atm}}^{\qty{10}{atm}}\\
+                 &= - \qty{39.05}{J \per K . mol} \cdot \qty{9.259967}{K} \\
+                 &= - \qty{361.601711}{J \per mol}\\
+                 &\approx - \qty{361.6}{J \per mol}
+    \end{align*}
+    
