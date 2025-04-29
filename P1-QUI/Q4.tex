@@ -24,27 +24,28 @@ Dessa forma, primeiro será calculado a variação de entalpia da reação \( \D
 	\Delta_rH^\circ &= -393,54 - (-352,35) = \qty{-41,19}{kJmol^{-1}}
 \end{align*}
 
-Agora, convertendo \(\Delta_rS^\circ = \qty{-42,4}{Jmol^{-1}K^{-1}} = \qty{-0,0424}{kJmol^{-1}K^{-1}}\), é possível aplicar os valores no cálculo da \(\Delta_rG^\circ_{298}\):
+Então, tomando dos dados \(\Delta_r S^\circ = \qty{-42,4}{Jmol^{-1}K^{-1}}\) e
+convertendo para \(\qty{-0,0424}{kJmol^{-1}K^{-1}}\), é possível aplicar os valores no cálculo da \(\Delta_r G^\circ_{298}\):
 \begin{align*}
-	\Delta_rG^\circ &= \qty{-41,19}{kJmol^{-1}} - (298K * -0,0424) \\ \\
-	\Delta_rG^\circ &= \qty{-28,5548}{kJmol^{-1}}
+	\Delta_r G^\circ &= \qty{-41,19}{kJmol^{-1}} - (298K * -0,0424) \\ \\
+	\Delta_r G^\circ &= \qty{-28,5548}{kJmol^{-1}}
 \end{align*}
 
-Assim, como \(\Delta_rG^\circ_{298} < 0\), a reação \textbf{é favorável}. \\ 
+Assim, como \(\Delta_r G^\circ_{298} < 0\), a reação \textbf{é favorável}. \\ 
  
 (b) determine a temperatura na qual a reação se torna favorável no sentido 
 oposto. Considere que apenas o \(C_{P,m}\), das espécies envolvidas pode ser
 considerado constante nesse intervalo de temperatura.\\
 
-Para descobrir a que temperatura a reação inversa se torna favorável, é só descobrir a partir de que temperatura \(\Delta_rG^\circ > 0\):
+Para descobrir a que temperatura a reação inversa se torna favorável, basta descobrir a partir de que temperatura \(\Delta_r G^\circ > 0\):
 
 \begin{align*}
-	\Delta_rG^\circ = &\Delta_rH^\circ - T \Delta_rS^\circ \\ \\
-	0 < &\Delta_rH^\circ - T \Delta_rS^\circ \\ \\
-	T < &\frac{\Delta_rH^\circ}{\Delta_rS^\circ}
+	\Delta_r G^\circ = &\Delta_r H^\circ - T \Delta_r S^\circ \\ \\
+	0 < &\Delta_r H^\circ - T \Delta_r S^\circ \\ \\
+	T < &\frac{\Delta_r H^\circ}{\Delta_r S^\circ}
 \end{align*}
 
-Porém, os dados fornecidos de \(\Delta_rH^\circ\)  e  \(\Delta_rS^\circ\) são apenas relativos a temperatura de \qty{298}{K}, e são necessários os relativos à nova temperatura. Dessa forma, deverá ser usado correções para obter \(\Delta_rH^\circ_{T}\) e \(\Delta_rS^\circ_{T}\)  a partir de \(\Delta_rH^\circ_{298}\) e \(\Delta_rS^\circ_{298} \), e para isso será necessário calcular-se \(\Delta C_{P,m}\):
+Porém, os dados fornecidos de \(\Delta_r H^\circ\)  e  \(\Delta_r S^\circ\) são apenas relativos a temperatura de \qty{298}{K}, e são necessários os relativos à nova temperatura. Dessa forma, deverá ser usado correções para obter \(\Delta_r H^\circ_{T}\) e \(\Delta_r S^\circ_{T}\)  a partir de \(\Delta_r H^\circ_{298}\) e \(\Delta_r S^\circ_{298} \), e para isso será necessário calcular-se \(\Delta C_{P,m}\):
 
  \begin{align*}
  	\Delta C_{P,m} &= \sum C_{P,m, produtos} - \sum C_{P,m, reagentes}\\ \\
@@ -72,7 +73,9 @@ Dessa forma, substitui-se esses valores na primeira inequação:
 	&   \qty{0,00321}{kJmol^{-1}K^{-1}} * ln (\dfrac{T}{298}) = \frac{\qty{-42,15}{kJmol^{-1}}}{T}  + \qty{0,04561}{kJmol^{-1}K^{-1}} \\
 \end{align*}
 
- Agora, para realizar essa conta de forma mais simplificada pode-se usar um chute consciente para verificar a partir de que ponto a inequação se torna verdadeira. Um chute consciente seria utilizar qual seria o valor de T se não houvesse a correção dos termos, sendo \(T \approx 971 K\):
+ Agora, para realizar essa conta pode-se utilizar métodos numéricos para
+ verificar a partir de que ponto a inequação se torna verdadeira. Para
+ isso, inciamos calculando o valor de T se não houvesse a correção dos termos, sendo \(T \approx 971 K\):
  
  \begin{align*}
  	&\text{Para T} = \qty{971}{K} \rightarrow 0,00379 > -0,0958 \\
