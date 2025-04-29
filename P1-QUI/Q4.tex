@@ -19,15 +19,18 @@ Para verificar se a reação é favorável ou não, precisa-se calcular a varia�
 Dessa forma, primeiro será calculado a variação de entalpia da reação \( \Delta_rH^\circ_{298}\) com os dados fornecidos:
 
 \begin{align*}
-	\Delta_rH^\circ &= \sum\Delta_fH^\circ_{produtos} - \sum\Delta_fH^\circ_{reagentes}\\ \\
-	\Delta_rH^\circ &= [\Delta_fH^\circ_{CO_2} + \Delta_fH^\circ_{H_2}] - [ \Delta_fH^\circ_{CO} + \Delta_fH^\circ_{H_2O}]\\ \\
-	\Delta_rH^\circ &= -393,54 - (-352,35) = \qty{-41,19}{kJmol^{-1}}
+    \Delta_rH^\circ &= \sum\Delta_fH^\circ_{\text{produtos}} -
+    \sum\Delta_fH^\circ_{\text{reagentes}}\\ \\
+    \Delta_rH^\circ &= [\Delta_fH^\circ_{\ce{CO2}} + \Delta_fH^\circ_{\ce{H2}}]
+    - [ \Delta_fH^\circ_{\ce{CO}} + \Delta_fH^\circ_{\ce{H2O}}]\\ \\
+	\Delta_rH^\circ &= -393,54 - (-352,35) = \qty{-41,19}{kJ . mol^{-1}}
 \end{align*}
 
-Agora, convertendo \(\Delta_rS^\circ = \qty{-42,4}{Jmol^{-1}K^{-1}} = \qty{-0,0424}{kJmol^{-1}K^{-1}}\), é possível aplicar os valores no cálculo da \(\Delta_rG^\circ_{298}\):
+Agora, convertendo \(\Delta_rS^\circ = \qty{-42,4}{J . mol^{-1} . K^{-1}} =
+\qty{-0,0424}{kJ . mol^{-1} . K^{-1}}\), é possível aplicar os valores no cálculo da \(\Delta_rG^\circ_{298}\):
 \begin{align*}
-	\Delta_rG^\circ &= \qty{-41,19}{kJmol^{-1}} - (298K * -0,0424) \\ \\
-	\Delta_rG^\circ &= \qty{-28,5548}{kJmol^{-1}}
+	\Delta_rG^\circ &= \qty{-41,19}{kJ.mol^{-1}} - (298K \cdot -0,0424) \\ \\
+	\Delta_rG^\circ &= \qty{-28,5548}{kJ.mol^{-1}}
 \end{align*}
 
 Assim, como \(\Delta_rG^\circ_{298} < 0\), a reação \textbf{é favorável}. \\ 
@@ -48,28 +51,38 @@ Porém, os dados fornecidos de \(\Delta_rH^\circ\)  e  \(\Delta_rS^\circ\) são 
 
  \begin{align*}
  	\Delta C_{P,m} &= \sum C_{P,m, produtos} - \sum C_{P,m, reagentes}\\ \\
- 	\Delta C_{P,m} &= [C_{P,m} (\qty{298}{K}) (\ce{CO(g)} + C_{P,m} (\qty{298}{K}) (\ce{H2O(g)}] - [ C_{P,m} (\qty{298}{K}) (\ce{CO2(g)} + C_{P,m} (\qty{298}{K}) (\ce{H2(g)}]\\ \\
+ 	\Delta C_{P,m} &= [C_{P,m} (\qty{298}{K}) (\ce{CO(g)}) + C_{P,m}
+    (\qty{298}{K}) (\ce{H2O(g)})] - [ C_{P,m} (\qty{298}{K}) (\ce{CO2(g)}) +
+    C_{P,m} (\qty{298}{K}) (\ce{H2(g)})]\\ \\
  	\Delta C_{P,m} &= \qty{0,00321}{kJmol^{-1}K^{-1}}
  \end{align*}
  
 Com o valor obtido, deve-se aplicar para realizar a correção dos termo \(\Delta_rH^\circ_{298}\) e \(\Delta_rS^\circ_{298} \):
 
 \begin{align*}
-	\Delta_rS^\circ_{T} &= \Delta_rS^\circ_{298} +\Delta C_{P,m} * ln (\dfrac{T}{298}) \\
-	\Delta_rS^\circ_{T} &= \qty{-0,0424}{kJmol^{-1}K^{-1}} +\qty{0,00321}{kJmol^{-1}K^{-1}} * ln (\dfrac{T}{298}) \\ \\
-	\Delta_rH^\circ_{T} &= \Delta_rH^\circ_{298} +\Delta C_{P,m} *  (T - 298) \\
-	\Delta_rH^\circ_{T} &= \qty{-41,19}{kJmol^{-1}} +\qty{0,00321}{kJmol^{-1}K^{-1}} *  (T - 298) \\
+	\Delta_rS^\circ_{T} &= \Delta_rS^\circ_{298} +\Delta C_{P,m} \cdot \ln (\dfrac{T}{298}) \\
+	\Delta_rS^\circ_{T} &= \qty{-0,0424}{kJmol^{-1}K^{-1}}
+    +\qty{0,00321}{kJmol^{-1}K^{-1}} \cdot \ln (\dfrac{T}{298}) \\ \\
+	\Delta_rH^\circ_{T} &= \Delta_rH^\circ_{298} +\Delta C_{P,m} \cdot (T - 298) \\
+	\Delta_rH^\circ_{T} &= \qty{-41,19}{kJmol^{-1}}
+    +\qty{0,00321}{kJmol^{-1}K^{-1}} \cdot (T - 298) \\
 \end{align*}
 
 Dessa forma, substitui-se esses valores na primeira inequação:
 
 \begin{align*}
-	T = &\frac{\Delta_rH^\circ}{\Delta_rS^\circ}\\ 
-	T = &\frac{\qty{-41,19}{kJmol^{-1}} +\qty{0,00321}{kJmol^{-1}K^{-1}} *  (T - 298)}{\qty{-0,0424}{kJmol^{-1}K^{-1}} +\qty{0,00321}{kJmol^{-1}K^{-1}} * ln (\dfrac{T}{298})} \\  
-	T * \qty{-0,0424}{kJmol^{-1}K^{-1}} + &T * \qty{0,00321}{kJmol^{-1}K^{-1}} *  ln (\dfrac{T}{298}) = \qty{-42,15}{kJmol^{-1}} + T * \qty{0,00321}{kJmol^{-1}K^{-1}} \\
-	   &T * \qty{0,00321}{kJmol^{-1}K^{-1}} *  ln (\dfrac{T}{298}) = \qty{-42,15}{kJmol^{-1}} + T * \qty{0,04561}{kJmol^{-1}K^{-1}}\\
-	&   \qty{0,00321}{kJmol^{-1}K^{-1}} * ln (\dfrac{T}{298}) = \frac{\qty{-42,15}{kJmol^{-1}}}{T}  + \frac{T * \qty{0,04561}{kJmol^{-1}K^{-1}}}{T} \\
-	&   \qty{0,00321}{kJmol^{-1}K^{-1}} * ln (\dfrac{T}{298}) = \frac{\qty{-42,15}{kJmol^{-1}}}{T}  + \qty{0,04561}{kJmol^{-1}K^{-1}} \\
+    &T = \frac{\Delta_rH^\circ}{\Delta_rS^\circ}\\ 
+    &T = \frac{\qty{-41,19}{kJmol^{-1}} +\qty{0,00321}{kJmol^{-1}K^{-1}} \cdot
+    (T - 298)}{\qty{-0,0424}{kJmol^{-1}K^{-1}} +\qty{0,00321}{kJmol^{-1}K^{-1}}
+    \cdot \ln (\dfrac{T}{298})} \\  
+    &T \cdot \qty{-0,0424}{kJmol^{-1}K^{-1}} + T \cdot
+        \qty{0,00321}{kJmol^{-1}K^{-1}} \cdot  \ln (\dfrac{T}{298}) =
+    \qty{-42,15}{kJmol^{-1}} + T \cdot \qty{0,00321}{kJmol^{-1}K^{-1}} \\
+    &T \cdot \qty{0,00321}{kJmol^{-1}K^{-1}} \cdot \ln (\dfrac{T}{298}) =
+       \qty{-42,15}{kJmol^{-1}} + T \cdot \qty{0,04561}{kJmol^{-1}K^{-1}}\\
+    &\qty{0,00321}{kJmol^{-1}K^{-1}} \cdot \ln (\dfrac{T}{298}) =
+    \frac{\qty{-42,15}{kJmol^{-1}}}{T}  + \frac{T \cdot \qty{0,04561}{kJmol^{-1}K^{-1}}}{T} \\
+    &\qty{0,00321}{kJmol^{-1}K^{-1}} \cdot \ln (\dfrac{T}{298}) = \frac{\qty{-42,15}{kJmol^{-1}}}{T}  + \qty{0,04561}{kJmol^{-1}K^{-1}} \\
 \end{align*}
 
  Agora, para realizar essa conta de forma mais simplificada pode-se usar um chute consciente para verificar a partir de que ponto a inequação se torna verdadeira. Um chute consciente seria utilizar qual seria o valor de T se não houvesse a correção dos termos, sendo \(T \approx 971 K\):
