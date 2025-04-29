@@ -28,7 +28,8 @@ cálculos a partir da derivada total apropriada.\\
     \end{itemize}
     
     \begin{align*}
-    \Delta S_{\ce{N2}} = \num{0,75} \cdot R \cdot \ln\left(\frac{V}{\num{0,25}V}\right) = \num{0,75}R\ln(4)
+        \Delta S_{\ce{N2}} = \num{0,75}\unit{mol} \cdot R \cdot
+        \ln\left(\frac{V}{\num{0,25}V}\right) = (\num{0,75}\unit{mol})R\ln(4)
     \end{align*}
 
     Para o \ce{O2}:
@@ -39,12 +40,14 @@ cálculos a partir da derivada total apropriada.\\
     \end{itemize}
     
     \begin{align*}
-    \Delta S_{\ce{O2}} = \num{0,25} \cdot R \cdot \ln\left(\frac{V}{\num{0,25}V}\right) = \num{0,25}R\ln(4)
+        \Delta S_{\ce{O2}} = \num{0,25}\unit{mol} \cdot R \cdot
+        \ln\left(\frac{V}{\num{0,25}\unit{mol}V}\right) = (\num{0,25}\unit{mol})R\ln(4)
     \end{align*}
     
     Portanto, as variações de entropia são:
     \begin{align*}
-    \boxed{\Delta S_{\ce{N2}} = \num{0,75}R\ln(4)} \quad \text{e} \quad \boxed{\Delta S_{\ce{O2}} = \num{0,25}R\ln(4)}
+        \boxed{\Delta S_{\ce{N2}} = 8,64\unit{J\per K}} \quad \text{e} \quad
+        \boxed{\Delta S_{\ce{O2}} = 2,88\unit{J\per K}}
     \end{align*}
 
 (b) Calcule a variação de entropia total do sistema entre o estado inicial e
@@ -53,12 +56,13 @@ final (após a remoção das divisórias).\\
     \textbf{Resposta:} A variação de entropia total do sistema é a soma das contribuições de cada gás:
 
     \begin{align*}
-    \Delta S_{\text{total}} = \Delta S_{\ce{N2}} + \Delta S_{\ce{O2}} = \num{0,75}R\ln(4) + \num{0,25}R\ln(4) = R\ln(4)
+    \Delta S_{\text{total}} = \Delta S_{\ce{N2}} + \Delta S_{\ce{O2}} =
+    \num{0,75}R\ln(4) + \num{0,25}R\ln(4) 
     \end{align*}
     
     Resultando em:
     \begin{align*}
-    \boxed{\Delta S_{\text{total}} = R\ln(4)}
+        \boxed{\Delta S_{\text{total}} = 11,32\unit{J \per K}}
     \end{align*}
 
 (c) Explique porque a mistura de \ce{O2} e \ce{N2}, nas condições descritas,
@@ -67,7 +71,7 @@ pode ser considerada como um processo adiabático (\(dq= 0\)).\\
     \textbf{Resposta:} A mistura de \ce{O2} e \ce{N2} nas condições descritas pode 
     ser considerada um processo adiabático (\(dq = 0\)) porque não há transferência 
     de calor entre o sistema e a vizinhança. Isso ocorre porque a temperatura 
-    permanece constante (processo isotérmico) e a expansão dos gases é irreversível, 
+    permanece constante (conforme item (a)) e a expansão dos gases é irreversível, 
     sem realização de trabalho útil. Como os gases são ideais e a energia interna 
     depende apenas da temperatura, a variação de energia interna (\(\Delta U\)) é zero. 
     Pela Primeira Lei da Termodinâmica,
@@ -78,7 +82,7 @@ pode ser considerada como um processo adiabático (\(dq= 0\)).\\
 
     como \(\Delta U = 0\) e \(w = 0\) (não há trabalho contra uma pressão externa, 
     pois a expansão é livre no vácuo), conclui-se que \(q = 0\). Portanto, o processo 
-    é adiabático. 
+    é adiabático.\\ 
 
 (d) Algumas vezes os alunos respondem o item a dizendo que a variação de
 entropia é zero pois a entropia é definida como \(dS= dq_{\text{rev}}/T\) e,
@@ -94,4 +98,5 @@ qual é o problema com esse raciocínio.\\
     volume final. A entropia do sistema aumenta devido ao aumento da desordem 
     molecular, mesmo sem transferência de calor. Portanto, a variação de entropia 
     não é zero, e o erro está em aplicar uma fórmula válida apenas para processos 
-    reversíveis a um processo irreversível.
+    reversíveis a um processo irreversível.\\
+
