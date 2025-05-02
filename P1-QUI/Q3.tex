@@ -14,8 +14,52 @@ ideais.\\
 final e inicial sabendo que a temperatura permanece constante. Indique os
 cálculos a partir da derivada total apropriada.\\
 
+    \textbf{Resposta:} Para calcular a variação de entropia de cada gás, utilizamos a expressão para a variação de entropia de um gás ideal em processo isotérmico:
+
+    \begin{align*}
+    \Delta S = nR \ln\left(\frac{V_f}{V_i}\right)
+    \end{align*}
+    
+    Para o \ce{N2}:
+    \begin{itemize}
+        \item $n_{\ce{N2}} = \num{0,75}$ mol
+        \item $V_i = \num{0,25}V$
+        \item $V_f = V$
+    \end{itemize}
+    
+    \begin{align*}
+    \Delta S_{\ce{N2}} = \num{0,75} \cdot R \cdot \ln\left(\frac{V}{\num{0,25}V}\right) = \num{0,75}R\ln(4)
+    \end{align*}
+
+    Para o \ce{O2}:
+    \begin{itemize}
+        \item $n_{\ce{O2}} = \num{0,25}$ mol
+        \item $V_i = \num{0,25}V$
+        \item $V_f = V$
+    \end{itemize}
+    
+    \begin{align*}
+    \Delta S_{\ce{O2}} = \num{0,25} \cdot R \cdot \ln\left(\frac{V}{\num{0,25}V}\right) = \num{0,25}R\ln(4)
+    \end{align*}
+    
+    Portanto, as variações de entropia são:
+    \begin{align*}
+    \boxed{\Delta S_{\ce{N2}} = \num{0,75}R\ln(4)} \quad \text{e} \quad \boxed{\Delta S_{\ce{O2}} = \num{0,25}R\ln(4)}
+    \end{align*}
+
 (b) Calcule a variação de entropia total do sistema entre o estado inicial e
 final (após a remoção das divisórias).\\
+
+    \textbf{Resposta:} A variação de entropia total do sistema é a soma das contribuições de cada gás:
+
+    \begin{align*}
+    \Delta S_{\text{total}} = \Delta S_{\ce{N2}} + \Delta S_{\ce{O2}} = \num{0,75}R\ln(4) + \num{0,25}R\ln(4) = R\ln(4)
+    \end{align*}
+    
+    Resultando em:
+    \begin{align*}
+    \boxed{\Delta S_{\text{total}} = R\ln(4)}
+    \end{align*}
 
 (c) Explique porque a mistura de \ce{O2} e \ce{N2}, nas condições descritas,
 pode ser considerada como um processo adiabático (\(dq= 0\)).\\
@@ -50,4 +94,5 @@ qual é o problema com esse raciocínio.\\
     volume final. A entropia do sistema aumenta devido ao aumento da desordem 
     molecular, mesmo sem transferência de calor. Portanto, a variação de entropia 
     não é zero, e o erro está em aplicar uma fórmula válida apenas para processos 
-    reversíveis a um processo irreversível.
+    reversíveis a um processo irreversível.\\
+
