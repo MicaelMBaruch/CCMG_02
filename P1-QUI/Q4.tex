@@ -23,80 +23,101 @@ Dessa forma, primeiro será calculado a variação de entalpia da reação \( \D
     \sum\Delta_fH^\circ_{\text{reagentes}}\\ \\
     \Delta_rH^\circ &= [\Delta_fH^\circ_{\ce{CO2}} + \Delta_fH^\circ_{\ce{H2}}]
     - [ \Delta_fH^\circ_{\ce{CO}} + \Delta_fH^\circ_{\ce{H2O}}]\\ \\
-	\Delta_rH^\circ &= -393,54 - (-352,35) = \qty{-41,19}{kJ . mol^{-1}}
+    \Delta_rH^\circ &= -393,54\unit{kJ \per \mole} - (-352,35\unit{kJ \per
+    \mole}) = \qty{-41,19}{kJ \per \mole}
 \end{align*}
 
-Agora, convertendo \(\Delta_rS^\circ = \qty{-42,4}{J . mol^{-1} . K^{-1}} =
-\qty{-0,0424}{kJ . mol^{-1} . K^{-1}}\), é possível aplicar os valores no cálculo da \(\Delta_rG^\circ_{298}\):
+Então, tomando dos dados \(\Delta_r S^\circ = \qty{-42,4}{J \per \mole . K}\) e
+convertendo para \(\qty{-0,0424}{kJ \per mol . K}\), é possível aplicar os valores no cálculo da \(\Delta_r G^\circ_{298}\):
 \begin{align*}
-	\Delta_rG^\circ &= \qty{-41,19}{kJ.mol^{-1}} - (298K \cdot -0,0424) \\ \\
-	\Delta_rG^\circ &= \qty{-28,5548}{kJ.mol^{-1}}
+	\Delta_r G^\circ &= \qty{-41,19}{kJ\per mol} - (298K \cdot (-0,0424\unit{kJ
+    \per \mole . \kelvin})) \\ \\
+	\Delta_r G^\circ &= \qty{-28,5548}{kJ\per mol}
 \end{align*}
 
-Assim, como \(\Delta_rG^\circ_{298} < 0\), a reação \textbf{é favorável}. \\ 
+Assim, como \(\Delta_r G^\circ_{298} < 0\), a reação \textbf{é favorável}. \\ 
  
 (b) determine a temperatura na qual a reação se torna favorável no sentido 
 oposto. Considere que apenas o \(C_{P,m}\), das espécies envolvidas pode ser
 considerado constante nesse intervalo de temperatura.\\
 
-Para descobrir a que temperatura a reação inversa se torna favorável, é só descobrir a partir de que temperatura \(\Delta_rG^\circ > 0\):
+Para descobrir a que temperatura a reação inversa se torna favorável, basta descobrir a partir de que temperatura \(\Delta_r G^\circ > 0\):
 
 \begin{align*}
-	\Delta_rG^\circ = &\Delta_rH^\circ - T \Delta_rS^\circ \\ \\
-	0 < &\Delta_rH^\circ - T \Delta_rS^\circ \\ \\
-	T < &\frac{\Delta_rH^\circ}{\Delta_rS^\circ}
+	\Delta_r G^\circ = &\Delta_r H^\circ - T \Delta_r S^\circ \\ \\
+	0 < &\Delta_r H^\circ - T \Delta_r S^\circ \\ \\
+	T < &\frac{\Delta_r H^\circ}{\Delta_r S^\circ}
 \end{align*}
 
-Porém, os dados fornecidos de \(\Delta_rH^\circ\)  e  \(\Delta_rS^\circ\) são apenas relativos a temperatura de \qty{298}{K}, e são necessários os relativos à nova temperatura. Dessa forma, deverá ser usado correções para obter \(\Delta_rH^\circ_{T}\) e \(\Delta_rS^\circ_{T}\)  a partir de \(\Delta_rH^\circ_{298}\) e \(\Delta_rS^\circ_{298} \), e para isso será necessário calcular-se \(\Delta C_{P,m}\):
+Porém, os dados fornecidos de \(\Delta_r H^\circ\)  e  \(\Delta_r S^\circ\) são apenas relativos a temperatura de \qty{298}{K}, e são necessários os relativos à nova temperatura. Dessa forma, deverá ser usado correções para obter \(\Delta_r H^\circ_{T}\) e \(\Delta_r S^\circ_{T}\)  a partir de \(\Delta_r H^\circ_{298}\) e \(\Delta_r S^\circ_{298} \), e para isso será necessário calcular-se \(\Delta C_{P,m}\):
 
  \begin{align*}
  	\Delta C_{P,m} &= \sum C_{P,m, produtos} - \sum C_{P,m, reagentes}\\ \\
  	\Delta C_{P,m} &= [C_{P,m} (\qty{298}{K}) (\ce{CO(g)}) + C_{P,m}
     (\qty{298}{K}) (\ce{H2O(g)})] - [ C_{P,m} (\qty{298}{K}) (\ce{CO2(g)}) +
     C_{P,m} (\qty{298}{K}) (\ce{H2(g)})]\\ \\
- 	\Delta C_{P,m} &= \qty{0,00321}{kJmol^{-1}K^{-1}}
+ 	\Delta C_{P,m} &= \qty{0,00321}{kJ \per mol . K}
  \end{align*}
  
-Com o valor obtido, deve-se aplicar para realizar a correção dos termo \(\Delta_rH^\circ_{298}\) e \(\Delta_rS^\circ_{298} \):
+Com o valor obtido, deve-se aplicar para realizar a correção dos termos \(\Delta_rH^\circ_{298}\) e \(\Delta_rS^\circ_{298} \):
 
 \begin{align*}
 	\Delta_rS^\circ_{T} &= \Delta_rS^\circ_{298} +\Delta C_{P,m} \cdot \ln (\dfrac{T}{298}) \\
-	\Delta_rS^\circ_{T} &= \qty{-0,0424}{kJmol^{-1}K^{-1}}
-    +\qty{0,00321}{kJmol^{-1}K^{-1}} \cdot \ln (\dfrac{T}{298}) \\ \\
+	\Delta_rS^\circ_{T} &= \qty{-0,0424}{kJ \per mol . K}
+    +\qty{0,00321}{kJ \per mol . K} \cdot \ln (\dfrac{T}{298}) \\ \\
 	\Delta_rH^\circ_{T} &= \Delta_rH^\circ_{298} +\Delta C_{P,m} \cdot (T - 298) \\
-	\Delta_rH^\circ_{T} &= \qty{-41,19}{kJmol^{-1}}
-    +\qty{0,00321}{kJmol^{-1}K^{-1}} \cdot (T - 298) \\
+	\Delta_rH^\circ_{T} &= \qty{-41,19}{kJ \per mol }
+    +\qty{0,00321}{kJ \per mol . K} \cdot (T - 298) \\
 \end{align*}
 
 Dessa forma, substitui-se esses valores na primeira inequação:
 
 \begin{align*}
-    &T = \frac{\Delta_rH^\circ}{\Delta_rS^\circ}\\ 
-    &T = \frac{\qty{-41,19}{kJmol^{-1}} +\qty{0,00321}{kJmol^{-1}K^{-1}} \cdot
-    (T - 298)}{\qty{-0,0424}{kJmol^{-1}K^{-1}} +\qty{0,00321}{kJmol^{-1}K^{-1}}
+    &T < \frac{\Delta_rH^\circ}{\Delta_rS^\circ}\\ 
+    &T < \frac{\qty{-41,19}{kJ \per mol } +\qty{0,00321}{kJ \per mol . K} \cdot
+    (T - 298)}{\qty{-0,0424}{kJ \per mol . K} +\qty{0,00321}{kJ \per mol K}
     \cdot \ln (\dfrac{T}{298})} \\  
-    &T \cdot \qty{-0,0424}{kJmol^{-1}K^{-1}} + T \cdot
-        \qty{0,00321}{kJmol^{-1}K^{-1}} \cdot  \ln (\dfrac{T}{298}) =
-    \qty{-42,15}{kJmol^{-1}} + T \cdot \qty{0,00321}{kJmol^{-1}K^{-1}} \\
-    &T \cdot \qty{0,00321}{kJmol^{-1}K^{-1}} \cdot \ln (\dfrac{T}{298}) =
-       \qty{-42,15}{kJmol^{-1}} + T \cdot \qty{0,04561}{kJmol^{-1}K^{-1}}\\
-    &\qty{0,00321}{kJmol^{-1}K^{-1}} \cdot \ln (\dfrac{T}{298}) =
-    \frac{\qty{-42,15}{kJmol^{-1}}}{T}  + \frac{T \cdot \qty{0,04561}{kJmol^{-1}K^{-1}}}{T} \\
-    &\qty{0,00321}{kJmol^{-1}K^{-1}} \cdot \ln (\dfrac{T}{298}) = \frac{\qty{-42,15}{kJmol^{-1}}}{T}  + \qty{0,04561}{kJmol^{-1}K^{-1}} \\
+    &T \cdot \qty{-0,0424}{kJ \per mol . K} + T \cdot
+        \qty{0,00321}{kJ \per mol . K} \cdot  \ln (\dfrac{T}{298}) <
+    \qty{-42,15}{kJ \per mol } + T \cdot \qty{0,00321}{kJ \per mol . K} \\
+    &T \cdot \qty{0,00321}{kJ \per mol . K} \cdot \ln (\dfrac{T}{298}) <
+       \qty{-42,15}{kJ \per mol } + T \cdot \qty{0,04561}{kJ \per mol . K}\\
+    &\qty{0,00321}{kJ \per mol . K} \cdot \ln (\dfrac{T}{298}) <
+    \frac{\qty{-42,15}{kJ \per mol }}{T}  + \frac{T \cdot \qty{0,04561}{kJ \per mol . K}}{T} \\
+    &\qty{0,00321}{kJ \per mol . K} \cdot \ln (\dfrac{T}{298}) <
+    \frac{\qty{-42,15}{kJ \per mol }}{T}  + \qty{0,04561}{kJ \per mol . K} \\
 \end{align*}
 
- Agora, para realizar essa conta de forma mais simplificada pode-se usar um chute consciente para verificar a partir de que ponto a inequação se torna verdadeira. Um chute consciente seria utilizar qual seria o valor de T se não houvesse a correção dos termos, sendo \(T \approx 971 K\):
+ Agora, podemos aproximar o valor para \( T \) por aproximações
+ consecutivas. Até que a inequação se torne verdadeira. Para
+ isso, inciamos calculando o valor de T analiticamente caso \( \Delta C_p = 0 \)
+ que resulta em \(T \approx 971 K\). Então, utilizando este valor de T vamos
+ calcular se após correção com \( \Delta C_p \) a inequação permanece
+ verdadeira. Vamos fazer esta comparação iterativamente, os valores obtidos
+ podem ser visualizados na \cref{programafoda}. 
+
+ \begin{table}[H]
+     \centering
+ \begin{tabular}{c c c}
+     \hline
+     T(\unit{K}) & \( \Delta_r H^\circ (\unit{kJ \per mol.K}) \) & \(
+     \Delta_r S^\circ (\unit{kJ \per mol.K}) \)\\
+     \hline
+     971 & 0,00379 & -0,0958 \\
+     990 & 0,00395 & 0,00303 \\
+     1010 & 0,00392 &  0,00388 \\
+     1020 & 0,00395 & 0,00428 \\
+     1015 & 0,00393 & 0,00408 \\ 
+     \hline
+ \end{tabular}
+ \caption{Valores iterativos de \( T \) para que \( \Delta_r H^\circ < \Delta_r
+ S^\circ \)}  
+ \label{programafoda}
+\end{table}
  
- \begin{align*}
- 	&\text{Para T} = \qty{971}{K} \rightarrow 0,00379 > -0,0958 \\
- 	&\text{Para T} = \qty{990}{K} \rightarrow 0,00395 > 0,00303 \\
- 	&\text{Para T} = \qty{1010}{K} \rightarrow 0,00392 > 0,00388 \\
- 	&\text{Para T} = \qty{1020}{K} \rightarrow 0,00395 < 0,00428 \\
- 	&\text{Para T} = \qty{1015}{K} \rightarrow 0,00393 < 0,00408 
- \end{align*}
+ Como mostrado, a temperatura em que a reação inversa se torna favorável é
+ $\approx \qty{1015}{K}$ \\
  
- Como mostrado, a temperatura em que a reção inversa se torna favorável é $\approx \qty{1015}{K}$ 
-  
 \noindent Dados:\\
 \( \Delta_f H^0_{298(\ce{CO(g)})} = \qty{-110.52}{kJ \per mol};\) 
 \( \Delta_f H^0_{298(\ce{H2O(g)})} = \qty{-241.83}{kJ \per mol};\) 
