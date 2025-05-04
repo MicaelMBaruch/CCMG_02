@@ -1,5 +1,5 @@
 \section{Resultados}
-% Eu sei precisa colocar a imagem ajustar a imagem, mas calma, não sufoca o artista
+% E discuss
 
 \subsection{Quantificação e pureza do DNA} 
 A amostra analisada apresentou concentração de
@@ -7,7 +7,7 @@ A amostra analisada apresentou concentração de
 A\textsubscript{260}/A\textsubscript{280} de \num{2,07} e
 A\textsubscript{260}/A\textsubscript{230} de \num{2,31}. Esses valores indicam
 alta pureza, com ausência significativa de contaminantes como proteínas (razão
-esperada entre 1{,}8 e 2{,}0) ou compostos orgânicos/sais (razão
+esperada entre \num{1.8} e \num{2.0}) ou compostos orgânicos/sais (razão
 A\textsubscript{260}/A\textsubscript{230} ideal \(>\) \num{1.8})\cite{Alguém}. A
 qualidade do DNA obtido foi considerada adequada para as reações de PCR
 subsequentes.
@@ -16,7 +16,7 @@ subsequentes.
 amostra-problema foi conduzida por meio de três reações de PCR convencionais,
 designadas como PCR-A, PCR-B e PCR-C, cada uma com especificidade crescente em
 relação ao táxon de interesse. Os produtos amplificados foram analisados por
-eletroforese em gel de agarose a 1{,}5\%, conforme apresentado nas
+eletroforese em gel de agarose a \num{1.5}\%, conforme apresentado nas
 \cref{pcrA} e \cref{pcrBC}.
 
 \begin{wrapfigure}{L}{.45\textwidth}
@@ -51,22 +51,23 @@ As reações subsequentes, PCR-B e PCR-C, foram desenhadas com primers específi
 para espécies do subgênero \textit{Viannia} não-\textit{brasiliensis} e
 para a espécie \textit{L. (V.) braziliensis
 }, respectivamente. Em ambas as reações, a amostra W não apresentou
-bandas detectáveis, ao contrário dos controles positivos específicos para
-\textit{L. (V.) braziliensis} e outras espécies do subgênero. A ausência de
+bandas detectáveis, ao contrário dos controles positivos específicos para 
+\textit{Viannia} não-\textit{brasiliensis} e \textit{L. (V.) braziliensis}. A ausência de
 amplificação nas PCRs B e C reforça que a amostra W não pertence ao subgênero
-\textit{Viannia}, corroborando a classificação como \textit{Leishmania
+\textit{Viannia}, corroborando a classificação como \textit{L.
 (L.) amazonensis} já inferida pela PCR-A.
 
-%TODO: Olhar isso aqui
+%TODO: Olhar isso aqui ("olhado")
 
-Na PCR-B, específica para o subgênero não-\textit{Leishmania (Viannia)}, foi observada uma banda nítida no poço 4, correspondente à amostra \textit{L. (V.) shawi}, como esperado. 
-No entanto, uma banda mais tênue e não prevista foi detectada no poço 3, referente a \textit{L. (V.) braziliensis}, o que pode indicar uma amplificação inespecífica ou contaminação 
-pontual. As demais amostras, incluindo a amostra-problema (poço 5), não apresentaram bandas visíveis, sugerindo ausência de amplificação com os primers utilizados nesta reação.
+Na PCR-B, específica para o subgênero \textit{L. (V.)} não-\textit{brasiliensis}, foi observada uma banda nítida no poço 4, correspondente à amostra \textit{L. (V.) shawi}, como esperado. 
+No entanto, uma banda mais tênue e não prevista foi detectada no poço 3, referente a \textit{L. (V.) braziliensis}, o que pode indicar uma amplificação inespecífica possivelmente causado
+por erro no \textit{melting temperature(Tm)} visto que toda a placa ficou sob uma mesma temperatura e cada primer possuia um Tm específico. As demais amostras, incluindo a amostra-problema 
+(poço 5), não apresentaram bandas visíveis, sugerindo ausência de amplificação com os primers utilizados nesta reação.
 
 Já na PCR-C, voltada à detecção de espécies \textit{braziliensis} dentro do
-subgênero \textit{Viannia}, foi identificada uma banda clara no poço 3 \textit{(L. (V.) braziliensis}), 
-como previsto. No entanto, uma amplificação não esperada foi observada no poço 1, correspondente a \textit{L. (L.) infantum}, o que sugere a possibilidade de reação cruzada ou mínima 
-contaminação da amostra.
+subgênero \textit{Viannia}, foi identificada uma banda clara no poço 3 (\textit{L. (V.) braziliensis}), 
+como previsto. No entanto, uma amplificação não esperada foi observada no poço 1, correspondente a \textit{L. (L.) infantum},  o que novamente sugere a possibilidade de amplificação inespecífica.
+Ambos os controles negativos dos PCR-B e PCR-C (amostra 6 em ambos) não foram amplificados, o que indica que não houve contaminação dos experimentos.
 
 \subsection{Análise da amplificação e \textit{melting temperature} obtidos por
 qPCR e HRM}
@@ -141,13 +142,10 @@ diferencia à pouco menos que \qty{87}{\celsius}. Estes são os mesmos quatro
 padrões observados nas amostras conhecidas (\cref{tstuni}A).
 
 \subsection{Comparação entre os métodos de diagnóstico}
-Enquanto a metodologia de PCR-RFLP é bem sucedida na determinação da
-amostra-alvo, trata-se de uma metodologia com mais passos de análise.
-Idealmente, o método envolve fazer os testes de gel de agarose sequencialmente,
-o que pode evitar desperdício de reagentes pela determinação filogenética da
-\textit{Leishmania} presente em etapas. No entanto, isso também torna a
-metodologia mais dificultosa e propensa à erros experimentais. Estes erros são
-particularmente críticos em diagnósticos devido à escassez da amostra alvo. 
+Embora a metodologia de PCR-RFLP seja eficaz na identificação da amostra-alvo, ela envolve um maior número de etapas analíticas. 
+Idealmente, o método requer a realização sequencial de testes em gel de agarose para a determinação filogenética da \textit{Leishmania} 
+presente na amostra. No entanto, essa complexidade torna a técnica mais trabalhosa e suscetível a erros experimentais. 
+Tais erros são especialmente críticos em diagnósticos, devido à escassez de material biológico disponível.
 
 Por outro lado, com a metodologia de qPCR acoplada à HRM permite, com um único
 teste utilizando menor diversidade de reagentes entre reações, determinar de
