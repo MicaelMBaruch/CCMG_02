@@ -1,5 +1,5 @@
 \section{Resultados}
-% Eu sei precisa colocar a imagem ajustar a imagem, mas calma, não sufoca o artista
+% E discuss
 
 \subsection{Quantificação e pureza do DNA} 
 A amostra analisada apresentou concentração de
@@ -7,7 +7,7 @@ A amostra analisada apresentou concentração de
 A\textsubscript{260}/A\textsubscript{280} de \num{2,07} e
 A\textsubscript{260}/A\textsubscript{230} de \num{2,31}. Esses valores indicam
 alta pureza, com ausência significativa de contaminantes como proteínas (razão
-esperada entre 1{,}8 e 2{,}0) ou compostos orgânicos/sais (razão
+esperada entre \num{1.8} e \num{2.0}) ou compostos orgânicos/sais (razão
 A\textsubscript{260}/A\textsubscript{230} ideal \(>\) \num{1.8})\cite{Alguém}. A
 qualidade do DNA obtido foi considerada adequada para as reações de PCR
 subsequentes.
@@ -16,7 +16,7 @@ subsequentes.
 amostra-problema foi conduzida por meio de três reações de PCR convencionais,
 designadas como PCR-A, PCR-B e PCR-C, cada uma com especificidade crescente em
 relação ao táxon de interesse. Os produtos amplificados foram analisados por
-eletroforese em gel de agarose a 1{,}5\%, conforme apresentado nas
+eletroforese em gel de agarose a \num{1.5}\%, conforme apresentado nas
 \cref{pcrA} e \cref{pcrBC}.
 
 \begin{wrapfigure}{L}{.45\textwidth}
@@ -51,37 +51,30 @@ As reações subsequentes, PCR-B e PCR-C, foram desenhadas com primers específi
 para espécies do subgênero \textit{Viannia} não-\textit{brasiliensis} e
 para a espécie \textit{L. (V.) braziliensis
 }, respectivamente. Em ambas as reações, a amostra W não apresentou
-bandas detectáveis, ao contrário dos controles positivos específicos para
-\textit{L. (V.) braziliensis} e outras espécies do subgênero. A ausência de
+bandas detectáveis, ao contrário dos controles positivos específicos para 
+\textit{Viannia} não-\textit{brasiliensis} e \textit{L. (V.) braziliensis}. A ausência de
 amplificação nas PCRs B e C reforça que a amostra W não pertence ao subgênero
-\textit{Viannia}, corroborando a classificação como \textit{Leishmania
+\textit{Viannia}, corroborando a classificação como \textit{L.
 (L.) amazonensis} já inferida pela PCR-A.
 
-%TODO: Olhar isso aqui
+%TODO: Olhar isso aqui ("olhado")
 
-Na PCR-B, específica para o subgênero não-\textit{Leishmania (Viannia)}, foi observada uma banda nítida no poço 4, correspondente à amostra \textit{L. (V.) shawi}, como esperado. 
-No entanto, uma banda mais tênue e não prevista foi detectada no poço 3, referente a \textit{L. (V.) braziliensis}, o que pode indicar uma amplificação inespecífica ou contaminação 
-pontual. As demais amostras, incluindo a amostra-problema (poço 5), não apresentaram bandas visíveis, sugerindo ausência de amplificação com os primers utilizados nesta reação.
+Na PCR-B, específica para o subgênero \textit{L. (V.)} não-\textit{brasiliensis}, foi observada uma banda nítida no poço 4, correspondente à amostra \textit{L. (V.) shawi}, como esperado. 
+No entanto, uma banda mais tênue e não prevista foi detectada no poço 3, referente a \textit{L. (V.) braziliensis}, o que pode indicar uma amplificação inespecífica possivelmente causado
+por erro no \textit{melting temperature(Tm)} visto que toda a placa ficou sob uma mesma temperatura e cada primer possuia um Tm específico. As demais amostras, incluindo a amostra-problema 
+(poço 5), não apresentaram bandas visíveis, sugerindo ausência de amplificação com os primers utilizados nesta reação.
 
 Já na PCR-C, voltada à detecção de espécies \textit{braziliensis} dentro do
 subgênero \textit{Viannia}, foi identificada uma banda clara no poço 3 (\textit{L. (V.) braziliensis}), 
-como previsto. No entanto, uma amplificação não esperada foi observada no poço 1, correspondente a \textit{L. (L.) infantum}, o que sugere a possibilidade de reação cruzada ou mínima 
-contaminação da amostra.
+como previsto. No entanto, uma amplificação não esperada foi observada no poço 1, correspondente a \textit{L. (L.) infantum},  o que novamente sugere a possibilidade de amplificação inespecífica.
+Ambos os controles negativos dos PCR-B e PCR-C (amostra 6 em ambos) não foram amplificados, o que indica que não houve contaminação dos experimentos.
 
 \subsection{Análise da amplificação e \textit{melting temperature} obtidos por
 qPCR e HRM}
 
-A análise de HRM permite distinguir variantes de DNA com base em suas curvas de
-dissociação térmica. As curvas de melting foram obtidas com o software High
+As curvas de \textit{melting} foram obtidas com o software High
 Resolution Melt v.3.0.1 (Life Technologies) com resolução de
 \qty{0,2}{\celsius}, após a amplificação por PCR em tempo real.
-
-\begin{wrapfigure}{R}{.45\textwidth}
-        \centering
-        \includegraphics[width=.4\textwidth]{fig/pranheta_padrao_PCR}
-        \caption{Tem as imagens e a legenda e tal, sorry guys :)}
-        \label{paduni}
-\end{wrapfigure} 
 
 As amostras conhecidas, tiveram seu perfil de \textit{melting} determinado por
 Zampieri et.al.\cite{HRMzampi2016}. O perfil obtido está resumino na
@@ -89,36 +82,56 @@ Zampieri et.al.\cite{HRMzampi2016}. O perfil obtido está resumino na
 espécie nas curvas derivadas da fluorescência em função da temperatura
 (derivative melt curves) \cref{paduni}A.
 
-As diferenças entre os perfis de melting das amostras são evidenciadas nas
-curvas de diferença (\cref{paduni}B).  É notável que cada espécie estudada
-apresentou comportamento de melting único em comparação às demais. 
+\begin{figure}[h]
+        \centering
+        \includegraphics[width=.9\textwidth]{fig/paduni_prancheta_v2}
+        \caption{Curvas de \textit{melting} obtidas por qPCR acoplado à HRM dos amplicons de \textit{L. (L.)
+        amazonensis} (em laranja), \textit{L. (V.) braziliensis} (em roxo),
+    \textit{L. (L.) infantum} (em vermelho) e \textit{L. (V.) shawi} (em rosa).
+A \textit{Derivative melt curve} em A evidência as Tm de cada espécie. Em B
+vê-se as curvas alinhadas evidenciando o perfil de \textit{melting}.}
+        \label{paduni}
+\end{figure} 
+
+As diferenças entre os perfis de \textit{melting} das amostras são evidenciadas
+nas curvas de diferença (\cref{paduni}B).  É notável que cada espécie estudada
+apresentou comportamento de \textit{melting} único em comparação às demais.
+Essas diferenças são exatamente conforme o esperado de acordo com o trabalho de
+Zampieri et.al.\cite{HRMzampi2016} e são decorrentes de pequenas diferenças nas
+sequências dos amplicons de cada espécie.
 
 Ainda, é possível observar o padrão das amostras com \textit{L. (V.) shawi} e
-\textit{L. (V.) braziliensis} que são visualmente distinguíveis na
-\cref{paduni}.C. Já as curvas de \textit{L. (L.) amazonensis} e \textit{L. (L.)
+\textit{L. (V.) brasilienses} que são visualmente distinguíveis na
+\cref{paduni}B. Já as curvas de \textit{L. (L.) amazonensis} e \textit{L. (L.)
 infantum} são mais similares entre si, embora facilmente distinguível das outras
 duas,  com a maior diferença observável em valores pouco menores à
 \qty{87}{\celsius}.
 
-\begin{wrapfigure}{L}{.45\textwidth}
-        \centering
-        \includegraphics[width=.4\textwidth]{fig/prancheta_test_PCR}
-        \caption{Tem outras imagens e cores e zás e zás}
-        \label{tstuni}
-\end{wrapfigure}
-
 A reação de qPCR realizada originou a \cref{tstuni}, realizada com um conjunto
 de amostras desconhecidas acompanhadas de controles positivos e negativos. A
 curva de \textit{melting} (\cref{tstuni}A) revela que a maioria das amostras
-desconhecidas apresenta perfis de dissociação compatíveis com os observados nas
-amostras padronizadas discutidas anteriormente (\cref{paduni}C),
-especialmente em relação aos valores de Tm, que podem ser 
-identificados para cada amostra no gráfico.
+desconhecidas apresenta perfis de \textit{melting} compatíveis com os observados
+nas amostras padronizadas.
+
+\begin{figure}[h]
+        \centering
+        \includegraphics[width=.9\textwidth]{fig/prancheta_test_PCR}
+        \caption{Perfil de \textit{melting} (A) e amplificação (B) obtidos por
+            qPCR acoplada à HRM da placa com amostras de controle positivo de \textit{L. (L.)
+        amazonensis}, \textit{L. (V.) braziliensis},
+    \textit{L. (L.) infantum} e \textit{L. (V.) shawi} e controle negativo nas
+    curvas B (em amarelo) e C (em verde) e amostras desconhecidas W, X, Y, Z nas
+    curvas D (em azul esverdeado) e E (em azul). O quadrado em vermelho em A
+    marca a região em que o perfil de \textit{melting} é distinguível e
+    comparável com os padrões.
+}
+        \label{tstuni}
+\end{figure}
 
 Como esperado, duas curvas presentes na reação de qPCR realizada exibem perfis
 atípicos do padrão observado nas curvas com as amostras conhecidas, estas duas
 curvas são referentes aos dois poços com controle negativo na placa. Isto é
-corroborado ao avaliar as mesmas curvas na \cref{amplip}, que mostra as curvas
+corroborado ao avaliar as mesmas curvas na \cref{tstuni}B, que mostra as curvas
 de amplificação correspondentes à mesma placa, em que esses dois poços não
 apresentaram aumento significativo na fluorescência, comportamento compatível
 com o esperado para os controles negativos incluídos na reação.
@@ -127,3 +140,16 @@ Ademais, na região de \qty{85}{\celsius}-\qty{88}{\celsius} da \cref{tstuni}A �
 possível observar três padrões evidentemente diferentes e mais um que se
 diferencia à pouco menos que \qty{87}{\celsius}. Estes são os mesmos quatro
 padrões observados nas amostras conhecidas (\cref{tstuni}A).
+
+\subsection{Comparação entre os métodos de diagnóstico}
+Embora a metodologia de PCR-RFLP seja eficaz na identificação da amostra-alvo, ela envolve um maior número de etapas analíticas. 
+Idealmente, o método requer a realização sequencial de testes em gel de agarose para a determinação filogenética da \textit{Leishmania} 
+presente na amostra. No entanto, essa complexidade torna a técnica mais trabalhosa e suscetível a erros experimentais. 
+Tais erros são especialmente críticos em diagnósticos, devido à escassez de material biológico disponível.
+
+Por outro lado, com a metodologia de qPCR acoplada à HRM permite, com um único
+teste utilizando menor diversidade de reagentes entre reações, determinar de
+forma específica o  patógeno. Além disso, a qPCR com HRM também permite
+determinar a concentração relativa de material genético na amostra em comparação
+com um padrão, permitindo uma análise mais quantitativa do estado da infecção. Embora essa diferença não tenha sido percepitível nos resultados obtidos neste
+trabalho, é discutida no artigo original de Zampieri et.al.\cite{HRMzampi2016}.
