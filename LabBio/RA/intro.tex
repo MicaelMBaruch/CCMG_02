@@ -2,7 +2,7 @@
 
 Leishmanioses são doenças infecciosas causadas por protozoários do gênero
 \textit{Leishmania}, transmitidos por flebotomíneos e endêmicos em 98 países,
-afetando mais de 350 milhões de pessoas \cite{hong2020one}. Essas doenças
+afetando mais de 350 milhões de pessoas\cite{hong2020one}. Essas doenças
 apresentam manifestações clínicas diversas — de lesões cutâneas autolimitadas à
 leishmaniose visceral fatal — que variam conforme a espécie envolvida. No
 entanto, a diversidade de espécies causadoras de leishmanioses e as semelhanças
@@ -12,67 +12,70 @@ espécies-específico da doença.
 A complexidade da epidemiologia da leishmaniose demanda ferramentas diagnósticas
 precisas, rápidas e economicamente viáveis.  Neste cenário, métodos moleculares
 podem ser a chave na identificação da espécie de \textit{Leishmania} envolvida
-na infecção. O presente trabalho teve como objetivo reproduzir de forma adaptada
-os métodos moleculares de Graça
-et.al.\cite{RFLPgraca2012} e Zampieri et.al.\cite{HRMzampi2016} com objetivo de
-diagnosticar dentre as espécies \textit{Leishmania (Leishmania) infantum},
-\textit{Leishmania (Leishmania) amazonensis}, \textit{Leishmania (Viannia)
-braziliensis} e \textit{Leishmania (Viannia)
-shawi} em uma amostra de DNA desconhecida. 
+na infecção. Duas metodologias de diagnóstico propostas recentemente são a de
+Graça et.al.\cite{RFLPgraca2012} e a de Zampieri et.al.\cite{HRMzampi2016}.
+A metodologia de Graça e colegas é baseada em Reação em Cadeia da Polimerase
+(do inglês, PCR) seguida de análise por polimorfismo de fragmento de restrição
+(do inglês, PCR-RFLP). Conquanto, a metodologia de Zampieri e colegas é baseada
+na PCR em tempo real (qPCR) acoplada a análise de Alta de Resolução de
+Dissociação (do inglês, HRM) do DNA. 
 
-\subsection{Espectrofotometria, Eletroforese e PCR-RFLP}
-
-A espectrofotometria por NanoDrop é uma técnica amplamente utilizada para avaliar a pureza e a 
-concentração de ácidos nucleicos extraídos. A quantificação é realizada por meio da absorbância da 
-amostra em diferentes comprimentos de onda, especialmente em \SI{260}{\nano\meter} para DNA e RNA, 
-e em \SI{280}{\nano\meter} para proteínas. As razões A\textsubscript{260}/A\textsubscript{280} e A\textsubscript{260}/A\textsubscript{230} permitem 
-inferir o grau de pureza do material, sendo valores entre 1{,}8 e 2{,}0 indicativos de DNA livre de proteínas 
-e valores acima de 2{,}0 livre de outros contaminantes orgânicos~\cite{nanodrop}. Além disso, a pequena quantidade de amostra requerida (1–2~\si{\micro\liter}) 
-torna o NanoDrop uma ferramenta rápida e eficiente para controle de qualidade de extrações de DNA antes de análises subsequentes.
-% A métrica dada pelas professoras foram essas, porém nos artigos só encontro que A260/A280 ~ 1,8-2,0 e A260/A260 ~ 2,0-2,2
-
-A eletroforese em gel de agarose é um método essencial para a visualização e separação de fragmentos de DNA com base em seu tamanho. 
-Após a aplicação das amostras em poços de um gel de agarose e aplicação de corrente elétrica, os fragmentos de DNA migram em direção 
-ao polo positivo. A velocidade de migração depende do tamanho dos fragmentos — quanto menor o fragmento, maior sua mobilidade. 
-A adição de agentes intercalantes, como brometo de etídio ou SYBR Safe, permite a visualização das bandas de DNA sob luz ultravioleta. 
-Esta técnica permite confirmar o sucesso de amplificações por PCR, avaliar a integridade do DNA e estimar o tamanho dos amplicons 
-com base em marcadores de peso molecular~\cite{costa1998leishmaniose}.
-
-A PCR seguida de análise por polimorfismo de fragmento de restrição (PCR-RFLP) é uma técnica molecular que combina amplificação de regiões 
+A PCR-RFLP é uma técnica molecular que combina amplificação de regiões 
 específicas do DNA com digestão enzimática, visando identificar variações na sequência por meio do padrão de fragmentos gerados. Inicialmente, 
 uma região alvo do genoma é amplificada por PCR. Em seguida, a amostra é incubada com enzimas de restrição que reconhecem sequências específicas 
 de nucleotídeos. Alterações pontuais no DNA — como SNPs — podem criar ou abolir locais de corte, resultando em perfis distintos de bandas após separação 
 por eletroforese em gel. A PCR-RFLP é especialmente útil para diferenciação de espécies, genotipagem e identificação de variantes alélicas, sendo 
 considerada uma técnica de baixo custo, reprodutível e aplicável em diferentes contextos epidemiológicos e diagnósticos~\cite{garcia2005metodos}.
 
-A PCR em tempo real (qPCR)  é um método molecular baseado na amplificação da
-quantidade de fitas de DNA por ciclos, enquanto a fluorescência emitida por
-corantes intercalantes, é monitorada em tempo real a cada ciclo de amplificação.
-Como o aumento da fluorescência é proporcional à quantidade de DNA amplificado,
-torna-se possível quantificar o material genético na amostra\cite{Galluzi2018}.
-A qPCR associada a análise \textit{High Resolution Melting} (HRM) implica que
-após a amplificação, é realizada uma análise de dissociação da dupla fita com
-relação à temperatura (\textit{melting curve}). Para tanto, a temperatura é
-elevada gradualmente, à um passo definido e a fluorescência é medida
-continuamente. À medida que as duplas fitas de DNA se dissociam em fitas
-simples, a fluorescência diminui bruscamente, gerando uma curva característica
-de cada amplicon. Isto permite a detecção de variações sutis na sequência de DNA
-— como polimorfismos de nucleotídeo único (SNPs), inserções, deleções ou
-diferenças no conteúdo de GC — por meio de alterações no formato da curva e na
-temperatura de melting (Tm)\cite{Wittwer2009} por consequência da natureza
-termoquímica destas variações.
+A eletroforese em gel de agarose é um método essencial para a visualização e
+separação de fragmentos de DNA com base em seu tamanho.  Após a aplicação das
+amostras em poços de um gel de agarose e aplicação de corrente elétrica, os
+fragmentos de DNA migram em direção ao polo positivo. A velocidade de migração
+depende do tamanho dos fragmentos — quanto menor o fragmento, maior sua
+mobilidade.  A adição de agentes intercalantes, como brometo de etídio ou SYBR
+Safe, permite a visualização das bandas de DNA sob luz ultravioleta.  Esta
+técnica permite confirmar o sucesso de amplificações por PCR, avaliar a
+integridade do DNA e estimar o tamanho dos amplicons com base em marcadores de
+peso molecular~\cite{costa1998leishmaniose}.
 
-No contexto da leishmaniose, a qPCR-HRM tem grande potencial
-para o diagnóstico molecular e a discriminação de espécies de
-\textit{Leishmania}. Para tanto, a elaboração de primers específicos para uma
-sequência conservada entre as espécies, porém com pequenas variações em alguns
-nucleotídeos permite obter perfis distintos de Tm e
-formas de curva de dissociação para cada espécie.
-Estudos anteriores foram bem-sucedidos em diferenciar espécies com base em
-diferenças de menos de \qty{1}{\celsius}, na Tm dos amplicons
-avaliados\cite{Azam2024,HRMzampi2016,SaadiBenAoun2024}.
-Essa abordagem permite diagnósticos rápidos, sem necessidade de sequenciamento,
-e pode ser integrada a plataformas de PCR em tempo real já existentes,
-representando uma alternativa sensível, específica e custo-efetiva para a
-identificação de espécies de \textit{Leishmania}.
- 
+A espectrofotometria por NanoDrop é uma técnica amplamente utilizada para
+avaliar a pureza e a concentração de ácidos nucleicos extraídos. A quantificação
+é realizada por meio da absorbância da amostra em diferentes comprimentos de
+onda, especialmente em \SI{260}{\nano\meter} para DNA e RNA, e em
+\SI{280}{\nano\meter} para proteínas. As razões
+A\textsubscript{260}/A\textsubscript{280} e
+A\textsubscript{260}/A\textsubscript{230} permitem inferir o grau de pureza do
+material, sendo valores entre 1{,}8 e 2{,}0 indicativos de DNA livre de
+proteínas e valores acima de 2{,}0 livre de outros contaminantes
+orgânicos~\cite{nanodrop}. Além disso, a pequena quantidade de amostra requerida
+(1–2~\si{\micro\liter}) torna o NanoDrop uma ferramenta rápida e eficiente para
+controle de qualidade de extrações de DNA antes de análises subsequentes.
+% A métrica dada pelas professoras foram essas, porém nos artigos só encontro
+% que A260/A280 ~ 1,8-2,0 e A260/A260 ~ 2,0-2,2
+
+A qPCR é um método molecular baseado na amplificação da quantidade de fitas de
+DNA por ciclos, enquanto a fluorescência emitida por corantes intercalantes, é
+monitorada em tempo real a cada ciclo de amplificação.  Como o aumento da
+fluorescência é proporcional à quantidade de DNA amplificado, torna-se possível
+quantificar o material genético na amostra\cite{Galluzi2018}.  A qPCR associada
+a análise \textit{High Resolution Melting} (HRM) implica que após a
+amplificação, é realizada uma análise de dissociação da dupla fita com relação à
+temperatura (\textit{melting curve}). Para tanto, a temperatura é elevada
+gradualmente, à um passo definido e a fluorescência é medida continuamente. À
+medida que as duplas fitas de DNA se dissociam em fitas simples, a fluorescência
+diminui bruscamente, gerando uma curva característica de cada amplicon. Isto
+permite a detecção de variações sutis na sequência de DNA — como polimorfismos
+de nucleotídeo único (SNPs), inserções, deleções ou diferenças no conteúdo de GC
+— por meio de alterações no formato da curva e na temperatura de melting
+(Tm)\cite{Wittwer2009} por consequência da natureza termoquímica destas
+variações. Dessa forma, a identificação das espécies presentes em amostra de uma
+metodologia de diagnóstico por qPCR acoplada à HRM depende diretamente das
+diferenças nas sequências dos amplicons gerados pelo conjunto de primers
+desenhados. 
+
+O presente trabalho tem como objetivo reproduzir de forma adaptada os métodos
+moleculares de Graça et.al.\cite{RFLPgraca2012} e Zampieri
+et.al.\cite{HRMzampi2016} com objetivo de diagnosticar dentre as espécies
+\textit{Leishmania (Leishmania) infantum}, \textit{Leishmania (Leishmania)
+amazonensis}, \textit{Leishmania (Viannia) braziliensis} e \textit{Leishmania
+(Viannia) shawi} em uma amostra de DNA desconhecida. 
