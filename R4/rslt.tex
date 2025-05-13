@@ -1,11 +1,22 @@
 \section{Resultados e discussões}
-%TODO: erros
 \subsection{Sistema massa-mola}
-%TODO: freq de oscilações
-%TODO: const elástica da mola
-%TODO: relação massa ~ freq
-A partir dos dados extraídos do Tracker, resumidos nas \cref{molaG,molaP,2mola}, é notável observar o comportamento senoidal de todos os sistemas. É possível estimar a frequência do sistema massa-mola pela observação gráfica. Em \cref{molaG} a observação indica aproximadamente 1 oscilação por segundo. Enquanto em \cref{molaP} obtêm-se pouco mais de uma oscilação por segundo. E, em \cref{2mola} pouco menos de 1 oscilação por segundo.
+%Done: freq de oscilações
+%Done: const elástica da mola
+%Done: relação massa ~ freq
+A partir dos dados extraídos do Tracker, resumidos nas \cref{molaG,molaP,molaG2m}, é notável observar o comportamento senoidal de todos os sistemas. É possível estimar a frequência do sistema massa-mola pela observação gráfica. Em \cref{molaG} a observação indica aproximadamente 1 oscilação por segundo. Enquanto em \cref{molaP} obtêm-se pouco mais de uma oscilação por segundo. E, em \cref{molaG2m} pouco menos de 1 oscilação por segundo.
 
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=.5\linewidth]{fig/molaG}
+    \caption{Para mola grande com massa de \qty{100}{g}, gráfico de dispersão dos dados obtidos no Tracker em comparação aos valores nos mesmos instantes de tempo com a função horária deduzida}\label{molaG}
+\end{figure}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=.5\linewidth]{fig/molaP}
+    \caption{Para mola pequena com massa de \qty{100}{g}, gráfico de dispersão dos dados obtidos no Tracker em comparação aos valores nos mesmos instantes de tempo com a função horária deduzida}\label{molaP}
+\end{figure}
+ 
 No entanto, podemos também nos aproveitar do comportamento dos sistemas e obter uma equação para descrever cada um dos sistemas a partir da função horária da posição da massa considerando que tenha comportamento de um oscilador harmônico simples: 
 
 \begin{align*}
@@ -48,39 +59,25 @@ x_{pm}(t) = 8,1 \cos(\frac{\pi}{0,43}t) + 2,9
 
 Em que, \(\nu_{pm}\) é a frequência da mola pequena com massa de \qty{100}{g} e \(\nu_{Gm}\) é a mola grande com massa de \qty{100}{g}. Obtemos então, resultados compatíveis com a análise gráfica.
 
-A partir das equações obtidas, é possível determinar a aceleração instantânea da massa a partir da segunda derivada das funções horárias. Em particular nos instantes \(t\) nos quais a aceleração é exatamente zero, sabemos que as forças atuando sobre o corpo estão em equilíbrio. Dessa forma, podemos determinar a constante elástica das molas:
-
-\begin{align}
-    \frac{d^2x_{pm}}{dt^2} = -43,81 \pi^2 \cos(\frac{\pi}{0,43}t)\\
-    \frac{d^2x_{Gm}}{dt^2} = 60 \pi^2 \cos(2\pi t)\\ 
-\end{align}
-
-Sendo que a segunda derivada para a mola menor é 0 quando \(t = \qty{0,215}{s}\) ou \(t = \qty{0,645}{s}\) (se repetindo periodicamente para \(t + 2m\pi\) com \(m \in \mathbb{Z}\)) e a segunda derivada da mola maior é 0 quando \(t = \qty{0,25}{s}\) ou \(t = \qty{0,75}{s}\) seguindo as mesmas regras. Portanto, quando em equilíbrio de forças, \(x_{pm} = x_{pm}(0,215) = \qty{2,9}{cm}\) e \(x_{Gm} = \qty{-10}{cm}\).  
-
+É possível determinar também a constante elástica das molas:
 \begin{align*}
-    \vec{F} = \vec{F_{el}} + \vec{F_{gm}} \\
-    0 = -kx + gm\\
-    k = \frac{gm}{x}\\
-    k_{pm} = \qty{33.793103}{\gram\per\second\squared}\\
-    k_{Gm} = \qty{19.6}{\gram\per\second\squared}
+   k = \omega^2 \cdot m\\
+   k_{pm} = {(\pi\qty{2}{\per\second})}^2 \cdot \qty{0.1}{\kilo\gram}\\
+   k_{pm} = \qty{3,95}{\N\per\meter}\\
+   k_{Gm} = {(\frac{\pi}{0.43}\qty{1}{\per\second})}^2 \cdot \qty{0.1}{\kg}\\
+   k_{Gm} = \qty{5.34}{\N\per\meter} 
 \end{align*}
 
-\(\) 
+A frequência de oscilação do sistema é determinada por \(\frac{\omega}{2 \pi}  = \nu\), com \(\omega^2 = \frac{k}{m}\), portanto, a frequência deve ser inversamente proporcional à raiz quadrada da massa. Podemos averiguar isso observando a frequência para o sistema com a massa grande com \qty{200}{\g}. A função derivada para esta mola é \(x_{G2m} = 8.84\cos(\frac{\pi}{0.66}t) -11.16\), é possível observar a comparação entre esta função e os dados extraídos do Tracker na \cref{molaG2m}. Desta função, podemos extrair \(\nu = \cfrac{\pi}{0.66 \cdot 2 \cdot \pi} = \qty{0.76}{\per\second}\). Como esperado, o valor obtido é menor que a frequência para a mesma mola com uma massa menor.   
 
-
-
-\begin{figure}[H]
+\begin{figure}[h]
     \centering
-    \includegraphics[width=.5\linewidth]{fig/molaG}
-    \caption{Para mola grande com massa de \qty{100}{g}, gráfico de dispersão dos dados obtidos no Tracker em comparação aos valores nos mesmos instantes de tempo com a função horária deduzida}\label{molaG}
+    \includegraphics[width=.5\linewidth]{fig/molaG2m}
+    \caption{Para mola grande com peso de \qty{200}{\g}, a figura apresenta os dados extraídos do software Tracker em comparação com os valores obtidos nos mesmos instantes de tempo para uma função horária deduzida para este oscilador}
+    \label{molaG2m}
 \end{figure}
 
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=.5\linewidth]{fig/molaP}
-    \caption{Para mola pequena com massa de \qty{100}{g}, gráfico de dispersão dos dados obtidos no Tracker em comparação aos valores nos mesmos instantes de tempo com a função horária deduzida}\label{molaP}
-\end{figure}
-            
+           
 \subsection{Ondas}
 %TODO: como o ocorre formação de nós;
 %TODO: qual a diff entre esfera que vibra e e as molas?
