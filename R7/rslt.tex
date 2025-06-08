@@ -1,5 +1,4 @@
 \section{Resultados e discussões}
-%TODO: Discutir aumento volumétrico dentro do balão de vidro
 %TODO: Discutir os diversos motores, falar a respeito dos diferentes ciclos e as vantagens e desvantagens de cada um deles
 
 \subsection{Mudança de fase} % Mudança de fase da água
@@ -12,7 +11,25 @@ Em ambos os casos, ao aquecer o frasco, a velocidade média das partículas nele
 Quanto à diferença entre o frasco com água ou seco antes de aquecer, a presença de água dentro do frasco faz com que a força resultante da diferença de pressão seja maior. A justificativa está na mudança de fase da água, ao ser aquecida, a água torna-se vapor de água, comportando-se como gás e contribuindo para o equilíbrio de pressão previamente descrito. No entanto, ao resfriar quando o frasco é colocado de ponta cabeça no recipiente o vapor condensa e deixa de atuar como gás, exercendo ainda menos pressão contra os contornos do frasco. Isto faz com que uma porção maior do frasco seja preenchida por água do que caso o frasco estivesse completamente seco antes de aquecer.
 
 \subsection{Motor de Eron} % Mudança de fase
+Ao acender a lamparina sob o reservatório de água em princípio nada aconteceu. No entanto, após alguns instantes, vapor começou a ser ejetado dos tubos e o motor ganhou movimento angular. 
 
+O motor funciona com base no seguinte ciclo: a água dentro do reservatório é aquecida gerando vapor; o vapor se acumula aumentando a pressão interna, escapando aos poucos; a água dentro do reservatório é aquecida gerando mais vapor que aumenta a velocidade com que o vapor é expelido. Isto se repete até que a água dentro do reservatório acabe.
+
+Ao aquecer a água e aumentar a pressão interna, gera-se uma força resultante que aponta para fora do reservatório exatamente nos bicos do motor. Esta força faz com que o vapor seja expelido do reservatório. Pela conservação de momento linear do sistema e visto que o sistema parte do repouso, temos a seguinte relação para a velocidade do motor \(V\), a massa dentro total do motor com o tanto de água no reservatório \(M\), a velocidade com que o vapor é expelido \(v_e\) e a massa de vapor expelida \(m\):
+
+\begin{align*}
+    M \frac{dV}{dt}  = \frac{dm}{dt} v_e  \\
+\end{align*}
+
+Ou seja, a força sobre o motor é igual a \(v_e \frac{dm}{dt}\), como o vapor é expelido das pontas da esfera, então esta força resulta em um torque \(\tau\) descrito por:
+
+\begin{align*}
+    \tau = r \cdot v_e \frac{d m}{dt}  
+\end{align*}
+
+Em que \(r\) é o comprimento do tubo.
+
+Embora seja um motor de construção relativamente simples, o motor de Eron apresenta dificuldade de escalonamento. Pelas relações apresentadas temos que para aumentar a potência do motor seria necessário: (1) aumentar o comprimento dos tubos, aumentando o torque; (2) aumentar a quantidade de calor fornecida,  aumentando \(v_e\) e a quantidade de massa expelida que também aumentam o torque; (3) otimizar a área transversal dos tubos para que a vazão aumente sem que esse aumento na vazão seja compensando por menor força resultante da diferença de pressão. A ideia (1) tem o problema de tornar um reservatório pequeno muito grande com relação ao comprimento do tubo. A ideia (2) é limitada pela disponibilidade de energia térmica. Por fim, a ideia (3) é limitada pela relação ideal, após atingi-la não há nada mais que possa ser feito.
 
 \subsection{Pistão de sopro} % Como assoprar faz um pistão mover
 
