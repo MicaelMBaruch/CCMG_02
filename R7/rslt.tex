@@ -31,9 +31,49 @@ Em que \(r\) é o comprimento do tubo.
 Embora seja um motor de construção relativamente simples, o motor de Heron apresenta dificuldade de escalonamento. Pelas relações apresentadas temos que para aumentar a potência do motor seria necessário: (1) aumentar o comprimento dos tubos, aumentando o torque; (2) aumentar a quantidade de calor fornecida,  aumentando \(v_e\) e a quantidade de massa expelida que também aumentam o torque; (3) otimizar a área transversal dos tubos para que a vazão aumente sem que esse aumento na vazão seja compensando por menor força resultante da diferença de pressão. A ideia (1) tem o problema de tornar um reservatório pequeno muito grande com relação ao comprimento do tubo. A ideia (2) é limitada pela disponibilidade de energia térmica. Por fim, a ideia (3) é limitada pela relação ideal, após atingi-la não há nada mais que possa ser feito.
 
 \subsection{Pistão de sopro} % Como assoprar faz um pistão mover
+Ao soprar com força a seringa observou-se que o sopro empurrou a ampola, e como a ampola estava ligada a ao disco por uma haste, seu movimento fez com que o disco iniciasse um movimento de rotação, e empurrasse a ampola para trás, reiniciando o ciclo do movimento, similar ao funcionamento de uma roda de trem. Assim, viu-se que ao assoprar a ampola em um ritmo correto, foi possível fazer o disco girar mais rápido e de forma homogênea como uma roda. 
+
+Este experimento demonstra o principio da realização de trabalho por um gás, transformando a expansão do gás em rotação. Pois, ao soprar a seringa, aumenta-se a pressão do ar no seu interior, e como a pressão de um gás exerce uma força igual para todas as direções, uma parte dessa força move a ampola, que ligada ao disco, transforma a energia contida no ar em energia cinética do disco. Apesar de ser uma demonstração de um sistema de ação única e ciclo aberto, não produzindo trabalho continuo, serve para demonstrar como ocorre dentro de motores mais complexos, como o funcionamento de pistões por exemplo.
 
 \subsection{Motor de Stirling} % Duas versões, combustão externa como vantagem
+Foram observadas duas versões do motor de Stirling, um composto de uma seringa ligado a um compartimento de vidro com bolinhas de gude, e outro mais clássico com uma parte de metal, um dissipador de calor e uma roda.
+
+Sobre o primeiro motor, observou-se que ao acender a lamparina em sua ponta, após um tempo, a seringa começou a levantar fazendo com que a parte de vidro com a bolinhas se inclinasse para próximo á fonte de calor e as bolinhas rolassem para o a extremidade inclinada, seguidamente observou-se que a seringa abaixou, fazendo assim com que as bolinhas voltassem para sua extremidade de origem e repetissem esse ciclo.
+Agora, sobre o segundo motor, observou-se que após acender a lamparina em sua extremidade cilíndrica de metal não demorou muito tempo para que houvesse a movimentação de um pistão na outra extremidade que ligado a uma roda a fazia girar cada vez mais rápido, até atingir uma velocidade constante.
+
+Apesar de possuírem construções bem diferentes, ambos motores partem do mesmo principio físico de funcionamento, movendo uma quantidade fixa de um gás entre uma fonte de calor e um dissipador. Esse processo define o ciclo de Stirling, que é um ciclo fechado e pode ser divido em quatro etapas termodinâmicas.
+O princípio geral baseia-se na lei dos gases ideias \( (PV = nRT)\): quando um gás é aquecido, ele se expande; quando é resfriado ele se contrai. O motor de Stirling utiliza essa propriedade de forma cíclica para produzir um trabalho mecânico.
+
+Para descrever o ciclo de Stirling fisicamente, tomaremos como exemplo o segundo motor observado, cuja construção é do tipo beta. Este motor possui uma câmara selada com uma fonte de calor em uma extremidade e um dissipador de calor na outra. No seu interior operam dois pistões: o pistão deslocador, responsável por mover o gás entre as zonas quente e fria, e o pistão de potência, que realiza o trabalho mecânico e está conectado ao volante (a roda). O ciclo do motor de Stirling ocorre em quatro etapas coordenadas, como demonstrado na \cref{MotorStirling}:
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.80\linewidth]{fig/StirlingGenerico.png}
+	\caption{A imagem ilustra as etapas sequenciais (A-D) do funcionamento do motor. O componente interno (1) é o pistão deslocador, responsável por mover o gás entre a fonte de calor (região vermelha) e o dissipador (região azul). O componente externo (2) é o pistão de potência, que realiza o trabalho mecânico acionando o volante (roda). Fonte: Adaptado de \cite{galante_2017}.}
+	\label{MotorStirling}
+\end{figure}
+
+Primeiro, o pistão deslocador move a massa de gás para a extremidade quente da câmara (D). O gás absorve calor, e sua pressão aumenta consideravelmente. Em seguida, essa alta pressão impulsiona o pistão de potência, que se expande e realiza trabalho, transferindo energia para o volante (A).
+
+Com o movimento contínuo do sistema, o pistão deslocador então move o gás aquecido da extremidade quente para a fria (B). O gás cede calor ao dissipador, e sua pressão diminui drasticamente (C). Finalmente, impulsionado pela inércia do volante, o pistão de potência comprime o gás frio de baixa pressão (D), deslocando a massa de gás para a extremidade quente da câmara. O ciclo então se repete, produzindo trabalho líquido a cada volta do volante.
+ 
+Além da análise mecânica, o funcionamento do motor pode ser compreendido do ponto de vista termodinâmico, sendo o diagrama Pressão vs. Volume (P-V) a ferramenta ideal para isso, como ilustrado na \cref{CicloStirling}. Este gráfico representa as transformações que o gás de trabalho, um sistema fechado, sofre a cada etapa do ciclo.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.30\linewidth]{fig/CicloStirling.png}
+	\caption{Diagrama Pressão vs Volume do ciclo de Stirling, em que o gráfico ilustra as quatro transformações termodinâmicas do ciclo: \(D \rightarrow A\) (aquecimento isocórico), \(A \rightarrow B\) (expansão isotérmica), \(B \rightarrow C\) (resfriamento isocórico) e \(C \rightarrow D\) (compressão isotérmica). Fonte: \cite{CicloDeStirling}.}
+	\label{CicloStirling}
+\end{figure}
+
+O ciclo inicia com o processo de aquecimento a volume constante (isocórico), \(D \rightarrow A\) no gráfico. Nesta fase, o gás é movido para a fonte quente e, sem que seu volume mude, sua temperatura e pressão aumentam consideravelmente. Em seguida, ocorre a expansão a temperatura constante (isotérmica), mostrada no processo \(A \rightarrow B\). Mantendo-se em contato com a fonte quente, o gás se expande, empurrando o pistão de potência para realizar trabalho. Durante esta expansão, o sistema absorve calor para manter a temperatura estável, enquanto seu volume aumenta e a pressão diminui. Esta é a fase de potência do motor.
+
+Após a expansão, o ciclo prossegue com o resfriamento a volume constante (isocórico), no processo \(B \rightarrow C\). O gás é então deslocado para a fonte fria, onde sua temperatura e pressão caem drasticamente, mas seu volume é mantido fixo. Finalmente, a quarta etapa é a compressão a temperatura constante (isotérmica), no processo \(C \rightarrow D\). O gás é comprimido de volta ao seu volume inicial enquanto permanece em contato com a fonte fria, liberando o calor gerado no processo e fechando o ciclo, que se repetirá.
+
+A análise a partir do gráfico P-V do ciclo de Stirling se mostra muito importante, visto que a partir da integral desse gráfico é possível obter-se o trabalho realizado pelo gás, e consequentemente a energia que é transmitida para a roda e se torna energia cinética.
+
+O motor de Stirling possui vantagens objetivas sobre os motores convencionais, uma de suas principais vantagens é a utilização de uma combustão externa, o que possibilita a utilização de qualquer fonte de calor para o seu funcionamento, o que pode torna-lo muito mais ecológico, com a utilização de fontes de calor como energia solar concentrada, e seguro por não depender de explosões internas. Porém, os motores de Stirling possuem problemas para mudanças de potência, dependendo da intensidade das fontes de calor e de frio para realizar essas mudanças. 
 
 \subsection{Máquina térmica} % Simplesmente concatenação de um motor com geração de energia elétrica, seque acho que tenhamos que discutir, mas é bom pelo menos citar
-
+O experimento de máquina térmica
 
