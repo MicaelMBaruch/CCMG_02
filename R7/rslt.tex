@@ -1,10 +1,34 @@
 \section{Resultados e discussões}
-%TODO: Discutir aumento volumétrico dentro do balão de vidro
-%TODO: Discutir os diversos motores, falar a respeito dos diferentes ciclos e as vantagens e desvantagens de cada um deles
 
 \subsection{Mudança de fase} % Mudança de fase da água
+Ao aquecer o recipiente com um pouco de água dentro e depois mergulhá-lo de ponta cabeça na água, foi possível observar a água preencher o volume do recipiente por inteiro. Não foi possível testar com o recipiente completamente seco pois já estava molhado pelo uso de grupos anteriores. No entanto, o esperado seria que da mesma forma a água preenchesse o volume do recipiente, porém não por inteiro. 
+
+O princípio por trás desta diferença entre o recipiente com água ou sem água está na mudança de fase da água. Primeiro, vamos fazer a análise geral do fenômeno, depois discutiremos em termos das diferenças. 
+
+Em ambos os casos, ao aquecer o frasco, a velocidade média das partículas nele aumenta, como o frasco é um sistema aberto, a pressão se mantém constante e igual a pressão atmosférica, o volume do frasco é fixo, então pela lei geral dos gases ideais, temos que o número de mols dentro do frasco deve diminuir para compensar o aumento da temperatura. Fisicamente, interpreta-se que parte das moléculas de gás são ejetadas do frasco de forma que as que sobram lá dentro, naquela temperatura, exercem pressão equivalente a \qty{1}{atm}. Ao pôr o frasco de ponta cabeça no recipiente com água, o gás agitado dentro do frasco passa a colidir com as moléculas de água, transferindo momento linear para estas, ou seja, há transferência de calor. Este processo faz com que a temperatura dentro do frasco e na água comece a entrar em equilíbrio, resfriando o gás dentro do frasco. Agora, a temperatura diminui, a princípio não há como entrar mais moléculas de gás, o volume do frasco continua constante, então, por consequência a pressão dentro do frasco torna-se menor que a pressão atmosférica. Com isso, a diferença de pressão dentro e fora do frasco gera uma força resultante sobre a água que aponta para dentro do frasco, fazendo a água subir.
+
+Quanto à diferença entre o frasco com água ou seco antes de aquecer, a presença de água dentro do frasco faz com que a força resultante da diferença de pressão seja maior. A justificativa está na mudança de fase da água, ao ser aquecida, a água torna-se vapor de água, comportando-se como gás e contribuindo para o equilíbrio de pressão previamente descrito. No entanto, ao resfriar quando o frasco é colocado de ponta cabeça no recipiente o vapor condensa e deixa de atuar como gás, exercendo ainda menos pressão contra os contornos do frasco. Isto faz com que uma porção maior do frasco seja preenchida por água do que caso o frasco estivesse completamente seco antes de aquecer.
 
 \subsection{Motor de Heron} % Mudança de fase
+Ao acender a lamparina sob o reservatório de água em princípio nada aconteceu. No entanto, após alguns instantes, vapor começou a ser ejetado dos tubos e o motor ganhou movimento angular. 
+
+O motor funciona o seguinte processo: a água dentro do reservatório é aquecida gerando vapor; o vapor se acumula aumentando a pressão interna, o vapor escapa gerando movimento. Segue desta maneira até que a água dentro do reservatório acabe.
+
+Ao aquecer a água e aumentar a pressão interna, gera-se uma força resultante que aponta para fora do reservatório exatamente nos bicos do motor. Esta força faz com que o vapor seja expelido do reservatório. Pela conservação de momento linear do sistema e visto que o sistema parte do repouso, temos a seguinte relação para a velocidade do motor \(V\), a massa dentro total do motor com o tanto de água no reservatório \(M\), a velocidade com que o vapor é expelido \(v_e\) e a massa de vapor expelida \(m\):
+
+\begin{align*}
+    M \frac{dV}{dt}  = \frac{dm}{dt} v_e  \\
+\end{align*}
+
+Ou seja, a força sobre o motor é igual a \(v_e \frac{dm}{dt}\), como o vapor é expelido das pontas da esfera, então esta força resulta em um torque \(\tau\) descrito por:
+
+\begin{align*}
+    \tau = r \cdot v_e \frac{d m}{dt}  
+\end{align*}
+
+Em que \(r\) é o comprimento do tubo.
+
+Embora seja um motor de construção relativamente simples, o motor de Heron apresenta dificuldade de escalonamento. Pelas relações apresentadas temos que para aumentar a potência do motor seria necessário: (1) aumentar o comprimento dos tubos, aumentando o torque; (2) aumentar a quantidade de calor fornecida,  aumentando \(v_e\) e a quantidade de massa expelida que também aumentam o torque; (3) otimizar a área transversal dos tubos para que a vazão aumente sem que esse aumento na vazão seja compensando por menor força resultante da diferença de pressão. A ideia (1) tem o problema de tornar um reservatório pequeno muito grande com relação ao comprimento do tubo. A ideia (2) é limitada pela disponibilidade de energia térmica. Por fim, a ideia (3) é limitada pela relação ideal, após atingi-la não há nada mais que possa ser feito.
 
 \subsection{Pistão de sopro} % Como assoprar faz um pistão mover
 
