@@ -1,0 +1,74 @@
+\documentclass{article}
+\input{../preamble.tex}
+\usepackage[version=4]{mhchem}
+\author{Luan Leal (15470820); Matheus Justino (14598021);\\ 
+Matheus Queiroz (15479562); Micael Baruch (15578823)}
+\title{O Mundo em Movimento: A Vida Como um Fluido}
+
+\begin{document}
+
+\maketitle
+
+\section{Introdução}
+
+\cena{Abertura (0:00 - 0:45)}{Prender a atenção do público e apresentar a questão central do vídeo.}
+\imagem{Comece com um plano geral de algo que \textit{obviamente} é um fluido, como água caindo de uma torneira, um rio ou nuvens se movendo.}
+\narrador{Água, ar, um rio correndo... O que todos esses têm em comum? Eles são fluidos! Mas será que a gente realmente entende o que é um fluido? Ou será que nossa intuição nos engana?}
+\imagem{Transição para algo mais "ambíguo", como areia escorrendo em uma ampulheta ou um vídeo em timelapse de piche derretendo.}
+\narrador{Prepare-se para desafiar o que você pensa sobre líquidos e gases, e descobrir que a física dos fluidos está em todo lugar, até onde você menos espera!}
+
+---
+
+\section{O Básico dos Fluidos}
+
+\cena{O Básico dos Fluidos (0:45 - 2:00)}{Definição fundamental de fluido e suas características principais.}
+\imagem{Animação simples mostrando moléculas de um sólido (bem arrumadas), de um líquido (mais soltas, mas ainda próximas) e de um gás (bem separadas e em movimento caótico).}
+\narrador{Na física, um \textbf{fluido} é uma substância que pode fluir. Ou seja, suas moléculas não ficam presas em posições fixas, como nos sólidos. Elas podem se mover umas em relação às outras livremente, permitindo que o fluido tome a forma do recipiente em que está.}
+\imagem{Compare um cubo de gelo (sólido) com a água derretendo (líquido) e vapor subindo (gás).}
+\narrador{Pense na água: ela pode ser um cubo de gelo sólido, mas quando derrete, vira um líquido que se espalha. E se aquecermos mais, vira vapor, um gás invisível que se expande para preencher qualquer espaço.}
+\imagem{Exemplo de um líquido fluindo através de um funil e um gás (fumaça, talvez) se dispersando no ar.}
+\narrador{Essa capacidade de \textbf{fluir} e se \textbf{deformar continuamente} sob a ação de uma força, mesmo que pequena, é a característica principal de um fluido.}
+
+---
+
+\section{Fluidizando o Inesperado: Fluidos Não Convencionais}
+
+\cena{Fluidizando o Inesperado: Fluidos Não Convencionais (2:00 - 5:00)}{Apresentar exemplos de "fluidos" que fogem da definição clássica.}
+\imagem{Comece com um close de um \textbf{fluido granular}, como areia ou arroz, escorrendo lentamente.}
+\narrador{Mas e se eu te disser que nem todo fluido se parece com água? Existe algo que chamamos de \textbf{fluidos granulares}.}
+\imagem{Mostre vídeos de experimentos com fluidos granulares: areia escorrendo, um funil de areia, ou até mesmo um "rio" de bolas de gude pequenas descendo uma rampa.}
+\narrador{Esses são coleções de partículas sólidas, como grãos de areia, arroz ou até mesmo bolas de gude. Individualmente, são sólidos, mas quando há milhões delas juntas, elas podem se comportar como um líquido! Elas se deformam, fluem e se espalham de maneiras surpreendentemente parecidas com a água.}
+\imagem{Transição para vídeos de \textbf{multidões de pessoas} se movendo em um espaço apertado, como em um show ou uma rua movimentada. Use imagens aéreas, se possível, para mostrar o "fluxo".}
+\narrador{Indo um passo além, você já reparou como uma grande \textbf{multidão de pessoas} se move? Em um show ou em um metrô lotado, as pessoas se empurram, se ajustam e fluem quase como um líquido, adaptando-se ao espaço disponível.}
+\imagem{Animação ou ilustração simples mostrando a analogia entre o movimento das moléculas em um líquido e o movimento das pessoas em uma multidão.}
+\narrador{Embora não sejam fluidos no sentido estrito da física, o estudo do fluxo de multidões usa muitos dos princípios da mecânica dos fluidos para entender e prever seu comportamento.}
+\imagem{Vídeos impressionantes de \textbf{revoadas de pássaros} (murmuration).}
+\narrador{E o que dizer de um espetáculo da natureza como a \textbf{revoada de pássaros}? Milhares de pássaros se movem juntos, mudando de forma em sincronia, como se fossem uma única entidade fluida no céu.}
+\imagem{Animação ou ilustração mostrando como as interações individuais dos pássaros levam ao comportamento coletivo de "fluido".}
+\narrador{Esse comportamento emerge das interações simples entre os indivíduos, criando padrões complexos que lembram o fluxo de um fluido, mesmo que cada pássaro seja um ser individual.}
+
+---
+
+\section{Parece Sólido, Mas é Fluido: A Surpreendente Natureza do Piche}
+
+\cena{Parece Sólido, Mas é Fluido: A Surpreendente Natureza do Piche (5:00 - 6:30)}{Explorar o piche como um exemplo de fluido de alta viscosidade.}
+\imagem{Comece com uma imagem de uma estrada de asfalto ou um balde de piche que pareça sólido.}
+\narrador{Agora, prepare-se para o inverso. E se eu te dissesse que algo que parece incrivelmente sólido, na verdade, é um fluido?}
+\imagem{Vídeo do famoso "Pitch Drop Experiment" (Experimento da Gota de Piche), mostrando as gotas caindo ao longo de décadas. Enfatize a lentidão extrema do processo.}
+\narrador{Conheça o \textbf{experimento da gota de piche}, um dos experimentos mais longos da história. O piche parece um sólido à temperatura ambiente, mas ele é, na verdade, um líquido com uma viscosidade \textit{extremamente} alta.}
+\imagem{Explicação visual da viscosidade: mel (alta viscosidade), água (baixa viscosidade).}
+\narrador{A \textbf{viscosidade} é a resistência de um fluido ao fluxo. A água tem baixa viscosidade, por isso flui facilmente. O mel tem alta viscosidade, por isso flui mais devagar. O piche? Sua viscosidade é tão alta que leva anos, até décadas, para uma única gota cair!}
+\narrador{Ele é um fluido, mas flui tão devagar que nossos olhos o percebem como um sólido. É uma questão de tempo e escala!}
+
+---
+
+\section{Conclusão}
+
+\cena{Conclusão e Desafio (6:30 - 8:00)}{Recapitular os pontos chave e deixar uma mensagem final.}
+\imagem{Montagem rápida de todos os exemplos mostrados: água, areia, multidão, pássaros, piche.}
+\narrador{Então, o que aprendemos hoje? Que um fluido é muito mais do que apenas líquidos e gases. É qualquer coisa que pode fluir e se deformar sob uma força, seja em escala molecular ou em larga escala.}
+\narrador{Desde a areia em uma ampulheta até as revoadas de pássaros, passando pelas multidões e o misterioso piche, a física dos fluidos nos mostra que o mundo é muito mais maleável e fascinante do que imaginamos.}
+\imagem{Close-up em uma xícara de café ou chá, onde o líquido se move suavemente.}
+\narrador{Da próxima vez que você vir algo fluindo, seja a água da torneira ou até mesmo o trânsito na rua, pense: será que é um fluido? E se for, o que ele nos diz sobre as maravilhas da física?}
+
+\end{document}
