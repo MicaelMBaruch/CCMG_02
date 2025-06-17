@@ -7,6 +7,7 @@
 \usepackage[utf8]{inputenc}
 \usepackage[brazil]{babel} % Adaptação ao pt-br
 \usepackage{amssymb, amsthm, amsmath} % Para símbolos matemáticos
+\usepackage[version=4]{mhchem} % Para equações químicas
 \usepackage{geometry} % Para formatação do layout
 \usepackage{siunitx} % Para uso padronizado de unidades
 \usepackage{caption, float, graphicx} % Para melhores figuras
@@ -15,8 +16,11 @@
 \usepackage[onehalfspacing]{setspaceenhanced}
 \usepackage{hyperref} % Usado para inserir links
 \usepackage[capitalize, brazilian, noabbrev]{cleveref} % Referência adaptada ao pt-br
+\usepackage{makecell}
+\usepackage[num,overcite]{abntex2cite}
 
 % ----------------------------   LAYOUT   ----------------------------
+\citebrackets[]
 \geometry{a4paper, lmargin=3cm, tmargin=3cm, rmargin=2cm, bmargin=2cm}
 \onehalfspacing{} % Não precisa de argumento, mas meu ALE enche o saco
 \sisetup{output-decimal-marker = {,}}
