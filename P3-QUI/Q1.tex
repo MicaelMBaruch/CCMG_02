@@ -63,9 +63,15 @@ Aqui ocorre a quebra da ligação F–F e formação de uma nova ligação N–F
 \ce{F + NO2 -> NO2F}
 \end{align*}
 
-O radical flúor gerado na etapa anterior rapidamente reage com uma nova molécula de \ce{NO2} para formar mais uma molécula de \ce{NO2F}, completando a reação global.\\
+O radical flúor gerado na etapa anterior rapidamente reage com uma nova molécula de \ce{NO2} para formar mais uma molécula de \ce{NO2F}, completando a reação global.
 
-% Possivelmente depois eu vou escrever a soma das equações e a formação da equação global aqui, só preciso saber como fazer isso ficar bonitinho (tentei e ficou uma bosta)
+\begin{align*}
+&\ce{NO2 + F2 <=> [NO2 \cdots F2]^{\ddagger}} \hspace{1.0cm} \text{(etapa lenta)}\\
+&\ce{[NO2 \cdots F2]^{\ddagger} -> NO2F + F} \hspace{0.9cm} \text{(etapa rápida)}\\
+&\ce{F + NO2 -> NO2F} \hspace{2.2cm} \text{(etapa final)}\\
+\midrule %Alguém sabe ajeitar essa linha maldita?
+&\ce{2NO2 + F2 -> 2NO2F} \hspace{1.6cm} \text{(equação global)}
+\end{align*}
 
 Dessa forma, o mecanismo é consistente tanto com a estequiometria global quanto com a lei de velocidade observada experimentalmente, e evidencia que a etapa determinante é a formação do intermediário a partir de \ce{NO2} e \ce{F2}.
 
@@ -97,9 +103,14 @@ Com base nos dados fornecidos sobre a constante de equilíbrio (\(K_\text{eq}\))
 
 Segundo essa equação, se \(\ln(K)\) aumenta com a elevação da temperatura, isso indica que \(\Delta H^\circ\) é positivo, pois somente assim o termo \(-\frac{\Delta H^\circ}{R} \cdot \frac{1}{T}\) se torna menos negativo à medida que \(T\) cresce. Isso significa que a etapa determinante do mecanismo é endotérmica, ou seja, consome energia do meio para ocorrer.
 
-% Ainda preciso gerar esse gráfico, caso alguém queira me dar uma forcinha, seria bem grato
+Essa análise foi representada pelo diagrama de energia potencial em função da coordenada de reação \cref{diagrama}. Nesse gráfico, os reagentes se encontram em um patamar energético inicial. À medida que a reação prossegue, a energia do sistema aumenta até atingir um máximo, correspondente ao complexo ativado — o ponto mais instável e de maior energia do processo. Após ultrapassada essa barreira, a energia diminui com a formação dos produtos.
 
-Essa análise pode ser representada por um diagrama de energia potencial em função da coordenada de reação. Nesse gráfico, os reagentes se encontram em um patamar energético inicial. À medida que a reação prossegue, a energia do sistema aumenta até atingir um máximo, correspondente ao complexo ativado — o ponto mais instável e de maior energia do processo. Após ultrapassada essa barreira, a energia diminui com a formação dos produtos.
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.35\linewidth]{fig/grafico.png}
+        \caption{curva de energia potencial de formação do \ce{NO2F}}
+        \label{diagrama}
+    \end{figure}
 
 Como a energia dos produtos é maior do que a dos reagentes, a variação de entalpia total da reação (\(\Delta H\)) é positiva, reforçando que o processo é endotérmico. A energia de ativação (\(E_\text{a}\)) corresponde à diferença entre os reagentes e o complexo ativado, e sua magnitude está relacionada à taxa com que a reação ocorre: quanto maior a \(E_\text{a}\), mais lenta é a reação, justificando a sua presença como etapa determinante.
 
