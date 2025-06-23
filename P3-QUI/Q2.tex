@@ -8,6 +8,17 @@
 
 \textbf{a)} Usando a aproximação do estado estacionário para as espécies \ce{NO3} e \ce{NO}, obtenha a lei cinética derivada do mecanismo proposto.
 
+A velocidade global da reação é dada pela taxa de consumo de \ce{N2O5} e se relaciona com as constantes da seguinte forma:
+\begin{align*}
+    v = - \frac{d[\ce{N2O5}]}{dt} = K_1 [\ce{N2O5}] - K_{-1} [\ce{NO2}][\ce{NO3}] + K_3 [\ce{NO}][\ce{N2O5}]
+\end{align*}
+Vamos adotar a aproximação do estado estacionário para as espécies \ce{NO3} e \ce{NO}, de forma que obtemos as seguintes equações:
+\begin{align*}
+    \frac{d[\ce{NO3}]}{dt} &= K_1 [\ce{N2O5}] - K_{-1} [\ce{NO2}][\ce{NO3}] - K_2 [\ce{NO2}][\ce{NO3}] \approx 0\\
+    \frac{d[\ce{NO}]}{dt} &= K_2 [\ce{NO2}][\ce{NO3}] - K_3 [\ce{NO}][\ce{N2O5}] \approx 0
+\end{align*}
+% Ai só falta simplificar, isolar umas variáveis e trocar na equação original. -TF8
+
 \textbf{b)} Obtehna a lei cinética admitindo as reações (1) e (-1) como um equilíbrio.
 
 \textbf{c)} Mostre que da lei cinética obtida em a) pode-se, através de aproximações, chegar à mesma equação obtida em b). Em que condições está justificada essa aproximação? Teste sua hipótese utilizando valores plausíveis para as constantes de velocidade (verifique na base de dados cinéticos do NIST, por exemplo).
