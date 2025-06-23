@@ -19,9 +19,22 @@ Considere que os dados teóricos fornecem a estrutura dos reagentes e dos estado
     \includegraphics[width=.8\linewidth]{fig/estadosTQ3}
 \end{figure}
 
-\textbf{a)} Considerando que a intensidade relativa pode ser considerada como proporcional a concentração dos reagentes, escreva as derivadas \(\frac{d \ce{[HO^-]}}{dt}\), \(\frac{d \ce{[NO3^-]}}{dt}\), \( \frac{ \ce{[NO2^-]}}{dt}\) em função das constantes de velocidades e das concentrações das espécies envolvidas.
+\textbf{a)} Considerando que a intensidade relativa pode ser considerada como proporcional a concentração dos reagentes, escreva as derivadas \(\frac{d \ce{[HO^-]}}{dt}\), \(\frac{d \ce{[NO3^-]}}{dt}\), \(\frac{ \ce{d[NO2^-]}}{dt}\) em função das constantes de velocidades e das concentrações das espécies envolvidas.
 
-\textbf{b)} Com os dados cinéticos do gráfico (também apresentados na tabela no fim dessa questão), obtenha a constante de decaimento de \ce{^-OH} experimental, os valores de \ce{k_{SN 2}} e \ce{k_Eco 2}.
+\textbf{Resposta:}
+
+Primeiro, vamos analisar as reações paralelas para cada um dos compostos de interesse. Para \ce{HO^-}, temos que ele é consumido como reagente de ambas as reações. Portanto, a velocidade de consumo de \ce{HO^-} é \(k_{OH} = k_{ \ce{SN 2}} + k_{\ce{Eco 2}}\). Por sua vez, \ce{NO3^-} só é formado por uma reação, então, escrevemos que \(k_{\ce{NO3^-}} = k_{\ce{SN 2}}\). Similarmente, \(k_{\ce{NO2^-}} = k_{\ce{Eco 2}}\). Agora podemos utilizar a lei da velocidade em cada um:
+
+\begin{align*}
+    \frac{d \ce{[HO^-]}}{dt} = v_{HO^-} &= - (v_{SN2} + v_{Eco2})\\
+                                        &= - k_{OH}[\ce{MeNO3}][\ce{^-OH}]\\
+    \frac{d \ce{[NO3^-]}}{dt} = v_{\ce{NO3^-}} &= v_{SN2}\\
+                                               &= k_{SN2}[\ce{MeNO3}][\ce{^-OH}]\\
+    \frac{d \ce{[NO2^-]}}{dt} = v_{\ce{NO2^-}} &= v_{Eco2}\\
+                                               &= k_{Eco2}[\ce{MeNO3}][\ce{^-OH}]
+\end{align*}
+
+\textbf{b)} Com os dados cinéticos do gráfico (também apresentados na tabela no fim dessa questão), obtenha a constante de decaimento de \ce{^-OH} experimental, os valores de \ce{k_{SN 2}} e \ce{k_{Eco 2}}.
 
 \textbf{c)} Mostre a partir das derivadas parciais que o valor da constante de decaimento de \ce{^-OH} experimental, os valores de \ce{k_{SN 2}} e \ce{k_{Eco 2}}.
 
