@@ -8,6 +8,63 @@
 
 \textbf{a)} Usando a aproximação do estado estacionário para as espécies \ce{NO3} e \ce{NO}, obtenha a lei cinética derivada do mecanismo proposto.
 
-\textbf{b)} Obtehna a lei cinética admitindo as reações (1) e (-1) como um equilíbrio.
+\textbf{Resposta:}
+
+A velocidade global da reação é dada pela taxa de consumo de \ce{N2O5} e se relaciona com as constantes da seguinte forma:
+\begin{align}\label{eqOrig}
+    v = - \frac{d[\ce{N2O5}]}{dt} = K_1 [\ce{N2O5}] - K_{-1} [\ce{NO2}][\ce{NO3}] + K_3 [\ce{NO}][\ce{N2O5}]
+\end{align}
+Vamos adotar a aproximação do estado estacionário para as espécies \ce{NO3} e \ce{NO}, de forma que obtemos as seguintes equações:
+\begin{align*}
+    \frac{d[\ce{NO3}]}{dt} &= K_1 [\ce{N2O5}] - K_{-1} [\ce{NO2}][\ce{NO3}] - K_2 [\ce{NO2}][\ce{NO3}] \approx 0\\
+    \frac{d[\ce{NO}]}{dt} &= K_2 [\ce{NO2}][\ce{NO3}] - K_3 [\ce{NO}][\ce{N2O5}] \approx 0
+\end{align*}
+Da primeira equação, obtemos duas relações importantes:
+\begin{align*}
+    [\ce{NO3}] &= \frac{K_1 [\ce{N2O5}]}{(K_{-1} + K_2) [\ce{NO2}]}\\
+    K_1 [\ce{N2O5}] &= K_{-1} [\ce{NO2}][\ce{NO3}] + K_2 [\ce{NO2}][\ce{NO3}]
+\end{align*}
+E, da segunda equação, obtemos:
+\begin{align*}
+    K_2 [\ce{NO2}][\ce{NO3}] = K_3 [\ce{NO}][\ce{N2O5}]
+\end{align*}
+Assim, podemos substituir \( K_1 [\ce{N2O5}] \) na \cref{eqOrig}, obtendo:
+\begin{align*}
+    v &= 2 K_2 [\ce{NO2}][\ce{NO3}]\\
+      &= 2 K_2 [\ce{NO2}] \left( \frac{K_1 [\ce{N2O5}]}{(K_{-1} + K_2) [\ce{NO2}]}  \right) \\
+      &= \frac{2 K_1 K_2}{K_{-1} + K_2} [\ce{N2O5}]
+\end{align*}
+Sendo a expressão final a lei cinética derivada da aproximação do estado estacionário das espécies \ce{NO3} e \ce{NO}.
+
+\textbf{b)} Obtenha a lei cinética admitindo as reações (1) e (-1) como um equilíbrio.
+
+\textbf{Resposta:}
+
+Assumindo equilíbrio entre as etapas (1) e (-1), obtemos:
+\begin{align*}
+    K_1 [\ce{N2O5}] = K_{-1} [\ce{NO2}][\ce{NO3}]
+\end{align*}
+Donde segue que:
+\begin{align*}
+    [\ce{NO3}] = \frac{K_1 [\ce{N2O5}]}{K_{-1} [\ce{NO2}]} 
+\end{align*}
+Agora, note que a etapa lenta deve ser a reação (2), pela premissa de equilíbrio. Além disso, note que a cada ocorrência da reação (2), temos o consumo de duas moléculas de \ce{N2O5}, uma consumida para formar os reagentes da etapa (2) e outra consumida para reagir com o \ce{NO} formado. Dessa forma, obtemos a seguinte expressão para a reação global:
+\begin{align*}
+    v &= 2 v_2\\
+      &= 2 K_2 [\ce{NO2}][\ce{NO3}]\\
+      &= \frac{2 K_1 K_2}{K_{-1}} [\ce{N2O5}]
+\end{align*}
+Sendo a última expressão a lei cinética.
 
 \textbf{c)} Mostre que da lei cinética obtida em a) pode-se, através de aproximações, chegar à mesma equação obtida em b). Em que condições está justificada essa aproximação? Teste sua hipótese utilizando valores plausíveis para as constantes de velocidade (verifique na base de dados cinéticos do NIST, por exemplo).
+
+\textbf{Resposta:}
+
+A partir da aproximação de que \( K_{-1} >> K_2 \) obtemos que a lei cinética obtida em a) pode levar à lei cinética obtida em b), de fato, sob essa aproximação obtemos:
+\begin{align*}
+    \frac{2K_1K_2}{K_{-1} + K_2} [\ce{N2O5}] \approx \frac{2K_1K_2}{K_{-1}} [\ce{N2O5}] 
+\end{align*}
+Fisicamente, essa aproximação equivale a dizer que a velocidade com o intermediário \ce{NO3} reverte para o reagente \ce{N2O5} é muito maior que a velocidade com que ele reage para formar os produtos finais. Note que isso valida a premissa de um equilíbrio entre (1) e (-1), como esperado.
+
+Contudo, utilizando o \textit{NIST Chemical Kinetics Database}\footnote{\url{https://kinetics.nist.gov/kinetics/Detail?id=1997DEM/SAN1-266:534}, para a etapa (-1); e \url{https://kinetics.nist.gov/kinetics/Detail?id=1997DEM/SAN1-266:532}, para a etapa (2)}, obtemos que essa aproximação não é válida, dado que, na temperatura de \qty{300}{\kelvin}, \( K_{-1} = \num{2.2e-30} \) e \( K_2 = \num{6.75e-16} \). 
+%Falta isso aqui
