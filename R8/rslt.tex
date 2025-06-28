@@ -1,6 +1,22 @@
 \section{Resultados e discussões}
 
 \subsection{Pipocas e distribuição normal}
+O tabuleiro teve como resultado as bolinhas se distribuindo de maneira muito similar ao desenho de sino (mais conhecido como curva normal) nas diferentes colunas, conforme evidenciado na \cref{distbolinha}. O som de pipocas estourando foi aberto no Audacity para visualizar os picos de áudio. Primeiro, o áudio foi analisado para determinar quais picos eram decorrentes de estouros de pipoca. Então, a cada trecho de 5 segundos foram contados os picos de áudio. Por fim, os dados foram plotados no gráfico representado na \cref{estouros}.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=.5\linewidth]{fig/DistNorm}
+    \caption{Distribuição das bolinhas pelo tabuleiro de Galton.}\label{distbolinha}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=.5\linewidth]{fig/distEstouros}
+    \caption{Distribuição da quantidade de estouros por intervalos discretos de 5 em 5 segundos de tempo.}\label{estouros}
+\end{figure}
+
+É notável que a curva descrita pela \cref{estouros} se assemelha muito à de \cref{distbolinha}, porém o gráfico de estouros parece não seguir exatamente a curva de sino do lado direito e há uma boa razão para isto. Ambos os experimentos demonstram a padrões estatísticos a partir de sistemas com grande número de componentes, porém há uma diferença fundamental. No caso do tabuleiro de Galton, a cada nível, cada bolinha tem chance de ser defletida para a direita ou para a esquerda. Como as chances são iguais para os dois lados, na média, a bolinha segue o caminho do meio, e o resultado final é uma **distribuição normal** clássica, um comportamento estatisticamente previsível a partir de múltiplos eventos aleatórios independentes.
+
+No caso da pipoca estourando, conforme a temperatura aumenta, as moléculas de água dentro do grão ganham energia. Um milho estoura quando a energia interna do vapor atinge um limiar crítico. A distribuição da energia cinética das moléculas em um sistema térmico não segue uma curva normal, mas sim a distribuição de Maxwell-Boltzmann. Diferentemente da distribuição normal, a curva de Maxwell-Boltzmann é assimétrica, iniciando em zero e apresentando uma ``cauda'' mais longa para energias mais altas. Isso significa que, mesmo após o pico de estouros, ainda há uma probabilidade significativa de que alguns grãos atinjam a energia necessária para estourar, resultando na queda mais gradual observada no lado direito do gráfico de estouros (\cref{estouros}). A forma da curva de estouros é, portanto, um reflexo macroscópico dessa distribuição de energias.
 
 \subsection{Pressão na garrafa}
 
