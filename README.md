@@ -1,5 +1,5 @@
-# CCM Group 2 semestre
+# CCM Group 3 semestre
 
-Aqui serão depositados todos os trabalhos em grupo: química, projeto física, relatórios, etc.
+# Calendário
 
--> Para inserir um trabalho novo, crie uma pasta para ele no home do repositório. Queremos evitar pastas dentro de pastas que não sejam necessárias.
+- [ ] 08/18 - Artigo 1 Bio
