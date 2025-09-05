@@ -1,5 +1,8 @@
 \documentclass{article}
 \input{../../preamble.tex}
+\usepackage{csquotes}
+  \renewcommand{\mkbegdispquote}[2]{\openautoquote}
+  \renewcommand{\mkenddispquote}[2]{\closeautoquote#1#2}
 \author{Luan Leal}
 \title{Análise do artigo:\\
     \texttt{Organelle, Bead, and Microtubule Translocations Promoted by Soluble Factors from the\\ Squid Giant Axon}
@@ -19,5 +22,10 @@ Durante a leitura do artigo, devemos responder as seguintes perguntas:
     \item Qual a conclusão do estudo e como isso avança a área?  
 \end{enumerate}
 
+Algumas citações diretas do artigo que achamos relevantes para a discussão:
+\begin{displayquote}
+    Very little is known about the molecular “motor” that powers organelle transport. Because organelles of various types and sizes move at the same rate along isolated microtubules in dissociated axoplasm, all organelles may use the same type of motor (Vale et al., 1985). 
+\end{displayquote}
+% Deixei de exemplo caso alguém queira usar para colocar coisas mais importantes, depois vejo de dar uma atenção maior nesse artigo e coloco tudo que eu achar relevante por aqui.
 
 \end{document}
