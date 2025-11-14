@@ -1,2 +1,128 @@
-\selection{Discussão}
-\subsection{}
+\section{Discussão do fenômeno observado}
+
+Ao ligar a corrente em cada um dos sistemas, notou-se que, no sistema com duas boninas de massa $m$ os anéis saltaram até a altura máxima permitida pela montagem experiemntal, colidindo com o suporte supeior do equipamento, enquanto o sistema com massa $m'$ saltou até aproximadamente metade da altura permitida pela estrutura do experimento. Ambos os resultados estão representados na cref{fig:resultados}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.35\linewidth]{fig/resultados.png}
+\caption{Comparação das alturas máximas atingidas pelos anéis durante o experimento dos anéis saltitantes. Em A, os dois anéis idênticos (massa 
+$m$) atingem cerca de 1,0m, colidindo com o suporte superior do equipamento. Em B, o anel de maior massa ($m'$) alcança 0,46m de altura. As distâncias foram determinadas considerando cuidadosamente o efeito de paralaxe nas medições. Fonte: registro fotográfico realizado durante a prática.}
+\label{fig:resultados}
+\end{figure}
+
+O comportamento do anel nesse experimento resulta da interação entre fenômenos eletromagnéticos iniciais e a consequente dinâmica mecânica. Quando a corrente alternada percorre a bobina, o fluxo magnético que atravessa o anel varia rapidamente. De acordo com a lei de Faraday-Lenz,
+
+\[
+\mathcal{E} = -\frac{d\Phi}{dt},
+\]
+
+uma força eletromotriz é induzida no anel, gerando uma corrente cujo sentido se opõe à variação do fluxo. Dessa forma, o anel comporta-se como um circuito secundário acoplado magneticamente à bobina primária, de forma análoga a um transformador.
+
+A corrente induzida produz um campo magnético próprio, que interage com o campo da bobina. A oposição entre esses campos dá origem a uma força vertical repulsiva $F_z$, responsável por impulsionar o anel para cima. A energia transferida ao anel durante esse intervalo inicial é
+
+\[
+E = \int F_z \, dz,
+\]
+
+representando o trabalho realizado pelo campo magnético. Enquanto o anel permanece próximo ao núcleo, o acoplamento magnético é forte e a corrente induzida é significativa, concentrando nesse curto intervalo praticamente toda a transferência de energia.
+
+À medida que o anel se afasta, o acoplamento magnético $\Phi(z)$ diminui rapidamente, aproximadamente de forma exponencial. Com isso, a corrente induzida se reduz e a força magnética tende a zero, fazendo com que o movimento subsequente seja governado apenas pela gravidade. Toda a energia transmitida no impulso inicial transforma-se em energia potencial gravitacional na altura máxima:
+
+\[
+E = m g h_{\max} 
+\quad \Rightarrow \quad
+h_{\max} = \frac{E}{m g}.
+\]
+
+A análise dinâmica também pode ser formulada em termos do impulso magnético:
+
+\[
+J = \int F_z \, dt,
+\]
+
+que estabelece a velocidade inicial do anel:
+
+\[
+J = m v_0 
+\quad \Rightarrow \quad
+v_0 = \frac{J}{m}.
+\]
+
+Considerando então o movimento vertical sob gravidade, a altura máxima atingida é
+
+\[
+h = \frac{v_0^2}{2g}.
+\]
+
+Substituindo a expressão para $v_0$, obtém-se
+
+\[
+h = \frac{1}{2g} \left( \frac{J}{m} \right)^2
+= \frac{J^2}{2 m^2 g}.
+\]
+
+Essa relação mostra que, para o mesmo impulso, anéis com maior massa atingem alturas muito menores, uma vez que a altura varia inversamente com o quadrado da massa.
+
+Além do efeito da massa, parâmetros elétricos do anel, como resistência e indutância própria, influenciam a corrente induzida e, portanto, a força inicial. Parte da energia fornecida ao sistema é dissipada como calor tanto na bobina quanto no anel. Assim, o fenômeno ilustra claramente a conservação da energia: a energia elétrica fornecida ao primário é parcialmente convertida em energia magnética, parcialmente em energia cinética do anel e parcialmente dissipada como calor.
+
+Em resumo, o experimento evidencia de forma quantitativa a interação entre indução eletromagnética, transferência de energia e dinâmica gravitacional, permitindo relacionar diretamente impulso, energia e massa à altura máxima atingida pelo anel.
+
+
+\section{Modelo descritivo do fenômeno}
+
+A energia cinética inicial adquirida pelo anel é convertida totalmente em energia potencial gravitacional na altura máxima:
+
+\[
+\frac{1}{2} m v_0^2 = m g h,
+\]
+
+de onde,
+
+\[
+h = \frac{v_0^2}{2g}.
+\]
+
+A velocidade inicial obtém-se pelo impulso magnético:
+
+\[
+J = \int F_z\,dt = m v_0
+\quad \Rightarrow \quad
+v_0 = \frac{J}{m},
+\]
+
+resultando na relação final:
+
+\[
+h = \frac{J^2}{2 m^2 g}.
+\]
+
+Assim, a altura máxima é inversamente proporcional ao quadrado da massa (\[h \propto \frac{1}{m^2}\]).
+
+\section{Análise qualitativa e quantitativa}
+
+\subsection{Lado esquerdo — dois anéis leves}
+
+Os anéis da esquerda possuem massa $m$ cada. Como o impulso magnético é aproximadamente igual para ambos, a velocidade inicial $v_0 = J/m$ é alta, e a altura teórica prevista seria grande. Contudo, experimentalmente ambos atingiram o suporte mecânico antes de chegarem à sua altura máxima.
+
+\subsection{Lado direito — anel pesado}
+
+O anel do lado direito possui massa aproximadamente $m' = 2m$. Mantendo o mesmo impulso médio $J$:
+
+\[
+h' = \frac{J^2}{2 (2m)^2 g}
+= \frac{h}{4}.
+\]
+
+O anel pesado, portanto, deve atingir uma altura quatro vezes menor que a dos anéis leves — exatamente como observado: ele se levantou apenas alguns milímetros, enquanto os anéis leves saltaram visivelmente.
+
+\subsection{Considerações adicionais}
+
+Outros fatores contribuem:
+
+\begin{itemize}
+    \item maior resistência do anel pesado reduz a corrente induzida;
+    \item efeitos de distribuição de corrente (skin effect) alteram o acoplamento;
+    \item diferenças geométricas influenciam a indutância e o fluxo.
+\end{itemize}
+
+Apesar disso, a dependência dominante é a massa.
