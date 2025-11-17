@@ -1,0 +1,60 @@
+\section{Modelo descritivo do fenômeno}
+
+O comportamento dos anéis saltadores pode ser compreendido de forma mais clara quando se adota um modelo descritivo que privilegia as etapas físicas essenciais do processo, conectando a dinâmica eletromagnética transitória ao movimento mecânico subsequente. A sequência de eventos, desde o acionamento da corrente alternada na bobina até o instante em que o anel atinge sua altura máxima, evidencia a interação cooperativa entre indução eletromagnética, defasagens entre corrente e força eletromotriz, e a dinâmica gravitacional. A \cref{fig:esquema} apresenta um esquema típico do arranjo, destacando as linhas de fluxo, as correntes envolvidas e a geometria fundamental do sistema.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.38\linewidth]{fig/esquema.jpg}
+\caption{Esquema do Anel de Thomson. (1) corrente alternada na bobina; (2) linhas de fluxo magnético originadas no núcleo; (3) corrente induzida no anel de alumínio; (4) campo magnético gerado pela corrente induzida. Fonte: MUSEU DAS COMUNICAÇÕES, Anel Saltitante.}
+\label{fig:esquema}
+\end{figure}
+
+\subsection*{Estabelecimento do fluxo e indução no anel}
+
+Ao ser acionado o interruptor, o solenoide passa a ser percorrido por uma corrente alternada $i_1(t)$. Em virtude de suas variações temporais, essa corrente produz um fluxo magnético igualmente alternado no núcleo ferromagnético. A variação desse fluxo através da área ocupada pelo anel metálico dá origem, pela lei de Faraday, a uma força eletromotriz induzida $\varepsilon(t)$, que por sua vez gera uma corrente $i_2(t)$ no anel condutor.
+
+A polaridade dessa força eletromotriz é regida pela lei de Lenz: sempre que $i_1(t)$ cresce, o fluxo magnético correspondente aumenta, produzindo uma $\varepsilon$ de sinal contrário à variação e, portanto, uma corrente induzida que se opõe ao crescimento de $i_1$. De modo complementar, quando $i_1(t)$ decresce, o fluxo diminui e a $\varepsilon$ surge agora com o mesmo sentido de $i_1$, tentando impedir essa redução. Assim, o anel tenta continuamente restaurar o fluxo original, opondo-se às mudanças impostas pela bobina.
+
+\subsection*{Defasagens entre corrente e força eletromotriz: origem da repulsão líquida}
+
+A interação entre as correntes $i_1$ (na bobina) e $i_2$ (no anel) determina a força magnética que atua sobre o anel. Em um cenário ideal sem perdas, a alternância entre fases de atração e repulsão resultaria em uma força média nula. Entretanto, no caso real, dois efeitos de defasagem rompem essa simetria:
+
+\begin{enumerate}
+    \item \textbf{Defasagem entre $\varepsilon$ e $i_2$ no anel.}  
+    Como o anel possui resistência e autoindutância próprias, sua corrente não acompanha instantaneamente a força eletromotriz induzida. Há um atraso temporal: mesmo quando $\varepsilon$ muda rapidamente de sinal, $i_2$ demora um intervalo finito para inverter-se completamente. Essa ``inércia elétrica'' faz com que o anel responda de maneira retardada à variação de fluxo.
+
+    \item \textbf{Defasagem entre $\varepsilon$ e $i_1$.}  
+    Em um circuito indutivo alimentado por corrente alternada, a força eletromotriz induzida e a corrente da bobina não estão em fase; em regime quase senoidal, a defasagem aproxima-se de $\pi/2$ (um quarto de ciclo). Como a $\varepsilon$ induzida está diretamente relacionada à derivada temporal de $i_1$, essa defasagem é inevitável.
+\end{enumerate}
+
+A combinação dessas duas defasagens faz com que o intervalo de repulsão seja mais intenso e mais eficiente do que o intervalo de atração dentro de um ciclo completo. Assim, embora atração e repulsão ocorram alternadamente, a interação média resultante é repulsiva, produzindo a força líquida responsável pelo salto do anel.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.35\linewidth]{fig/repulsao.png}
+\caption{Intervalos de tempo em que os sinais entre as correntes resultam em atração ou repulsão pelos campos magnéticos. Fonte: Silveira, 2013}
+\label{fig:repulsao}
+\end{figure}
+
+\subsection*{O impulso magnético inicial}
+
+Quando o sistema é ligado, não há ainda regime permanente: a corrente $i_1$ cresce rapidamente a partir do repouso. Esse crescimento abrupto produz uma variação de fluxo particularmente intensa, induzindo no anel uma corrente $i_2$ também intensa. Nesse instante inicial, as correntes $i_1$ e $i_2$ têm sentidos opostos, e a interação entre seus campos magnéticos gera uma força repulsiva vertical muito maior do que qualquer força atuante no regime alternado subsequente.
+
+Esse período de forte aceleração, de curta duração, fornece ao anel quase toda a energia mecânica observada. Trata-se, portanto, de um verdadeiro \textit{impulso magnético}, no qual a transferência de energia elétrica para energia cinética é maximizada.
+
+\subsection*{Perda rápida de acoplamento e movimento por inércia}
+
+À medida que o anel começa a subir, ele se afasta da região de maior densidade de fluxo. Esse deslocamento reduz rapidamente o fluxo magnético que o atravessa, a intensidade da corrente induzida $i_2$ e, consequentemente, a força magnética atuante. Poucos centímetros acima da bobina, a força já é praticamente nula. A partir desse ponto, o anel move-se apenas sob a ação da gravidade, como um projétil lançado verticalmente. A altura máxima atingida depende exclusivamente da velocidade inicial adquirida durante o impulso magnético.
+Após a queda, entretanto, o anel não retorna ao contato pleno com a bobina. Devido à corrente alternada que continua circulando no solenoide, pequenas variações residuais de fluxo ainda induzem correntes no anel enquanto ele se aproxima do núcleo. Esses sinais de corrente, embora fracos, encontram a corrente da bobina defasada de modo a produzir uma força repulsiva média suficiente para equilibrar o peso do anel a uma curta distância da bobina. Como resultado, o anel passa a repousar em uma posição de equilíbrio estável ligeiramente acima da superfície do solenoide, sustentado pela repulsão eletromagnética residual.
+
+\subsection*{Dependência da massa e comparação entre os anéis}
+
+A diferença de comportamento entre os anéis leves e o anel pesado segue diretamente dessa dinâmica. Os dois anéis da esquerda possuem massa $m$ e recebem impulsos quase idênticos devido ao forte acoplamento inicial. O anel da direita, com massa $m' = 2m$, não recebe um impulso duas vezes maior, pois a intensidade da corrente induzida é limitada pela geometria e pelo acoplamento magnético. Assim, a mesma energia transferida precisa ser distribuída por uma massa maior, produzindo uma velocidade inicial menor e, portanto, uma altura final mais baixa.
+
+\subsection*{Interação entre anéis empilhados}
+
+Quando dois anéis idênticos estão empilhados sobre a mesma bobina, surge um acoplamento magnético adicional entre eles. O anel inferior é o primeiro a ser fortemente induzido; entretanto, o anel superior sofre tanto a influência direta do fluxo ascendente quanto do campo criado pela corrente no anel inferior, de modo que ambos funcionam como bobinas secundárias mutuamente acopladas. Esse acoplamento redistribui o fluxo entre eles e reduz assimetrias no impulso recebido, resultando no salto praticamente simultâneo observado no experimento.
+
+\subsection*{Interpretação energética}
+
+Sob a perspectiva da conservação de energia, o salto do anel representa a conversão temporária de energia elétrica em energia mecânica. Parte da energia fornecida ao solenoide transforma-se em energia cinética no instante do impulso, parte em energia potencial gravitacional durante a subida, e parte é dissipada como calor na bobina, no anel e no núcleo ferromagnético, devido à resistência elétrica e às correntes de Foucault.
