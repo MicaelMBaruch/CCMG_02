@@ -25,3 +25,7 @@ Verificar o aumento da complexidade em uma população com a variação no taman
 Lynch, M., & Conery, J. S. (2003). The Origins of Genome Complexity. Science, 302(5649), 1401–1404.
 
 Este artigo foi sugerido pelo Dyogo o que acredito ser vantajoso porque toda justificativa do nosso trabalho já é reconhecida por ele.
+
+= Sugestão professor
+
+Para definir o valor adaptativo do indivíduo poderia pegar o produto ou estudar outras formas de pegar o valor adaptativo.
