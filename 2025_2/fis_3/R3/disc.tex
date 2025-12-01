@@ -1,0 +1,48 @@
+\section{Discussão}
+
+\subsection{Cálculo da impedância do circuito}
+
+Vamos utilizar o método dos fasores para executar o cálculo. Assim, começamos olhando para o trecho paralelo do circuito. Este trecho tem uma mesma diferença de potencial entre os dois nós dele que vamos denominar \(V_{p}\). Por cada um dos elementos passa uma corrente \(I_{C}\) e \(I_{L}\). Sendo que:
+\begin{align*}
+    I_{C} &= \frac{V_{p}}{X_{C}} \\
+    I_{L} &= \frac{V_{p}}{X_{L}} 
+\end{align*}
+
+Como o fasor \(I_{mC}\) e o fasor \(I_{mL}\) (os fasores das correntes máximas do capacitor e do indutor) são diametralmente opostos, temos que a corrente máxima que entra no circuito (\(I_{meq}\)) é dada pela lei de Kirchhoff para os nós:
+
+\begin{align*}
+    I_{m eq} &= I_{mL} - I_{mC} \\
+           &= \frac{V_{mp}}{X_{L}} - \frac{V_{mp}}{X_{C}}\\
+           &= V_{mp} \left[ \frac{1}{X_{L}} - \frac{1}{X_{C}}  \right]
+\end{align*}
+
+Pela lei de Ohm generalizada, temos que:
+
+\begin{align*}
+    I_{meq} &= \frac{V_{mp}}{Z_{eq}} \\
+    \implies Z_{eq} &= \frac{X_{L} X_{C}}{X_{C} - X_{L}} \\
+                    &= \frac{\omega L}{\omega^{2}LC - 1} 
+\end{align*}
+
+Agora podemos utilizar este resultado para estudar o restante do circuito como um circuito em série incluindo a fonte, o resistor \(R\) e o trecho impedante \(Z_{eq}\). Assim, pela lei das malhas de Kirchhoff temos que a corrente em cada um dos componentes é igual. Com isso, podemos escrever a queda de tensão no resistor
+\[
+    V_{R} = IR
+\]
+e no trecho impedante
+\[
+    V_{p} = I Z_{eq}
+\]
+
+novamente, pensando nos fasores, sabemos que o ângulo entre \(V_{R}\) e \(V_{mp}\) é \(\pm 90\)º dependendo de quem for maior entre \(I_{L}\) e \(I_{C}\). Com isso, o módulo da soma destes dois vetores é:
+\begin{align*}
+    V_{F} &= \sqrt{V_{R}^{2} + V_{mp}^{2}}\\
+          &= \sqrt{(IR)^{2} + I^{2}\left(\frac{\omega L}{\omega^{2} L C - 1}  \right)^{2}} \\
+          &= I\sqrt{R^{2} + \left(\frac{\omega L}{\omega^{2} L C - 1}  \right)^{2}} \\
+\end{align*}
+
+Pela lei de Ohm generalizada, sabemos que \(V = IZ\), assim, a impedância total do circuito (\(Z_{F}\)) é dada por:
+\[
+          Z_{F} = \sqrt{R^{2} + \left(\frac{\omega L}{\omega^{2} L C - 1}  \right)^{2}}
+\]
+
+% TODO: calcular com dados experimentais
