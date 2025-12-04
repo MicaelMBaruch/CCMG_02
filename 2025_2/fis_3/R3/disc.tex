@@ -1,0 +1,50 @@
+\section{Discussões}
+
+\subsection{Determinação da Capacitância Real}
+O objetivo desta etapa experimental foi determinar a capacitância real do componente a partir da análise da resposta transiente do circuito RC série. A constante de tempo de relaxação ($\tau$) foi obtida medindo-se, via cursores no osciloscópio, o intervalo de tempo necessário para que a tensão no capacitor decaísse para $1/e$ (aproximadamente $36,8\%$) de seu valor inicial.
+
+O valor experimental obtido foi:
+\begin{align*}
+	\tau_{exp} = 124 \, \mu s
+\end{align*}
+
+Para o cálculo correto da capacitância, é necessário considerar as impedâncias reais do circuito. Conforme discutido na análise experimental, o gerador de funções utilizado não atua como uma fonte ideal, apresentando uma impedância interna de saída ($R_{int}$) de $50 \, \Omega$.
+
+Dessa forma, a resistência efetiva ($R_{ef}$) responsável pela carga e descarga do  capacitor é a soma da resistência nominal do circuito ($R_{ext}$) com a impedância do gerador:
+
+\begin{align*}
+	R_{ef} = R_{ext} + R_{int}
+\end{align*}
+\begin{align*}
+	R_{ef} = 100 \, \Omega + 50 \, \Omega = 150 \, \Omega
+\end{align*}
+
+Partindo da relação teórica $\tau = R \cdot C$, isola-se a capacitância:
+
+\begin{align*}
+	C_{real} = \frac{\tau_{exp}}{R_{ef}}
+\end{align*}
+
+Substituindo os valores experimentais:
+
+\begin{align*}
+	C_{real} = \frac{124 \times 10^{-6} \, \text{s}}{150 \, \Omega} 
+\end{align*}
+\begin{align*}  
+	C_{real} \approx 8,27 \times 10^{-7} \, \text{F}
+\end{align*}
+
+
+Convertendo para subunidades usuais:
+
+\begin{align*}
+	\mathbf{C_{real} \approx 827 \, \text{nF}}
+\end{align*}
+
+\section{Discussão dos Resultados}
+
+A análise dos dados revelou uma discrepância importante entre o roteiro experimental sugerido e os resultados obtidos. Embora a montagem proposta sugerisse o uso de um capacitor de $330 \, \text{nF}$, a constante de tempo medida ($\tau = 124 \, \mu\text{s}$) é fisicamente inconsistente com este valor, uma vez que o $\tau$ esperado para $330 \, \text{nF}$ seria de aproximadamente $50 \, \mu\text{s}$ (considerando $R_{tot}=150\,\Omega$).
+
+O valor medido de $124 \, \mu\text{s}$ aproxima-se muito mais do comportamento teórico esperado para o capacitor de \textbf{$1 \, \mu\text{F}$}, cujo $\tau$ teórico seria de $150 \, \mu\text{s}$.
+
+Assumindo, portanto, que a medição refere-se ao componente de $1 \, \mu\text{F}$, o valor experimental calculado de \textbf{$827 \, \text{nF}$} apresenta um desvio de aproximadamente $-17\%$ em relação ao nominal. Este desvio é plenamente justificável por dois fatores, capacitores eletrolíticos ou de poliéster comuns possuem tolerâncias típicas de $\pm 20\%$, e a inclusão da resistência interna do gerador ($50 \, \Omega$) no modelo foi determinante para a precisão do resultado. Caso fosse ignorada, o cálculo resultaria em $1,24 \, \mu\text{F}$, superestimando a capacitância e mascarando o comportamento real do componente.
