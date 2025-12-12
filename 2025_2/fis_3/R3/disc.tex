@@ -1,4 +1,4 @@
-\section{Discussão}
+\section{Resultados}
 
 \subsection{Cálculo da impedância do circuito}
 
@@ -21,7 +21,7 @@ Pela lei de Ohm generalizada, temos que:
 \begin{align*}
     I_{meq} &= \frac{V_{mp}}{Z_{eq}} \\
     \implies Z_{eq} &= \frac{X_{L} X_{C}}{X_{C} - X_{L}} \\
-                    &= \frac{\omega L}{\omega^{2}LC - 1} 
+                    &= \frac{\omega L}{1 - \omega^{2}LC } 
 \end{align*}
 
 Agora podemos utilizar este resultado para estudar o restante do circuito como um circuito em série incluindo a fonte, o resistor \(R\) e o trecho impedante \(Z_{eq}\). Assim, pela lei das malhas de Kirchhoff temos que a corrente em cada um dos componentes é igual. Com isso, podemos escrever a queda de tensão no resistor
@@ -36,16 +36,36 @@ e no trecho impedante
 novamente, pensando nos fasores, sabemos que o ângulo entre \(V_{R}\) e \(V_{mp}\) é \(\pm 90\)º dependendo de quem for maior entre \(I_{L}\) e \(I_{C}\). Com isso, o módulo da soma destes dois vetores é:
 \begin{align*}
     V_{F} &= \sqrt{V_{R}^{2} + V_{mp}^{2}}\\
-          &= \sqrt{(IR)^{2} + I^{2}\left(\frac{\omega L}{\omega^{2} L C - 1}  \right)^{2}} \\
-          &= I\sqrt{R^{2} + \left(\frac{\omega L}{\omega^{2} L C - 1}  \right)^{2}} \\
+          &= \sqrt{(IR)^{2} + I^{2}\left(\frac{\omega L}{1 - \omega^{2} L C }  \right)^{2}} \\
+          &= I\sqrt{R^{2} + \left(\frac{\omega L}{1 - \omega^{2} L C }  \right)^{2}} \\
 \end{align*}
 
 Pela lei de Ohm generalizada, sabemos que \(V = IZ\), assim, a impedância total do circuito (\(Z_{F}\)) é dada por:
 \[
-          Z_{F} = \sqrt{R^{2} + \left(\frac{\omega L}{\omega^{2} L C - 1}  \right)^{2}}
+          Z_{F} = \sqrt{R^{2} + \left(\frac{\omega L}{1 - \omega^{2} L C }  \right)^{2}}
 \]
 
-% TODO: calcular com dados experimentais
+\subsection{Frequência de ressonância do circuito}
+
+A frequência de ressonância, em que \(X_C = X_L\) é dada por:
+\begin{align*}
+    \frac{1}{\omega C} = \omega L \\
+    \implies f_0 = \frac{1}{2 \pi \sqrt{L C}} 
+\end{align*}
+Nesta frequência temos que o termo de reatância da impedância é dado por:
+\begin{align*}
+    Z &=  \frac{\omega L}{1 - \omega^{2} L C} = \frac{X_C X_L}{X_C - X_L} \\
+      &= lim_{h \to 0}\frac{X_C X_L}{h} \to \infty 
+\end{align*}
+Resultando em um circuito aberto para frequências próximas a \(f_0\). Usando o valor nominal de capacitância e indutância, obtemos:
+\begin{align*}
+    f_0 &\approx \frac{1}{2 \pi \sqrt{\qty{15e-6}{H} \cdot \qty{3.3e-6}{F}  }} \\
+    f_0 &\approx \frac{1}{2 \pi \sqrt{\qty{49.5e-12}{s^2}}} \\
+    f_0 &\approx \frac{1}{2 \pi \qty{7.035624e-6}{s}} \\
+    f_0 &\approx \frac{1}{\qty{4.4204826e-5}{s}} \\
+    f_0 &\approx \qty{22.622}{kHz}\\
+\end{align*}
+
 
 \subsection{Determinação da Capacitância Real}
 O objetivo desta etapa experimental foi determinar a capacitância real do componente a partir da análise da resposta transiente do circuito RC série. A constante de tempo de relaxação ($\tau$) foi obtida medindo-se, via cursores no osciloscópio, o intervalo de tempo necessário para que a tensão no capacitor decaísse para $1/e$ (aproximadamente $36,8\%$) de seu valor inicial.
@@ -88,7 +108,7 @@ Convertendo para subunidades usuais:
 	\mathbf{C_{real} \approx 827 \, \text{nF}}
 \end{align*}
 
-\section{Discussão dos Resultados}
+\section{Discussão}
 
 A análise dos dados revelou uma discrepância importante entre o roteiro experimental sugerido e os resultados obtidos. Embora a montagem proposta sugerisse o uso de um capacitor de $330 \, \text{nF}$, a constante de tempo medida ($\tau = 124 \, \mu\text{s}$) é fisicamente inconsistente com este valor, uma vez que o $\tau$ esperado para $330 \, \text{nF}$ seria de aproximadamente $50 \, \mu\text{s}$ (considerando $R_{tot}=150\,\Omega$).
 
