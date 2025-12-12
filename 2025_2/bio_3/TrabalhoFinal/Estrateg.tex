@@ -3,14 +3,70 @@
 \subsection{Estratégia Geral}
 A simulação utiliza um modelo de gerações sucessivas com cruzamentos, onde o genótipo possui tamanho variável e está sujeito a mutação e duplicação de genes. O teste principal consiste em comparar a evolução da complexidade genômica em populações de diferentes tamanhos.
 
-\subsection{Parâmetros Controlados e Fixos}
-\subsubsection*{Parâmetros Fixos}
-Os seguintes parâmetros foram mantidos constantes:
-\begin{itemize}
-	\item Chance de duplicação de gene ($x$)[cite: 8].
-	\item Chance de mutação ($y$).
-	\item O alfabeto de possíveis alelos (o *genepool*) com suas respectivas desvantagens evolutivas ou neutralidade.
-\end{itemize}
+\subsubsection*{Parâmetros Controlados} %ESSA È CRITÈRIO
+Nossa simulação foi feita em três cenários principais. O \textit{Cenário 1} foi a variação do tamanho populacional mantendo fixos os demais parâmetros. O \textit{Cenário 2} foi variando a chance de mutação. E o \textit{Cenário 3} foi controlando o custo por gene extra no genótipo. Os parâmetros de cada um dos cenários está resumido a seguir:
 
-\subsubsection*{Parâmetro Controlado}
-O principal parâmetro de controle é o tamanho da população, testado em valores progressivamente maiores.
+%DE NOVO, GRANDÃO, EU SEI, SE QUISEREM É SÓ TIRAR 
+\vspace{1em}
+\begin{minipage}[c][40ex][c]{0.3\linewidth}
+    \textit{Cenário 1}
+
+    \textbf{Tamanho da população: 10-1010 (100 em 100)}
+
+Chance de mutação: 0.0005
+
+Número de gerações: 500
+
+Penalidade por gene a mais no genótipo: 0.05
+
+Chance de duplicação de genes: 0.001
+
+Número de corridas por cenário: 15\\
+
+
+
+\end{minipage}
+\hspace{0.1em}
+\begin{minipage}[c][40ex][c]{0.3\linewidth}
+    \textit{Cenário 2}
+
+     Tamanho da população: 50
+
+     \textbf{Chance de mutação: 0.0005-0.05 (0.005 em 0.005)}
+
+Número de gerações: 700
+
+Penalidade por gene a mais no genótipo: 0.05
+
+Chance de duplicação de genes: 0.001
+
+Número de corridas por cenário: 15
+
+    
+\end{minipage}
+\hspace{0.1em}
+\begin{minipage}[c][40ex][c]{0.3\linewidth}
+    \textit{Cenário 3}
+
+    Tamanho da população: 500
+
+    Chance de mutação: 0.0005
+
+    Número de gerações: 500
+
+    \textbf{Penalidade por gene a mais no genótipo: 0.0--0.05 (0.0025 em 0.0025) }
+
+    Chance de duplicação de genes: 0.001
+
+    Número de corridas por cenário: 15\\
+
+\end{minipage}
+\vspace{1em}
+
+\section{New}
+Objetivo: premissas do Lynch -> Fazer simulação análoga ao processo biológico -> Avaliar resultados em comparação ao esperado
+
+Estratégia: Escrever código python que implementa a abstração do processo biológico. Ou seja, código sabe o que é um individuo, uma geração de individuos e sexo. A cada iteração o código amostra os individuos e tananananam
+PRIMEIRO POR O PARA LEIGOS DEIXANDO EXPLÍCITO O QUE O CÒDIGO SABE OU NÃO.
+
+Vamos fazer simulação estocástica em que o que é definido são os indvíduos a geração e o cruzamento. A cada geração reprodução pode gerar duplicação, mutação. 
