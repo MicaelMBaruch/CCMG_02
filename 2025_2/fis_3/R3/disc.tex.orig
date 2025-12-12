@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 \section{Discussão}
 
 \subsection{Cálculo da impedância do circuito}
@@ -46,6 +47,8 @@ Pela lei de Ohm generalizada, sabemos que \(V = IZ\), assim, a impedância total
 \]
 
 % TODO: calcular com dados experimentais
+=======
+\section{Discussões}
 
 \subsection{Determinação da Capacitância Real}
 O objetivo desta etapa experimental foi determinar a capacitância real do componente a partir da análise da resposta transiente do circuito RC série. A constante de tempo de relaxação ($\tau$) foi obtida medindo-se, via cursores no osciloscópio, o intervalo de tempo necessário para que a tensão no capacitor decaísse para $1/e$ (aproximadamente $36,8\%$) de seu valor inicial.
@@ -95,3 +98,4 @@ A análise dos dados revelou uma discrepância importante entre o roteiro experi
 O valor medido de $124 \, \mu\text{s}$ aproxima-se muito mais do comportamento teórico esperado para o capacitor de \textbf{$1 \, \mu\text{F}$}, cujo $\tau$ teórico seria de $150 \, \mu\text{s}$.
 
 Assumindo, portanto, que a medição refere-se ao componente de $1 \, \mu\text{F}$, o valor experimental calculado de \textbf{$827 \, \text{nF}$} apresenta um desvio de aproximadamente $-17\%$ em relação ao nominal. Este desvio é plenamente justificável por dois fatores, capacitores eletrolíticos ou de poliéster comuns possuem tolerâncias típicas de $\pm 20\%$, e a inclusão da resistência interna do gerador ($50 \, \Omega$) no modelo foi determinante para a precisão do resultado. Caso fosse ignorada, o cálculo resultaria em $1,24 \, \mu\text{F}$, superestimando a capacitância e mascarando o comportamento real do componente.
+>>>>>>> origin
