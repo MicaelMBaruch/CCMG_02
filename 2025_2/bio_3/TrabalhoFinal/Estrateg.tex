@@ -15,11 +15,7 @@ Os seguintes parâmetros foram mantidos constantes:
 \subsubsection*{Parâmetro Controlado} %ESSA È CRITÈRIO
 O principal parâmetro de controle é o tamanho da população, testado em valores progressivamente maiores.
 
-
 \section{New}
-Objetivo: premissas do Lynch -> Fazer simulação análoga ao processo biológico -> Avaliar resultados em comparação ao esperado
+A biblioteca Galapagos-Evo traduz a dinâmica evolutiva para o ambiente computacional utilizando a Orientação a Objetos para criar ``atores digitais'' que mimetizam entidades biológicas. O código não possui um roteiro pré-definido do destino evolutivo; ele apenas detém as definições fundamentais: o computador ``sabe'' o que constitui um Indivíduo, reconhece a existência de Sexo e delimita o ciclo de uma Geração.
 
-Estratégia: Escrever código python que implementa a abstração do processo biológico. Ou seja, código sabe o que é um individuo, uma geração de individuos e sexo. A cada iteração o código amostra os individuos e tananananam
-PRIMEIRO POR O PARA LEIGOS DEIXANDO EXPLÍCITO O QUE O CÒDIGO SABE OU NÃO.
-
-Vamos fazer simulação estocástica em que o que é definido são os indvíduos a geração e o cruzamento. A cada geração reprodução pode gerar duplicação, mutação. 
+A simulação opera de maneira estocástica  análoga à aleatoriedade da natureza. A cada iteração do código (uma geração), o algoritmo realiza a amostragem de indivíduos para cruzamento. Durante essa reprodução virtual, aplicam-se as taxas fixas de erro para gerar eventos de mutação e duplicação gênica sobre genótipos de tamanho variável. Ao controlar estritamente esses parâmetros e variar apenas o tamanho da população, o sistema permite testar \textit{in silico} as premissas de Lynch: verificar se a deriva genética em populações pequenas é suficiente para permitir o acúmulo de complexidade genômica passiva, independentemente de seleção.
