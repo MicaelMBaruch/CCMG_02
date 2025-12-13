@@ -1,0 +1,16 @@
+
+\section{Interpretação dos Resultados}
+
+A simulação forneceu uma intuição biológica direta sobre como a eficiência da seleção natural, modulada pelo tamanho populacional efetivo ($N_e$), pode influenciar a arquitetura genômica. Observou-se que populações maiores, em média, tendem a convergir para genomas finais menores, próximos ao tamanho ótimo definido no modelo (igual a 1), indicando uma transição de um regime dominado pela deriva genética para um regime dominado pela seleção natural eficiente.
+
+Em populações pequenas, a seleção é menos eficaz na remoção de mutações levemente deletérias associadas ao aumento do genoma. Nesse contexto, a deriva genética não \emph{garante} o acúmulo de genomas maiores, mas permite que tal acúmulo ocorra estocasticamente. Em contraste, em populações grandes, embora genótipos maiores possam surgir por mutação, a seleção tende a eliminá-los rapidamente, impedindo sua fixação.
+
+Esses resultados são coerentes com o modelo proposto por Lynch e Conery, segundo o qual muitas características genômicas complexas de eucariotos — como íntrons, elementos transponíveis e duplicações gênicas — emergem como consequências indiretas da redução do $N_e$, e não como adaptações diretas.
+
+Como desdobramento futuro, seria relevante explorar de forma mais detalhada a interação entre o tamanho populacional ($N$) e a taxa de mutação ($\mu$), com foco no parâmetro composto $N \times \mu$. Estudos recentes baseados em simulações sugerem que esse produto é um determinante central da densidade de codificação genômica\cite{LuiselliEtAl2024}. 
+
+Apesar de a simulação fornecer suporte teórico à plausibilidade da hipótese da deriva para o aumento da complexidade genômica, sua validação macroevolutiva permanece controversa. Estudos filogenéticos posteriores, ao controlarem a não independência entre espécies, não encontraram associações estatisticamente significativas entre $N_e$ e atributos genômicos como tamanho do genoma, número de genes ou quantidade de íntrons \cite{WhitneyGarland2010}. Além disso, no artigo \textit{Comment on ``The origins of genome complexity''} Daubin e Moran questionaram o uso do parâmetro composto $N_e \mu$ como um proxy confiável de $N_e$ isoladamente, especialmente ao analisar genomas bacterianos\cite{DaubinMoran2004}.
+
+Adicionalmente, o padrão observado na simulação — no qual populações pequenas tendem a acumular genomas maiores — contrasta com genomas bacterianos reduzidos, como os de endossimbiontes, que apesar de apresentarem baixo $N_e$, exibem forte redução genômica associada à perda de genes essenciais\cite{LuiselliEtAl2024}.
+
+Em síntese, os resultados reforçam a importância da deriva genética como força permissiva para o aumento da complexidade genômica, mas indicam que a arquitetura genômica observada na natureza provavelmente emerge de uma interação mais complexa entre tamanho populacional, taxa de mutação, distribuição de efeitos deletérios e custos associados à robustez replicativa.

@@ -1,72 +1,38 @@
 \section{Estratégias de Simulação}
 
-\subsection{Estratégia Geral}
-A simulação utiliza um modelo de gerações sucessivas com cruzamentos, onde o genótipo possui tamanho variável e está sujeito a mutação e duplicação de genes. O teste principal consiste em comparar a evolução da complexidade genômica em populações de diferentes tamanhos.
+A estratégia adotada para a simulação foi o desenvolvimento de um biblioteca em Python denominada "Galapagos-Evo" que traduz a dinâmica evolutiva para o ambiente computacional utilizando a Orientação a Objetos para criar ``atores digitais'' que mimetizam entidades biológicas, desse modo, o nosso programa produz simulações de maneira análoga ao processo biológico, sendo possível simular não apenas as hipótese de Lynch, como os modelos mais simples vistos em aula.
+
+A simulação utiliza um modelo de gerações sucessivas com cruzamentos, onde o genótipo possui tamanho variável e está sujeito a mutação e duplicação de genes. O teste principal consiste em comparar a evolução da complexidade genômica em populações de diferentes tamanhos. O código não possui um viés quanto ao destino evolutivo da simulação; ele apenas detém as definições fundamentais: o computador ``sabe'' o que constitui um Indivíduo, reconhece a existência de Sexo e delimita o ciclo de uma Geração.
+
+A simulação opera de maneira estocástica  análoga à aleatoriedade da natureza. A cada iteração do código (uma geração), o algoritmo realiza a amostragem de indivíduos para cruzamento. Durante essa reprodução virtual, aplicam-se as taxas fixas de erro para gerar eventos de mutação e duplicação gênica sobre genótipos de tamanho variável. Ao controlar estritamente esses parâmetros e variar apenas o tamanho da população, o sistema permite testar \textit{in silico} as premissas de Lynch: verificar se a deriva genética em populações pequenas é suficiente para permitir o acúmulo de complexidade genômica passiva, independentemente de seleção.
+
+Nosso código pode ser acessado por qualquer dispositivo com Python instalado através do seguinte comando no terminal: "pip install galapagos-evo", ou pelo link: https://github.com/TheFire888/galapagos.
 
 \subsubsection*{Parâmetros Controlados} %ESSA È CRITÈRIO
-Nossa simulação foi feita em três cenários principais. O \textit{Cenário 1} foi a variação do tamanho populacional mantendo fixos os demais parâmetros. O \textit{Cenário 2} foi variando a chance de mutação. E o \textit{Cenário 3} foi controlando o custo por gene extra no genótipo. Os parâmetros de cada um dos cenários está resumido a seguir:
+Nossa simulação foi feita em três cenários principais em que um parâmetro foi variado enquanto os outros permaneceram fixos. O \textit{Cenário 1} variou o tamanho populacional, equanto o \textit{Cenário 2} variou a chance de mutação e o \textit{Cenário 3} o custo por gene extra no genótipo. Os parâmetros de cada um dos cenários está resumido a seguir:
 
-%DE NOVO, GRANDÃO, EU SEI, SE QUISEREM É SÓ TIRAR 
-\vspace{1em}
-\begin{minipage}[c][40ex][c]{0.3\linewidth}
-    \textit{Cenário 1}
-
-    \textbf{Tamanho da população: 10-1010 (100 em 100)}
-
-Chance de mutação: 0.0005
-
-Número de gerações: 500
-
-Penalidade por gene a mais no genótipo: 0.05
-
-Chance de duplicação de genes: 0.001
-
-Número de corridas por cenário: 15\\
-
-
-
-\end{minipage}
-\hspace{0.1em}
-\begin{minipage}[c][40ex][c]{0.3\linewidth}
-    \textit{Cenário 2}
-
-     Tamanho da população: 50
-
-     \textbf{Chance de mutação: 0.0005-0.05 (0.005 em 0.005)}
-
-Número de gerações: 700
-
-Penalidade por gene a mais no genótipo: 0.05
-
-Chance de duplicação de genes: 0.001
-
-Número de corridas por cenário: 15
-
-    
-\end{minipage}
-\hspace{0.1em}
-\begin{minipage}[c][40ex][c]{0.3\linewidth}
-    \textit{Cenário 3}
-
-    Tamanho da população: 500
-
-    Chance de mutação: 0.0005
-
-    Número de gerações: 500
-
-    \textbf{Penalidade por gene a mais no genótipo: 0.0--0.05 (0.0025 em 0.0025) }
-
-    Chance de duplicação de genes: 0.001
-
-    Número de corridas por cenário: 15\\
-
-\end{minipage}
-\vspace{1em}
-
-\section{New}
-Objetivo: premissas do Lynch -> Fazer simulação análoga ao processo biológico -> Avaliar resultados em comparação ao esperado
-
-Estratégia: Escrever código python que implementa a abstração do processo biológico. Ou seja, código sabe o que é um individuo, uma geração de individuos e sexo. A cada iteração o código amostra os individuos e tananananam
-PRIMEIRO POR O PARA LEIGOS DEIXANDO EXPLÍCITO O QUE O CÒDIGO SABE OU NÃO.
-
-Vamos fazer simulação estocástica em que o que é definido são os indvíduos a geração e o cruzamento. A cada geração reprodução pode gerar duplicação, mutação. 
+\begin{table}[h]
+    \centering
+    \caption{Parâmetros experimentais por cenário}
+    \label{tab:cenarios}
+    \begin{tabular}{lccc}
+        \toprule
+        \textbf{Parâmetro} & \textbf{Cenário 1} & \textbf{Cenário 2} & \textbf{Cenário 3} \\
+        \midrule
+        Tamanho da população & \textbf{10--1010} & 50 & 500 \\
+        & \small{(passo de 100)} & & \\
+        \addlinespace
+        Chance de mutação & 0.0005 & \textbf{0.0005--0.05} & 0.0005 \\
+        & & \small{(passo de 0.005)} & \\
+        \addlinespace
+        Número de gerações & 500 & 700 & 500 \\
+        \addlinespace
+        Penalidade (gene extra) & 0.05 & 0.05 & \textbf{0.0--0.05} \\
+        & & & \small{(passo de 0.0025)} \\
+        \addlinespace
+        Chance de duplicação & 0.001 & 0.001 & 0.001 \\
+        \addlinespace
+        Corridas por cenário & 15 & 15 & 15 \\
+        \bottomrule
+    \end{tabular}
+\end{table}

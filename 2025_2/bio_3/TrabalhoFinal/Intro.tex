@@ -1,22 +1,12 @@
 \section{Introdução}
 
-O presente trabalho simula o cenário proposto por Lynch e colaboradores para investigar o papel da deriva genética no aumento da complexidade genômica em eucariontes multicelulares[cite: 3].
+O presente trabalho tem como interesse biológico primário compreender os mecanismos evolutivos subjacentes à grande disparidade na arquitetura genômica observada entre procariontes e eucariontes multicelulares. Genomas eucarióticos são notavelmente maiores, com um número maior de genes, introns abundantes e proliferação de elementos móveis, em comparação com os genomas densos e compactos dos procariontes. 
+A hipótese central testada por meio de simulação baseasse no artigo \textit{The Origins of Genome Complexity}\cite{Lynch2003GenomeComplexity}, debatido em sala, que argumenta que a complexidade emerge passivamente em resposta à redução do tamanho populacional efetivo ($N_e$). Em populações com $N_e$ pequeno, o poder da deriva genética aleatória é amplificado, resultando em um ambiente permissivo onde a seleção natural é menos eficiente para eliminar mutações levemente deletérias, como duplicações de genes "inúteis" ou DNA não-codificante.
 
-\subsection{Interesse Biológico}
-O interesse biológico do cenário é compreender os mecanismos evolutivos que levam à grande diferença na arquitetura genômica entre procariontes e eucariontes. A hipótese central é que a ineficiência da seleção natural em populações pequenas (alta deriva) permite a fixação de mutações levemente deletérias que aumentam o tamanho e a complexidade do genoma.
-% TODO: Justino, não seria interessante não deixar em tópicos? E sim como um texto corrido.
+Um exemplo clássico, feito pelos próprios autores, que ilustra essa disparidade é a comparação direta entre genomas de bactérias e de eucariontes multicelulares. Enquanto bactérias (com $N_e$ tipicamente enorme) mantêm genomas pequenos e densos (variando de $0{,}6$ a $7{,}6$ megabases, com uma fração não codificante reduzida), organismos multicelulares (com $N_e$ tipicamente menor, como vertebrados, na ordem de $10^{4}$ a $10^{5}$) possuem genomas muito maiores (ao menos $100$ Mb) e exibem uma expansão dramática de elementos como íntrons e elementos móveis\cite{Lynch2003GenomeComplexity}.
 
-\subsection{Exemplo de Realismo Biológico}
-Um exemplo clássico é a comparação entre o tamanho e a proporção de DNA não-codificante nos genomas de bactérias (populações grandes) e organismos multicelulares (populações tipicamente menores).
-% TODO: Talvez fosse interessante citar algum artigo que testa as hipóteses do Lynch
+O presente trabalho busca replicar \textit{in silico} essa observação empírica, avaliando se a variação no tamanho populacional efetivo ($N_e$) é, por si só, suficiente para conduzir a essa diferença na complidade genômica. Importante salientar, que, tanto para o contexto do artigo quanto para a nossa simulação, assumimos a complexidade como análoga ao tamnho do genótipo.
 
-\subsection{Extensão de Cenários Simples} %ESSA É CRITÉRIO AVALIATIVO
-% Tópicos avaliativos: 1 e 2
-%TODO: adicionar texto:
-simulação análoga ao processo biológico que 
+Este cenário estende os modelos básicos de genética populacional (como Hardy-Weinberg e deriva simples) ao introduzir uma capacidade de variação dinâmica do genoma. Em vez de apenas rastrear a frequência de alelos discretos, a simulação modela o tamanho do genoma de forma variável, sujeitando-o a eventos de duplicação e mutação que podem ser neutros ou levemente deletérios, tornando o fitness um parâmetro mais dinâmico e probabilístico.
 
-Este cenário estende os modelos simples de genética populacional ao incorporar a variação no tamanho do genoma e um espectro de alelos neutros ou com desvantagens evolutivas, tornando o fitness um parâmetro dinâmico e probabilístico.
-% TODO: Aqui é importante adicionar quais outros diferenciais nossa simulação tem
-	
-\section{Queiroz} %QUEIROZ VAI VER SE FICA MELHOR AQUI OU NO RSLT
-Escrever stroytelling: tentamos, parecia errado, buscamos, literatura falou que é isso ai.
+
